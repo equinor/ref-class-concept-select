@@ -51,7 +51,7 @@ Detail and measurements are in `docs/data-sources.md` §1.
 | `Volve_PUD_cmt.pdf` | Same plus 77 highlights on 23 pages | Highlights can be transferred to Markdown programmatically |
 | `Discovery_report.pdf` (194 p, scan + OCR) | OCR good on prose, unusable on figures | Tables and figures need page-image reading and sample checks |
 | Production workbook | Daily and monthly per wellbore, 2007–2016 | Ready to use |
-| Eclipse model `VOLVE_2016` | 203 522 active cells, results included | Analysis possible without running anything |
+| Eclipse model `VOLVE_2016` | 183 545 active cells, results included | Analysis possible without running anything |
 
 Working environment: WSL2 Ubuntu 24.04, 20 cores, 30 GB RAM, Python 3.12, Docker
 29.8, poppler, mutool, qpdf, tesseract, LibreOffice, `uv` 0.13. The project
@@ -78,7 +78,7 @@ environment is defined in `pyproject.toml`. OPM Flow is installed separately
 |---|---|---|---|---|
 | sys / infrastructure | Feasible, low risk | Plain-file workflow; one maintainer; two machines (inferred from the two prompt logs) | Conventions drifting between sessions and machines | Short always-loaded rules; checksummed data manifest; locked environment |
 | doc | Feasible; PDO high fidelity, discovery report medium | Text layer and highlights read programmatically in tests; plot pages contain vector paths | Translation errors in technical terms; scanned tables; digitising raster plots; 182 MB scan | Page anchors back to the original; table-versus-plot cross-checks; sample verification; page-wise processing |
-| sim | Analysis feasible now; re-running needs deck work | Results read with `resdata` 7.0; deck loads in the OPM 2026.4 parser after one record is removed and extra records are tolerated | Flow may not reproduce the Eclipse results; run time unknown; model is 2016 hindsight | Analyse shipped results first; port in small steps and compare against shipped vectors; tag everything `as_of 2016` |
+| sim | Analysis feasible now; re-running needs deck work | Results read with `resdata` 7.0. Flow 2026.04 dry run completes after three input fixes and with unsupported keywords ignored; active cells and total pore volume then match the Eclipse `INIT` | Flow does not implement `ADDZCORN` (cell depths differ in 2 862 cells) or the `QUIESC`/`MOBILE` equilibration options, so results may not reproduce Eclipse; run time unknown; model is 2016 hindsight | Analyse shipped results first; substitute the final geometry for `ADDZCORN`; compare against shipped vectors; tag everything `as_of 2016` |
 | dmx | Feasible for the 2005 concept decision | PDO has distributions, costs, price (22 USD/bbl), discount rate (8 %), break-even (17.50 USD/bbl), and a section on alternatives | Alternatives may be described only qualitatively; earlier and later decisions less documented | Model only what is documented; mark assumptions; start with timeline and framing |
 | rcf | Feasible for recoverable volume and cost; limited for in-place | Sodir tables: 145 fields with yearly reserve estimates 2004–2025, 136 with production, 142 with investments | No public history of in-place estimates; no public operator forecast profiles; published dataset not shareable; estimate history starts 2004 | Start with recoverable-volume and investment classes; use published calibration results for production profiles; treat in-place as a research question |
 
@@ -157,7 +157,7 @@ settled by a small trial in the first step of the domain, not in advance.
 | PDF layout and tables | Docling 2.x, Marker 2.x, PyMuPDF4LLM | *Evaluate* on a few PDO pages |
 | Scanned tables, figures, translation | LLM with page images | Checked per guidelines §7 |
 | Eclipse results | `resdata` 7.0, `res2df` 1.4 | `resdata` verified on the Volve results |
-| Simulator | OPM Flow 2026.04 | Ubuntu package (`ppa:opm/ppa`) or container; Python bindings `opm` 2026.4 |
+| Simulator | OPM Flow 2026.04 | Installed from `ppa:opm/ppa`; Python bindings `opm` 2026.4. State of the Volve deck under Flow: `agents/sim/README.md` |
 | Influence diagrams | pyAgrum 3.3 | *Evaluate*; alternative PyCID 0.8 |
 | Decision trees | Small in-repo solver over a text specification | Transparent and auditable; trees here are small |
 | Statistics for rcf | pandas, SciPy | |
@@ -193,9 +193,9 @@ charters, `.gitignore`.
 | 1.6 | Copilot CLI agent profiles in `.github/agents/` | All five listed by the CLI; `rcf` run once and found its charter. The other four were not run individually |
 | 1.7 | Guidelines, charters and README brought in line with what exists | Done |
 
-Still open from Phase 1: OPM Flow is not installed on this machine (command in
-`agents/sim/README.md`; it needs `sudo`), and nothing has been checked on the
-second machine.
+OPM Flow 2026.04 was installed by the user and checked with dry runs on the
+Volve deck; findings are in `agents/sim/README.md`. Still open from Phase 1:
+nothing has been checked on the second machine.
 
 ### Phase 2 — first step per domain
 
@@ -227,9 +227,9 @@ All approved by the user on 2026-11-19; recorded in the decision log
   annotations, images and drawing paths per page.
 - Production workbook: `openpyxl` and `pandas`.
 - Simulation results: `resdata` 7.0 on `VOLVE_2016.UNSMRY` and `.INIT`.
-- Deck: `opm` 2026.4 Python parser on a copy with line 620 of
-  `VOLVE_2016.DATA` removed and extra records ignored; grid and schedule
-  objects built. No simulation was run.
+- Deck: `opm` 2026.4 Python parser, then Flow 2026.04 dry runs, on patched
+  copies outside the raw data; the Flow `INIT` compared with the shipped one
+  using `resdata`. No simulation was run.
 - Sodir: CSV downloads with `curl` from the endpoints in
   `docs/data-sources.md`.
 - Tools were installed in a temporary environment that has been removed. The

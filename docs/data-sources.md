@@ -16,7 +16,7 @@ or wherever the `VOLVE_DATA` environment variable points. Described in
 | `pud2005` | `reports/Volve_PUD_cmt.pdf` | Same, with the user's highlights | 77 highlight annotations on 23 pages; otherwise identical text |
 | `disc1993` | `reports/Discovery_report.pdf` | Discovery evaluation report, well 15/9-19 SR, Dec 1993, English | 194 pages, 300-dpi scan with OCR layer, 182 MB |
 | `prod` | `production_data/Volve production data.xlsx` | Daily and monthly production per wellbore | Daily: 15 634 rows × 24 columns, 7 wellbores, 2007-09-01 to 2016-12-01. Monthly: 526 rows. Cumulative oil 10.04 MSm3, gas 1.475 GSm3, water 15.32 MSm3, water injection 30.33 MSm3 |
-| `sim2016` | `eclipse_model/sim_model_PPA-eclipse/` | Eclipse 100 history-matched model with results | 108 × 100 × 63 grid, 203 522 active cells; 31 Dec 2007 to 1 Oct 2016; FOPT 9.98 MSm3; FOIP at start 21.97 MSm3 |
+| `sim2016` | `eclipse_model/sim_model_PPA-eclipse/` | Eclipse 100 history-matched model with results | 108 × 100 × 63 grid, 183 545 active cells; 31 Dec 2007 to 1 Oct 2016; FOPT 9.98 MSm3; FOIP at start 21.97 MSm3 |
 
 The three `.zip` files in `../volve_data` (581 MB) are the downloaded archives
 of the extracted folders.
