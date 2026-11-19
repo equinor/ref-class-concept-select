@@ -8,8 +8,9 @@ selected for analysis.
 
 ## Inputs
 
-- Facts from doc: alternatives considered, estimates with their ranges, cost
-  and price assumptions, dates.
+- Facts from the register (`data/facts/`): alternatives considered, estimates
+  with their ranges, cost and price assumptions, dates, and outcomes from
+  Sodir.
 - Results from sim: profiles, volumes, sensitivities (hindsight; `as_of 2016`).
 - Distributions and adjustment factors from rcf.
 
@@ -34,6 +35,10 @@ from the producing domain.
 
 In `agents/dmx/out/`: model specification as a text file (nodes, states,
 probabilities, values, each with its source), solution tables, diagrams.
+
+## Environment
+
+`uv sync --group dmx` installs pyAgrum.
 
 ## Rules specific to dmx
 

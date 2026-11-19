@@ -32,12 +32,13 @@ its "when the guidelines are silent" procedure rather than inventing a local rul
 
 1. **Raw data is read-only.** Source data lives outside the repo in
    `../volve_data` (override with the `VOLVE_DATA` environment variable). Never
-   modify, move or delete anything there except to add the derived `md/` and
-   `figs/` folders defined in the doc charter.
+   write, modify, move or delete anything there. Converted documents go in the
+   repository under `data/volve/`.
 2. **Every number has a source.** A value taken from a document, a simulation
-   or a public table is recorded with where it came from (file, page or
-   table/figure or vector name), its unit, and how it was obtained (read,
-   digitised, computed). Values that are assumed or inferred are labelled so.
+   or a public table is recorded as a fact in `data/facts/` with where it came
+   from (file, page or table/figure or vector name), its unit, and how it was
+   obtained. Values that are assumed or inferred are labelled so and are not
+   facts.
 3. **Report what the source says.** Do not fill gaps with plausible values. If
    a document gives no alternatives, pros/cons or probabilities, say so.
 4. **Stay in your lane when writing.** Read anywhere; write only in your own
@@ -47,12 +48,22 @@ its "when the guidelines are silent" procedure rather than inventing a local rul
    later information to describe what was known at an earlier decision.
 6. **`logs/` belongs to the user.** Do not edit the prompt logs.
 7. **Check before you claim.** State what was verified and how; flag what was
-   not.
+   not. `make check` must pass before a commit.
+
+## Commands
+
+| Command | Effect |
+|---|---|
+| `make setup` | Install the environment (all domains); `uv sync --group <domain>` for one |
+| `make check` | Verify raw data against the manifest, validate facts, run tests and lint |
+| `uv run <command>` | Run anything inside the environment |
 
 ## Key documents
 
 - `docs/background.txt` — the Volve field and the local dataset.
 - `docs/data-sources.md` — local data inventory and public sources, with
   retrieval recipes.
+- `data/README.md` — the shared data: manifest, sources, Sodir snapshots, fact
+  register, converted documents.
 - `docs/startup-assessment.md` — feasibility assessment, infrastructure
   specification and development plan.

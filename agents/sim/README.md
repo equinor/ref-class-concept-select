@@ -43,10 +43,24 @@ With the trailing `ROCK` record removed and lenient handling of extra records,
 the deck parses and the grid and schedule build. A full Flow run has not been
 attempted.
 
+## Environment
+
+- `uv sync --group sim` installs `resdata`, `res2df`, the `opm` Python bindings
+  and pandas.
+- OPM Flow itself is installed system-wide from the OPM package archive
+  (2026.04 for Ubuntu 24.04); `openmpi-bin` provides `mpirun` for parallel
+  runs:
+
+  ```bash
+  sudo add-apt-repository -y ppa:opm/ppa && sudo apt-get update && sudo apt-get install -y libopm-simulators-bin openmpi-bin
+  flow --version
+  ```
+
 ## Outputs
 
 Tables (CSV) and notes in `agents/sim/out/`, each stating case, vector or
-keyword names, simulator and version. Modified decks are kept as small patch
+keyword names, simulator and version. Values other domains rely on also go in
+`data/facts/sim2016.csv`. Modified decks are kept as small patch
 files or scripts against the original; the original is never edited.
 
 ## Quality checks

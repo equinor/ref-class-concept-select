@@ -23,7 +23,9 @@ comparable estimates in comparable projects turn out?
 ## Data
 
 Public structured data that supports a reference class for the Norwegian
-continental shelf (checked 2026-11-19; see `docs/data-sources.md`):
+continental shelf is held as a snapshot in `data/sodir/20261119/` (all fields;
+see `docs/data-sources.md`). Read it with `syskit.sodir.read_table`. The Volve
+values are also in the fact register, `data/facts/sodir.csv`.
 
 | Sodir table | Coverage | Use |
 |---|---|---|
@@ -59,11 +61,15 @@ To be obtained and verified:
   forecasting: optimistic and overconfident — over and over again. *SPE
   Reservoir Evaluation & Engineering* 23(3).
 
+## Environment
+
+`uv sync --group rcf` installs pandas and SciPy.
+
 ## Outputs
 
-In `agents/rcf/out/`: the reference dataset (with retrieval date), the class
-definition, distribution statistics, and adjustment factors for the requesting
-domain.
+In `agents/rcf/out/`: the reference dataset (with the snapshot date it was
+built from), the class definition, distribution statistics, and adjustment
+factors for the requesting domain.
 
 ## Quality checks
 

@@ -9,12 +9,11 @@ can use, analyses them on request, and produces the communication artifacts
 ## Rules set by the user
 
 1. **Convert to Markdown.** Each source document (`.pdf`, `.docx`, …) is
-   converted to a `.md` file with the same file name, placed in an `md/` folder
-   in the same directory as the original.
-2. **Figures.** Cut-outs of the figures in a document go in a `figs/` folder in
-   the same directory as the original, named so they can be matched to the
-   document and figure. For plot graphs, the corresponding data table goes with
-   the cut-out.
+   converted to a `.md` file with the same file name, placed in an `md/`
+   folder.
+2. **Figures.** Cut-outs of the figures in a document go in a `figs/` folder,
+   named so they can be matched to the document and figure. For plot graphs,
+   the corresponding data table goes with the cut-out.
 3. **Graph data to Excel.** The data of all graphs (production profiles and
    similar) in a document is exported to an Excel file with the same name as
    the original document.
@@ -25,7 +24,21 @@ can use, analyses them on request, and produces the communication artifacts
 6. **Communication.** doc produces the HTML pages that present and summarise
    the data found in the documents.
 
-## Conventions proposed by this charter (pending approval)
+## Where the converted files go
+
+Approved 2026-11-19: the `md/` and `figs/` folders are kept in the repository
+under `data/volve/`, at the mirrored location of the original, so they are
+versioned. Nothing is written to `$VOLVE_DATA`.
+
+| Original | Converted |
+|---|---|
+| `$VOLVE_DATA/reports/Volve_PUD_cmt.pdf` | `data/volve/reports/md/Volve_PUD_cmt.md` |
+| | `data/volve/reports/md/Volve_PUD_cmt.xlsx` |
+| | `data/volve/reports/figs/Volve_PUD_cmt_fig04-5_<slug>.png` and `.csv` |
+
+## Conventions proposed by this charter
+
+To be confirmed or adjusted when the first doc task is specified.
 
 - Figure files: `<stem>_fig<NN>_<slug>.png`; plot data beside it as
   `<stem>_fig<NN>_<slug>.csv`. `<NN>` follows the document's own numbering
@@ -48,9 +61,15 @@ can use, analyses them on request, and produces the communication artifacts
 
 ## Outputs and consumers
 
-See `agents/sys/GUIDELINES.md` §6. Facts follow the fields in §5 of the
-guidelines; until the fact register exists they are given as tables in the
-`_anlz` document.
+See `agents/sys/GUIDELINES.md` §6. Every value extracted for use by another
+domain is a row in `data/facts/pud2005.csv` or `data/facts/disc1993.csv`, with
+the columns of guidelines §5; `make facts-validate` checks them.
+
+## Environment
+
+`uv sync --group doc` installs PyMuPDF, openpyxl, pandas and matplotlib. Other
+extraction tools are added with `uv add --group doc <package>` once a trial
+shows they are needed.
 
 ## Method
 

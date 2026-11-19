@@ -1,6 +1,6 @@
 # Startup assessment and development plan
 
-Status: **for approval** · 2026-11-19 · prepared in the sys role
+Status: **approved 2026-11-19; Phase 1 complete** · prepared in the sys role
 
 ## 1. Summary
 
@@ -36,12 +36,10 @@ P90 is the low case. The in-place outcome is below the PDO's P90; recovery
 ended between P90 and P50, after the estimate had fallen to 8.15 in 2010 and a
 further 1 640 MNOK was invested in 2012–2014.
 
-**Delivered with this document:** the agent rules (`AGENTS.md`), the operating
-specification for sys (`agents/sys/`), a charter per domain, and the data
-source guide (`docs/data-sources.md`).
-
-**Asked of you:** approve the plan in §8 and settle the four decisions in §9.
-No environment, tooling or agent profiles have been built yet.
+**State:** the plan in §8 and the decisions in §9 were approved on 2026-11-19.
+Phase 0 (rules, sys specification, charters, data-source guide) and Phase 1
+(environment, data manifest, Sodir snapshot, fact register, check command,
+agent profiles) are built. Phase 2 starts with the doc task.
 
 ## 2. What exists
 
@@ -56,8 +54,9 @@ Detail and measurements are in `docs/data-sources.md` §1.
 | Eclipse model `VOLVE_2016` | 203 522 active cells, results included | Analysis possible without running anything |
 
 Working environment: WSL2 Ubuntu 24.04, 20 cores, 30 GB RAM, Python 3.12, Docker
-29.8, poppler, mutool, qpdf, tesseract, LibreOffice. No project Python packages
-and no simulator are installed.
+29.8, poppler, mutool, qpdf, tesseract, LibreOffice, `uv` 0.13. The project
+environment is defined in `pyproject.toml`. OPM Flow is installed separately
+(`agents/sim/README.md`).
 
 ## 3. Additional public data
 
@@ -124,17 +123,17 @@ and no simulator are installed.
 | R1 | Always-loaded rules | `AGENTS.md` at the root (read automatically by Copilot CLI); short, pointing to charters | Done |
 | R2 | sys operating specification | `agents/sys/README.md`, `agents/sys/GUIDELINES.md`: layout, ownership, data handling, naming, provenance, hand-offs, quality gates, change control | Done |
 | R3 | Domain charters | `agents/<domain>/README.md`: role, inputs, outputs, method, checks | Done |
-| R4 | Data location and integrity | Raw data outside the repo via `VOLVE_DATA`; `data/manifest.csv` with size and SHA-256; verification command | Phase 1 |
-| R5 | Reproducible environment | One `pyproject.toml` with lock file; dependency group per domain so heavy stacks install only when needed | Phase 1 |
-| R6 | Provenance | Fields in guidelines §5; fact register `data/facts/<source-id>.csv`; validator | Rule done; register Phase 1 |
-| R7 | Public-data snapshots | Script that downloads the Sodir tables to dated files | Phase 1 |
-| R8 | One check command | `make check`: manifest verification, validators, tests, lint | Phase 1 |
+| R4 | Data location and integrity | Raw data outside the repo via `VOLVE_DATA`; `data/manifest.csv` with size and SHA-256; verification command | Done: 74 files, `make manifest-verify` |
+| R5 | Reproducible environment | One `pyproject.toml` with lock file; dependency group per domain so heavy stacks install only when needed | Done: `make setup` |
+| R6 | Provenance | Fields in guidelines §5; fact register `data/facts/<source-id>.csv`; validator | Done: 182 Sodir facts for Volve, `make facts-validate` |
+| R7 | Public-data snapshots | Script that downloads the Sodir tables to dated files | Done: `data/sodir/20261119/`, `make sodir` |
+| R8 | One check command | `make check`: manifest verification, validators, tests, lint | Done |
 
 ### 6.2 Recommended
 
 | # | Element | Why | When |
 |---|---|---|---|
-| S1 | Copilot CLI agent profiles in `.github/agents/`, one per domain, pointing to the charter | Lets a session start as a domain agent (`--agent`, `/agent`) and lets one agent delegate to another | Phase 1; profile format to be confirmed against the CLI when created |
+| S1 | Copilot CLI agent profiles in `.github/agents/`, one per domain, pointing to the charter | Lets a session start as a domain agent (`--agent`, `/agent`) and lets one agent delegate to another | Done; all five are listed by the CLI |
 | S2 | Skills for repeatable procedures (`.github/skills/`) | Turns a proven procedure into something reusable on the next batch | After a procedure has been run once |
 | S3 | Continuous integration running `make check` | Catches breakage between the two machines | Optional; local check is enough for one maintainer |
 | S4 | Decision log | Already in guidelines §10 | Done |
@@ -153,7 +152,7 @@ settled by a small trial in the first step of the domain, not in advance.
 
 | Purpose | Candidate | Note |
 |---|---|---|
-| Environment | `uv` 0.13 with lock file | Not installed; plain `venv` + `pip` is the fallback |
+| Environment | `uv` 0.13 with lock file | In use |
 | PDF text, annotations, vector paths | PyMuPDF 2.1 | Used in the probes; reads highlights and drawing paths |
 | PDF layout and tables | Docling 2.x, Marker 2.x, PyMuPDF4LLM | *Evaluate* on a few PDO pages |
 | Scanned tables, figures, translation | LLM with page images | Checked per guidelines §7 |
@@ -168,33 +167,35 @@ settled by a small trial in the first step of the domain, not in advance.
 
 | Domain | First step | Result | Depends on |
 |---|---|---|---|
-| doc | Convert `Volve_PUD_cmt.pdf`: Markdown in English with page anchors and highlights in bold; figure cut-outs; plot data to Excel; begin with a three-page trial of the extraction tools | `md/`, `figs/`, workbook, and a written procedure | Decision D1 |
-| sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. Then port the deck to OPM Flow | CSV tables and a note; later a patch set for the deck | Environment (R5) |
-| rcf | Build the reference dataset from Sodir snapshots: per field, the recoverable estimate at approval and at each later year, final recovery, investments. Write the class definition before computing statistics. Summarise the method of Nesvold & Bratvold (2022) | Dataset, class definition, method note | R7 |
+| doc | Convert `Volve_PUD_cmt.pdf`: Markdown in English with page anchors and highlights in bold; figure cut-outs; plot data to Excel; begin with a three-page trial of the extraction tools | `data/volve/reports/md/`, `figs/`, workbook, facts, and a written procedure | Your task specification |
+| sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. Then port the deck to OPM Flow | CSV tables and a note; later a patch set for the deck | Nothing for the analysis; OPM Flow installed for the port |
+| rcf | Build the reference dataset from the Sodir snapshot: per field, the recoverable estimate at approval and at each later year, final recovery, investments. Write the class definition before computing statistics. Summarise the method of Nesvold & Bratvold (2022) | Dataset, class definition, method note | Nothing |
 | dmx | Decision timeline and framing of the 2005 concept decision from doc's facts; influence-diagram skeleton without numbers | Timeline, frame, diagram | doc first step |
-| sys | Phase 1 below | Working infrastructure | Approval |
 
-doc and rcf can start in parallel once Phase 1 is done; sim's analysis step is
-independent of both; dmx follows doc.
+doc, rcf and sim's analysis step can run in parallel; dmx follows doc.
 
 ## 8. Development plan
 
-### Phase 0 — foundation documents (this delivery)
+### Phase 0 — foundation documents (done)
 
 Assessment, data-source guide, `AGENTS.md`, sys specification, domain
 charters, `.gitignore`.
 
-### Phase 1 — infrastructure (after approval)
+### Phase 1 — infrastructure (done 2026-11-19)
 
-| # | Task | Done when |
+| # | Task | Result |
 |---|---|---|
-| 1.1 | Environment: `pyproject.toml`, lock file, dependency groups `doc`, `sim`, `dmx`, `rcf` | A fresh clone installs with one command on both machines |
-| 1.2 | Data manifest: script to create and verify `data/manifest.csv`; `VOLVE_DATA` resolution in one helper | Verification passes on both machines; a changed file is reported |
-| 1.3 | Sodir snapshot script for the tables in `docs/data-sources.md` | Dated snapshot committed; Volve values reproduce those in this document |
-| 1.4 | Fact register: column definition, validator, one example file | Validator rejects a row without source or unit |
-| 1.5 | `Makefile` with `check` | One command runs 1.2 verification, 1.4 validation, tests and lint |
-| 1.6 | Copilot CLI agent profiles for the five domains | Each profile is listed by `/agent` and loads its charter |
-| 1.7 | Update guidelines: remove *planned* marks for what now exists | No rule refers to missing tooling |
+| 1.1 | Environment: `pyproject.toml`, lock file, dependency groups `doc`, `sim`, `dmx`, `rcf`, `dev` | All groups resolve into one lock file and install with `make setup` on this machine. Not yet run on the second machine |
+| 1.2 | Data manifest: `syskit.manifest` creates and verifies `data/manifest.csv`; `VOLVE_DATA` resolved in `syskit.paths` | 74 files, 2.48 GB; verification passes; missing, changed and extra files are reported (tested) |
+| 1.3 | Sodir snapshot: `syskit.sodir` | `data/sodir/20261119/`, nine tables with index; the Volve values in this document are reproduced by a test |
+| 1.4 | Fact register: columns in guidelines §5, validator `syskit.facts`, `data/facts/sodir.csv` | 182 facts; rows without source, unit or locator are rejected (tested) |
+| 1.5 | `Makefile` | `make check` runs manifest verification, fact validation, 32 tests and lint; passes |
+| 1.6 | Copilot CLI agent profiles in `.github/agents/` | All five listed by the CLI; `rcf` run once and found its charter. The other four were not run individually |
+| 1.7 | Guidelines, charters and README brought in line with what exists | Done |
+
+Still open from Phase 1: OPM Flow is not installed on this machine (command in
+`agents/sim/README.md`; it needs `sudo`), and nothing has been checked on the
+second machine.
 
 ### Phase 2 — first step per domain
 
@@ -208,14 +209,17 @@ First end-to-end pass on the 2005 concept decision: doc facts → rcf adjustment
 sim and Sodir → doc report. sys reconciles cross-source differences (§5.4)
 along the way.
 
-## 9. Decisions needed
+## 9. Decisions
 
-| # | Question | Options | Recommendation |
-|---|---|---|---|
-| D1 | Where do converted documents live? | **A** beside the originals in `../volve_data/.../md` and `figs`, as you specified; outside the repo, so not versioned and not synchronised between your machines. **B** the same `md/` and `figs/` structure inside the repo under `data/`, versioned | B. These files are costly to regenerate and are the input for every other domain. A stays in force until you say otherwise |
-| D2 | Install `uv` in your user account? | Yes; or stay with `venv` + `pip` | Yes |
-| D3 | How to install OPM Flow? | Ubuntu package (needs `sudo`), or container via Docker | Ubuntu package; simpler to run and to script |
-| D4 | Approve Phase 1 as listed? | Approve, or adjust | Approve |
+All approved by the user on 2026-11-19; recorded in the decision log
+(`agents/sys/GUIDELINES.md` §10).
+
+| # | Question | Decision |
+|---|---|---|
+| D1 | Where do converted documents live? | In the repository under `data/volve/`, in `md/` and `figs/` folders mirroring the location of the original; versioned. Nothing is written to `../volve_data` |
+| D2 | Install `uv`? | Yes; installed in `~/.local/bin` |
+| D3 | How to install OPM Flow? | Ubuntu package from `ppa:opm/ppa`, installed by the user with `sudo` |
+| D4 | Phase 1 | Approved and built |
 
 ## Appendix — how the measurements were made
 

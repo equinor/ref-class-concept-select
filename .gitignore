@@ -34,3 +34,6 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+
+# Incomplete Sodir downloads
+data/sodir/.*.partial/

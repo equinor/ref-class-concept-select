@@ -5,8 +5,10 @@ to retrieve it. Everything marked *verified* was checked on 2026-11-19.
 
 ## 1. Local data
 
-Location: `../volve_data` relative to the repository root (2.4 GB). Described
-in `docs/background.txt`.
+Location: `../volve_data` relative to the repository root (74 files, 2.48 GB),
+or wherever the `VOLVE_DATA` environment variable points. Described in
+`docs/background.txt`. Every file is listed with size and SHA-256 in
+`data/manifest.csv`; `make manifest-verify` checks a machine against it.
 
 | ID | Path | Content | Measured |
 |---|---|---|---|
@@ -40,6 +42,9 @@ of the extracted folders.
 
 - Field page: <https://factpages.sodir.no/en/field/PageView/All/3420717>
   (NPDID field 3420717; discovery wellbore 15/9-19 SR, wellbore page id 2105).
+- A snapshot of the tables below, taken 2026-11-19, is in
+  `data/sodir/20261119/`; `make sodir` takes a new one. The Volve values are in
+  the fact register, `data/facts/sodir.csv`.
 - Every FactPages table can be downloaded as CSV for the whole shelf without
   authentication:
 
@@ -67,6 +72,11 @@ curl -s -o field_reserves.csv 'https://factpages.sodir.no/public?/Factpages/exte
   makes them the base for the reference class as well (see
   `agents/rcf/README.md`).
 
+  Units, as stated on the Sodir field page: oil and condensate in million Sm3,
+  gas in billion Sm3, oil equivalents in million Sm3 o.e., investments in
+  million NOK nominal. NGL is in million Sm3 in the production tables and in
+  million tonnes in `field_reserves`.
+
 Volve values from these tables:
 
 | Quantity | Value |
@@ -87,7 +97,8 @@ Volve values from these tables:
 
 - OPM Flow reference manual, release 2026-04: <https://opm-project.org/?page_id=955>
 - OPM Flow packages for Ubuntu 24.04: `ppa:opm/ppa` (`libopm-simulators-bin`
-  2026.04); Python bindings `opm` 2026.4 on PyPI.
+  2026.04); Python bindings `opm` 2026.4 on PyPI. Install command in
+  `agents/sim/README.md`.
 - `resdata` 7.0.0 and `res2df` 1.4.0 on PyPI.
 
 ### 2.5 Not yet checked
@@ -102,8 +113,9 @@ Volve values from these tables:
 
 ## 3. Retrieval practice
 
-- Pull public tables with a script, save them as dated snapshots, and analyse
-  the snapshots (`agents/sys/GUIDELINES.md` §3).
+- Public tables are pulled with `make sodir` into `data/sodir/<YYYYMMDD>/`
+  and analyses read the snapshot (`agents/sys/GUIDELINES.md` §3). To add a
+  table, add its name to `TABLES` in `agents/sys/src/syskit/sodir.py`.
 - Record the retrieval date with every value quoted from Sodir. The tables
   carry a synchronisation date (it equalled the retrieval date) and the
   reserve estimates get a new version each year.
