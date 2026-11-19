@@ -1,0 +1,140 @@
+
+____________________________________________________________
+Thu Nov 19 2026 13:26:41 week 47 CET+0100
+████████████████████████████████████████████████████████████
+
+┌────────────────────┐
+│ VOLVE DATA VILLAGE │
+└────────────────────┘
+
+[overview:]
+Volve is a decommissioned field in the central part of the North Sea and was discovered in 1993, the plan for development and operation (PDO) was approved in 2005. The field was shut down in 2016 and the formal removal and decommissioning will be completed by the end of 2018.
+
+The Volve field is located five kilometers north of the Sleipner Øst field with water depths of 80 meters in the block 15/9. The produced oil was from sandstone in the Hugin Formation of the Jurassic age.
+The reservoir is located at 2750 – 3120 m depth. The Volve Data was approved for data sharing in 2018 by the initiative of the last Operating company, Equinor and approved by the license partners ExxonMobil E&P Norway AS and Bayerngas Norge AS in the end of 2017.
+
+During the life of the Volve license, a limited amount of field-related data has been released to a handful of research institutes.
+The Volve Data available will contain data covering data in regards of production data, well design, completion string design, seismic data, well logs (petrophysical and drilling), geological and stratigraphical data, static and dynamic models, surface and grid data.
+
+Disclaimer
+
+The users of the information and data are expressly informed that the data provided by Equinor and the former Volve License partners is provided on an “as is” basis and may contain errors and omissions.
+Equinor and former Volve license partners provide no warranties, expressed or implied, either relating to the content or to the relevance of the data.
+Equinor disclaims any liability for errors and defects associated with the data to the maximum extent permitted by law.
+Equinor and the former Volve License partners shall not be liable for any direct or indirect losses as a result of use of the data, or concerning possible infringement of any intellectual property and/or patent rights of a third party.
+The data set shall not be resold.
+
+Personal data and availability
+
+The «Volve data village» was released for a two year period on June 14, 2018. The availability has been extended until June 2022. In order to comply with the agreements relevant for the release of the data, it is necessary for Equinor to maintain control of who has downloaded the data. Consequently, name, email, company and date of download will be registered when asking for access to the data, and retained for the necessary time-period. For further information, please see Equinor’s privacy policy available on equinor.com.
+
+The Volve Data Village
+
+[The Volve Field:]
+
+The Volve field was discovered in 1993 (Discovery well 15/9-19 SR). Located in the central part of the north sea, 5 km north of Sleipner East, waterdepth 80 m.
+
+Volve was developed when oil prices were low. A non-traditional concept was chosen to extract resources easily and profitably. The plan for development and production was approved by NPD in 2005. A description of field development can be found in the PUD report.
+The Volve development took advantage of an opportunity to use a vacant new building, Maersk Inspirer, which at the time was the world's largest jack-up rig. The rig was equipped with its own wellhead and process module for drilling and production. After the shutdown of the Volve field, this rig will be used in the Repsol-operated Yme field which is to be reopened for production.
+
+FSU Navion Saga was used as a storage vessel for the oil. Both installations were leased under the license and operation of the contractors Mærsk Drilling and Teekay.
+
+The reservoir in the Volve field consists of Jurassic sandstones at 2750 – 3120 m TVD ss, the field was produced with water injection as pressure support.
+
+When the Volve field started well drilling in May 2007, and came into production the following year, life expectancy was from 3-5 years.
+New wells were being drilled up until 2012-13, which contributed to the increased recovery rate and extended life of the field. However remaining resources were very limited and with the decrease in oil price over recent years, new wells were no longer profitable.
+
+The Volve oil and gas field closed in 2016, having continued production 3 years longer than originally planned.
+All possibilities to extend the life of the field were explored, which yielded very good results.
+
+The field was in production for over 8 years and delivered about 9.5 million barrels of oil beyond what was expected in the development and operation plan. In total, Volve achieved a recovery rate of 54%.
+
+Volve was shut down in 2016 by decision of the partners: Statoil (now Equinor), ExxonMobil and Bayern Gas (Now Spring Energy), and with the approval of OED.
+Production ended in October 2016 and FSU Navion Saga left the field.
+Permanent plugging of the wells and other process activities were carried out in December. Maersk Inspirer then disconnected from the Volve field.
+Removal of Subsea equipment was completed in the summer of 2017.
+To ensure fair access and scalability, datasets are subject to a 90‑day usage policy, where installations are automatically removed after 90 days but can be reinstalled as needed.
+
+┌─────────┐
+│ DATASET │
+└─────────┘
+
+This data is found in ../volve_data
+.
+├── eclipse_model
+│   ├── license.txt
+│   ├── ReadMe.txt
+│   └── sim_model_PPA-eclipse
+│       ├── ACTNUM_2013
+│       ├── CONTACT_MAIN-NW-AP2014.GRDECL
+│       ├── EQLNUM_2013
+│       ├── F-10_main-LH.INC
+│       ├── F-10_main-UHW.INC
+│       ├── F-12_NOV_10_TEST_2.Ecl
+│       ├── F-14A_revp1.INC
+│       ├── F-1CW.INC
+│       ├── FAULT_MAIN-F12-F14-AP2014.GRDECL
+│       ├── FAULT_MAIN-F14-AP2014.GRDECL
+│       ├── FAULT_NW-15NOV13.GRDECL
+│       ├── FAULT_NW_NEG.GRDECL
+│       ├── FIPNUM13_REMOVAL
+│       ├── FIPNUM_2013
+│       ├── FLUXNUM_2013
+│       ├── fort7ycXYL
+│       ├── GRID_postF1B_Nov2013_locupd_12112013.grdecl
+│       ├── i_f5_7_ju.ecl
+│       ├── KLOGH_NW
+│       ├── MOD2010_VOLVE_AMAP2012_WELLS_IOR_N_UPPERHUGIN_L-F15D.SCH
+│       ├── MOD2013_VOLVE_HM_NTRANS_BASE-SHUT-DEF-F11-BHP-F12-3.SCH
+│       ├── MOD2013_VOLVE_NW-OPTIONS-SHUT-PF1C_H.SCH
+│       ├── PERMZ_NW
+│       ├── PHIF_NW
+│       ├── pp03_KRW
+│       ├── pp03_SORW
+│       ├── pvt_input_new_combined_PVDG_020610_perch_water_2914m.E100
+│       ├── PVTNUM_2013
+│       ├── RSVD_input_new_combined_020610_perch_water_2914m.E100
+│       ├── SCH_010916_10DAYS.SCH
+│       ├── SCH_151215_10DAYS.SCH
+│       ├── SCH_190516_10DAYS.SCH
+│       ├── SGFN_NEW_BASE_2TABLES.INCL
+│       ├── SOF3_NEW_PESS_2TABLES.INCL
+│       ├── SWFN_NEW_PESS_C15_2TABLES.INCL
+│       ├── SWIRR_NW
+│       ├── Thumbs.db
+│       ├── UH-perm-corr-main-mod13
+│       ├── UH-Upflank-NW-perm-corr
+│       ├── VOLVE_2016.2.MSG
+│       ├── VOLVE_2016.3.MSG
+│       ├── VOLVE_2016.4.MSG
+│       ├── VOLVE_2016.DATA
+│       ├── VOLVE_2016.DBG
+│       ├── VOLVE_2016.ECLEND
+│       ├── VOLVE_2016.ECLRUN
+│       ├── VOLVE_2016.eclrun_dbg
+│       ├── VOLVE_2016_EXPAND.DATA
+│       ├── VOLVE_2016.GRID
+│       ├── VOLVE_2016.h5
+│       ├── VOLVE_2016.INIT
+│       ├── VOLVE_2016.INSPEC
+│       ├── VOLVE_2016.LOG
+│       ├── VOLVE_2016.MSG
+│       ├── VOLVE_2016.OUT
+│       ├── VOLVE_2016.PRT
+│       ├── VOLVE_2016.RFT
+│       ├── VOLVE_2016.RSSPEC
+│       ├── VOLVE_2016.SMSPEC
+│       ├── VOLVE_2016.UNRST
+│       ├── VOLVE_2016.UNSMRY
+│       ├── Volve Sim model and HM per jan-16.pptx
+│       └── WELL_WSEG_TRACER_HK3_MA.SUMMARY
+├── production_data
+│   ├── license.txt
+│   └── Volve production data.xlsx
+└── reports
+    ├── Discovery_report.pdf
+    ├── license.txt
+    ├── Volve_PUD_cmt.pdf
+    └── Volve_PUD.pdf
+
+

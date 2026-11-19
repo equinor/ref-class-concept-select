@@ -1,0 +1,242 @@
+
+____________________________________________________________
+Thu Nov 19 2026 16:57:55 week 47 CET+0100
+████████████████████████████████████████████████████████████
+
+┌────────────────────────────────┐
+│ ANALYSIS OF DOCS BY AGENTS/DOC │
+└────────────────────────────────┘
+
+____________________________________________________________
+[prompt:]
+
+We start by analysing the documents
+../volve_data/reports/Volve_PUD_cmt.pdf and
+../volve_data/reports/Discovery_report.pdf
+
+As base, both docs should be converted to md as is the 
+general operation of agents/docs. If any of the documents
+names has a 'cmt' tag, then any highlighted text in the 
+document should also be highlighted/made bold in the md. 
+
+Note that Volve_PUD_cmt.pdf is Norwegian, and thus it needs
+to be translated to English. Both documents should 
+
+If asked when analyzing a document summarize and extract the
+specified type of content onto a separate document with that
+has the same file name with the added tag _anlz. Do this for
+Volve_PUD_cmt.pdf
+
+Analyze Volve_PUD_cmt.pdf along the three following lines: 
+
+1. Volve_PUD_cmt.pdf describes the plan for development for
+the Volve field. We are interested in extracting information
+regarding the concept selection, e.g., what is the specific
+solution developed, what were other alternatives considered,
+what are the pros and cons for the current and the other
+options (if any given, if not, don't speculate).
+
+2. What is the rationale for the described production
+strategy, describe it in plain terms. Also redraw the data
+for the different production forecasts given in the
+document, and remake the tables in the analysis document.
+
+3. Conduct a third pass where you identify the main
+uncertainties underlying the estimated volumes in place, 
+as well as the production strategy and the development 
+plan.
+
+Analyze Discovery_report along the same lines, where
+applicable. Extract to a separate .md file accordingly.
+
+Conduct an analysis of the Volve field development plan 
+as given in Volve_PUD_cmt.pdf (with whatever other relevant
+information available from Discovery_report) with focus on 
+the forecasted production and development costs and compare
+it with openly available data of what the actualy production
+and cost were for this field at end of operation. Present 
+this analysis as a state-of-the-art html web report with 
+appropriate comparison figures and tables. 
+
+At the end of the analyzes a generalized procedure for how
+to analyze this type of documents should be articulated so
+the next batch of docs to be analyzed can start from these
+directions. Save the guideline in agents/docs.   
+
+____________________________________________________________
+# result
+
+
+
+____________________________________________________________
+[prompt:]
+
+____________________________________________________________
+# result
+
+____________________________________________________________
+Thu Nov 19 2026 13:25:12 week 47 CET+0100
+████████████████████████████████████████████████████████████
+
+┌──────────────────────────────┐
+│ STARTUP AGENT INFRASTRUCTURE │
+└──────────────────────────────┘
+
+[context: the nature of the work]
+
+This work builds methodology to analyze petroleum field
+development projects along the lines of which decisions that
+were taken at different points in time and at different
+project stages. The methodology will be built by analyzing
+the data from the real openly available Volve field
+downloaded from databricks.
+
+The analysis will identify different core decisions that
+were made during the project, which information was
+available at the time of decision, e.g., volumetric and cost
+estimates, which assumptions that underlie the different
+decisions, and any inconsistencies that may be found. 
+
+The methodology then works to structure some of these
+decisions using a decision analysis procedure, i.e., a
+decision model, e.g., a decision tree and/or influence
+diagram is created using specific decision, uncertainties
+and corresponding values and probabilites acquired from the
+data. (Data in this sense is information directly read from 
+documentation and/or derived from artifacts created by the 
+field development team, e.g., the reservoir simulation 
+model and the plan for production and operation.)
+
+Reference class forecasting is a general approach that is in
+this context used to calibrate in-place volumetric estimates
+though it can also be use to calibrate other probabilistic
+assessments, i.e., use the outside view to challenge the 
+inside view. 
+
+[context: repo startup]
+
+This repo sets up work to be conducted by a set of agents 
+which concentrate on performing different tasks and serve 
+as experts within their respective domains. 
+
+Five domains are currently identified to each be driven by 
+a respective agent. Each agent works primariry within its
+own folder within this repo, but has access to all data 
+in the repo. Additional domains may be specified at a later 
+time. 
+
+[The agents folders and the agent specifications are:]
+
+agents/doc: agent that analyses and extracts data from 
+documents that contain graphs and tables. The documents, 
+often given in pdfs, should be extracted to markdown and 
+any other format that makes both the text data and the 
+numerical data easy to digest by an llm agent for further
+analysis. This agent also has the responsibility to create 
+communication artifacts, e.g., html webpages that show and 
+summarize the data found in the various documents. All the  
+the data from all the graphs (production profiles) in each 
+document should be exported to an excel file with the same 
+name as the original file.
+
+agents/doc is also responsible for converting source docs,
+e.g., .pdf and .docx files, to md format to facilitate llm
+ingestion. The resulting .md file has the same file name as
+the original file and is placed in a md dir in the same dir
+as the original file. Moreover, cut-outs of the figures in
+the document, and their corresponding tables if the figures
+are plot graphs with are placed in a figs dir. Name
+appropriately.
+
+agents/sim: agent that runs reservoir simulations and/or
+perform analysis on input data and output results from
+reservoir simulations. 
+
+The manual for the open-source opm flow reservoir simulator
+(https://opm-project.org/?page_id=955) is the reference for
+the definition of the different reservoir simulator keywords
+and their specification. This knowledge can serve to develop
+custom simulation decks which are reduced version of the
+main simulatin decks for some specific purpose
+(fit-for-purpose modeling).
+
+Equinor has a software library called resdata
+(https://github.com/equinor/resdata) for reading and writing
+result files from the Eclipse reservoir simulator.
+
+agents/dmx: agent that structures decisions and is able to 
+create and solve decision models, e.g., influence diagrams 
+and/or decision trees. 
+
+agents/rcf: agent that possesses the knowledge about 
+reference class forecasting and has the main responsibility 
+for implementing this methodology when called in by other 
+other agents. 
+
+agents/sys: agent that has specific knowledge about how best
+to organize, coordinate and integrate the different types of
+data and the work created by the different agents. The other
+agents can and should call in the guidelines provided by
+this agent when necessary. 
+
+[tasks:]
+
+- read ../docs/background.txt to get background
+understanding about the Volve field and the specific data
+currently available (found in a folder just outside this
+repo: ../volve_data). Get an overview of where additional
+publicly available data can be found and obtained (and how
+this data be efficiently retrieved) regarding Volve, e.g.,
+from norwegian offshore directorate, etc.
+
+- conduct a feasibility assessment of the current work plan
+and make a detailed specification of the work that is
+required and recommended from a state-of-the-art perspective
+to implement the various ideas in this plan. Focus first on
+what is required to create a robust workflow infrastructure,
+then consider what is recommended as a first step in each of
+the domains. Consider that this overall workflow will be
+managed and maintained by a single user only. 
+
+- Summarize your report and development plan for approval. 
+The overall infrastructure should be established first, 
+including possible a sufficiently detailed specification
+using best practice as reference for how agents/sys should
+operate. 
+
+- Tasks to be performed by the agents/doc domain will be
+specified next after the foundational part of the workflow
+is well established.
+
+- Push the code and keep everything tidy
+
+____________________________________________________________
+[prompt:]
+
+
+____________________________________________________________
+# result
+
+
+
+
+
+____________________________________________________________
+[prompt:]
+
+
+____________________________________________________________
+# result
+
+# todo 
+get some references for 'reference class forecasting'
+methodology and how it should be applied to petroleum 
+field development ~> [ok:]
+research/20261118-force-llm-hackathon/ref-class-concept-select/agents/rcf/lib
+/LIB_2022_ENERGY_debiasing_production-forecasts_ENesvold+RBratvold.pdf
+
+____________________________________________________________
+Tue Nov 17 2026 14:10:23 week 47 CET+0100
+████████████████████████████████████████████████████████████
+
+START
