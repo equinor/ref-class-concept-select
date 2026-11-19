@@ -1,0 +1,52 @@
+[project]
+name = "ref-class-concept-select"
+version = "0.1.0"
+description = "Methodology for analysing petroleum field-development decisions, developed on the Volve dataset"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Shared code installed into the environment. Add a domain's package here when it gets one.
+[tool.hatch.build.targets.wheel]
+packages = ["agents/sys/src/syskit"]
+
+[tool.pytest.ini_options]
+testpaths = ["agents"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
+dmx = [
+    "pyagrum>=3.3.2",
+]
+doc = [
+    "matplotlib>=3.11.2",
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "pymupdf>=2.1",
+]
+rcf = [
+    "pandas>=3.1.1",
+    "scipy>=1.18.1",
+]
+sim = [
+    "opm>=2026.4",
+    "pandas>=3.1.1",
+    "res2df>=1.4.0",
+    "resdata>=7.0.0",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["syskit"]
