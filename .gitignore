@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Per-agent scratch space (never versioned)
+agents/*/work/
+
+# Reservoir simulation output (large, reproducible)
+*.UNRST
+*.UNSMRY
+*.SMSPEC
+*.INIT
+*.EGRID
+*.GRID
+*.RFT
+*.PRT
+*.DBG
+*.INFOSTEP
+*.h5
+
+# Raw data must stay outside the repository
+/volve_data/
+*.zip
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
