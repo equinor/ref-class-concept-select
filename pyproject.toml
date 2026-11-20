@@ -12,7 +12,7 @@ build-backend = "hatchling.build"
 
 # Code installed into the environment. Add a domain's package here when it gets one.
 [tool.hatch.build.targets.wheel]
-packages = ["agents/sys/src/syskit", "agents/sim/src/simkit"]
+packages = ["agents/sys/src/syskit", "agents/sim/src/simkit", "agents/doc/src/dockit"]
 
 [tool.pytest.ini_options]
 testpaths = ["agents"]
@@ -35,6 +35,7 @@ doc = [
     "matplotlib>=3.11.2",
     "openpyxl>=3.1.5",
     "pandas>=3.1.1",
+    "plotly>=7.1.0",
     "pymupdf>=2.1",
 ]
 rcf = [
@@ -49,4 +50,4 @@ sim = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["syskit", "simkit"]
+known-first-party = ["syskit", "simkit", "dockit"]
