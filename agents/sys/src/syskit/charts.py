@@ -142,7 +142,8 @@ class Chart:
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
 
-        with plt.rc_context({"font.size": 10 * scale}):
+        # A fixed salt keeps the identifiers in vector output the same from run to run.
+        with plt.rc_context({"font.size": 10 * scale, "svg.hashsalt": "syskit"}):
             self._plot(plt, path, dpi, scale, size)
 
     def _plot(self, plt, path: Path, dpi: int, scale: float, size: tuple[float, float]) -> None:
@@ -209,5 +210,6 @@ class Chart:
             axes.legend(frameon=False, fontsize=9 * scale, loc="best")
         figure.tight_layout()
         path.parent.mkdir(parents=True, exist_ok=True)
-        figure.savefig(path, dpi=dpi)
+        vector = Path(path).suffix == ".svg"
+        figure.savefig(path, dpi=dpi, metadata={"Date": None} if vector else None)
         plt.close(figure)

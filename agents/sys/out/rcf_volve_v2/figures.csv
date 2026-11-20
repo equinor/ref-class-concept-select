@@ -1,0 +1,12 @@
+file,in_presentation,original
+pptx_image1.jpeg,image1.jpeg,
+pptx_image2.png,image2.png,
+inplace_result_vs_prognosis_loglog.png,image3.png,agents/rcf/study/figures/inplace_result_vs_prognosis_loglog.png
+calibration_plot.png,image4.png,agents/rcf/study/figures/calibration_plot.png
+fid_reserves_vs_discovery_inplace_loglog.png,image5.png,agents/rcf/study/figures/fid_reserves_vs_discovery_inplace_loglog.png
+expert-study-review_slide4.png,image6.png,agents/rcf/out/figs/expert-study-review_slide4.png
+expert-study-review_slide5.png,image7.png,agents/rcf/out/figs/expert-study-review_slide5.png
+expert-study-review_slide6.png,image8.png,agents/rcf/out/figs/expert-study-review_slide6.png
+roles.svg,,agents/sys/out/workflow-deck/figs/roles.svg
+use-case.svg,,agents/sys/out/workflow-deck/figs/use-case.svg
+concept-comparison.svg,,agents/sys/out/workflow-deck/figs/concept-comparison.svg

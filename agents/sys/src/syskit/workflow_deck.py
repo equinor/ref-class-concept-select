@@ -33,6 +33,31 @@ OIL, WATER, SEA = "#fdba74", "#bfdbfe", "#e0f2fe"
 
 
 # ---------------------------------------------------------------------------- numbers
+def numbers() -> dict:
+    """The numbers behind the diagrams of the first use and of the two plans."""
+    from dmxkit import volve_basis as vb
+    from rcfkit import inplace, volve
+
+    pud, sodir = facts.read("pud2005"), facts.read("sodir")
+    plan, outcome = volve.plan(), volve.outcome()
+    both = vb.bases()
+    ratios = inplace.prognosis_ratios(**vb.CLASSES[vb.PRIMARY])
+    return {
+        "pdo": vb.pdo(),
+        "plan_oil": plan["reserves"]["mean"],
+        "actual_oil": outcome["total"],
+        "investment_plan": pud["pud2005.costs_nominal.total_investments.total"],
+        "investment_actual": sodir["sodir.investment.total"],
+        "class_ratio": float(np.median(ratios)),
+        "class_low": float(np.quantile(ratios, 0.1)),
+        "class_high": float(np.quantile(ratios, 0.9)),
+        "class_n": len(ratios),
+        "metrics": {name: vb.metrics(basis) for name, basis in both.items()},
+        "west": {name: vb.west_decision(basis) for name, basis in both.items()},
+        "calibrated": {a: vb.describe(both["Calibrated"][a]) for a in ("west", "closure")},
+    }
+
+
 def results() -> dict:
     """The numbers and charts shown on the slides, from the domains' own code."""
     from dmxkit import volve_basis as vb
@@ -40,7 +65,7 @@ def results() -> dict:
     from rcfkit import expert, exploration, fields, review, study, volve
 
     pud, sodir = facts.read("pud2005"), facts.read("sodir")
-    plan, outcome = volve.plan(), volve.outcome()
+    outcome = volve.outcome()
     probability = exploration.probability_results()
     volumes = exploration.volume_results()
     sample = exploration.volume_sample("ip")
@@ -54,10 +79,7 @@ def results() -> dict:
     volve_row = table.set_index("field").loc[volve.FIELD]
     backtest = fields.backtest(table, horizons=(3,))[3]
     both = vb.bases()
-    metrics = {name: vb.metrics(basis) for name, basis in both.items()}
     west = {name: vb.west_decision(basis) for name, basis in both.items()}
-    calibrated = {area: vb.describe(both["Calibrated"][area]) for area in ("west", "closure")}
-    ratios = volve_concept.inplace.prognosis_ratios(**vb.CLASSES[vb.PRIMARY])
 
     oil_years = list(range(2007, 2017))
     investment_years = list(range(2005, 2017))
@@ -120,22 +142,13 @@ def results() -> dict:
         outcome["start"].month - volve.PLAN_FIRST_OIL.month
     )
     return {
+        **numbers(),
         "charts": charts,
-        "pdo": vb.pdo(),
-        "plan_oil": plan["reserves"]["mean"],
-        "actual_oil": outcome["total"],
         "months_late": months_late,
-        "investment_plan": pud["pud2005.costs_nominal.total_investments.total"],
-        "investment_actual": sodir["sodir.investment.total"],
-        "in_place_today": sodir["sodir.in_place_oil"],
         "expected_discoveries": probability["all"]["expected_discoveries"],
         "discoveries": probability["all"]["discoveries"],
         "volume_median": volumes["ip"]["median"],
         "range_inside": volumes["range"]["stated"]["inside"],
-        "class_ratio": float(np.median(ratios)),
-        "class_low": float(np.quantile(ratios, 0.1)),
-        "class_high": float(np.quantile(ratios, 0.9)),
-        "class_n": len(ratios),
         "backtest_inside": backtest["inside"],
         "backtest_n": backtest["n"],
         "first_year_calendar": float(quantiles.loc[0.5, 1]),
@@ -143,9 +156,6 @@ def results() -> dict:
         "below_low_years": [
             int(y) for y in comparison.loc[comparison["actual"] < comparison["plan_low"], "years"]
         ],
-        "metrics": metrics,
-        "west": west,
-        "calibrated": calibrated,
     }
 
 
@@ -549,6 +559,30 @@ def concept_comparison(r: dict) -> Svg:
     return s
 
 
+def changes_slide(deck: Deck, r: dict) -> None:
+    """The slide that sets the 2005 plan beside the modified plan, element by element."""
+    p, m, w = r["pdo"], r["metrics"], r["west"]
+    rows = [
+        ("Concept", "Leased jack-up, storage vessel, gas to Sleipner A", "Unchanged"),
+        ("Volume basis", f"{p['closure']['mean']:.1f} million Sm3 (mean)",
+         f"East {p['east']['mean']:.1f} committed; West "
+         f"{r['calibrated']['west']['p90']:.1f}–{r['calibrated']['west']['p10']:.1f} as an option"),
+        ("Wells at sanction", "3 producers, 3 injectors", "2 + 2; western pair held back"),
+        ("West", "Drilled with the rest", "Pilot first; drill the pair above "
+         f"{w['Calibrated']['break_even_west']:.1f} million Sm3"),
+        ("Capacity", f"{number(p['capacity_oil'])} Sm3/d", "Unchanged"),
+        ("Reserves told to owners", f"{p['reserves']['mean']:.1f}",
+         f"about {m['Calibrated']['reserves_p50']:.0f}, low case "
+         f"{m['Calibrated']['reserves_p90']:.1f}"),
+    ]  # fmt: skip
+    body = "".join(f'<tr><td>{a}</td><td>{b}</td><td class="new">{c}</td></tr>' for a, b, c in rows)
+    deck.slide(
+        "What changes",
+        '<table class="big"><thead><tr><th></th><th>2005 plan</th><th>Modified plan</th></tr>'
+        f"</thead><tbody>{body}</tbody></table>",
+    )
+
+
 # ---------------------------------------------------------------------------- deck
 def build(target_dir: Path) -> Path:
     r = results()
@@ -567,7 +601,7 @@ def build(target_dir: Path) -> Path:
     for name, chart in r["charts"].items():
         chart.svg(figures / f"{name}.svg", scale=1.7, size=(8.4, 6.2))
 
-    m, w, p = r["metrics"], r["west"], r["pdo"]
+    m, w = r["metrics"], r["west"]
     deck = Deck("ref-class-concept-select: workflow and first results")
     deck.title_slide(
         "ref-class-concept-select",
@@ -626,25 +660,7 @@ def build(target_dir: Path) -> Path:
         lead="dmx · agents/dmx/out/volve-concept-basis",
     )  # fmt: skip
     deck.figure_slide("The 2005 plan and the modified plan", "figs/concept-comparison.svg")
-    rows = [
-        ("Concept", "Leased jack-up, storage vessel, gas to Sleipner A", "Unchanged"),
-        ("Volume basis", f"{p['closure']['mean']:.1f} million Sm3 (mean)",
-         f"East {p['east']['mean']:.1f} committed; West "
-         f"{r['calibrated']['west']['p90']:.1f}–{r['calibrated']['west']['p10']:.1f} as an option"),
-        ("Wells at sanction", "3 producers, 3 injectors", "2 + 2; western pair held back"),
-        ("West", "Drilled with the rest", "Pilot first; drill the pair above "
-         f"{w['Calibrated']['break_even_west']:.1f} million Sm3"),
-        ("Capacity", f"{number(p['capacity_oil'])} Sm3/d", "Unchanged"),
-        ("Reserves told to owners", f"{p['reserves']['mean']:.1f}",
-         f"about {m['Calibrated']['reserves_p50']:.0f}, low case "
-         f"{m['Calibrated']['reserves_p90']:.1f}"),
-    ]  # fmt: skip
-    body = "".join(f'<tr><td>{a}</td><td>{b}</td><td class="new">{c}</td></tr>' for a, b, c in rows)
-    deck.slide(
-        "What changes",
-        '<table class="big"><thead><tr><th></th><th>2005 plan</th><th>Modified plan</th></tr>'
-        f"</thead><tbody>{body}</tbody></table>",
-    )
+    changes_slide(deck, r)
     deck.slide(
         "Where it stands",
         '<div class="cols">'

@@ -69,6 +69,8 @@ that does not exist.
 | `src/syskit/svg.py` | Diagrams as SVG, written from code |
 | `src/syskit/slides.py` | A slide deck as one web page, for a large screen |
 | `src/syskit/workflow_deck.py` | The deck on this repository's workflow and what it has been used for |
+| `src/syskit/pptx.py` | Read a PowerPoint file and lay its slides out as HTML |
+| `src/syskit/rcf_volve_deck.py` | The presentation `rcf_volve_v2.pptx` as a web page, with four slides of the workflow deck |
 | `tests/` | Tests for `syskit` |
 
 ## Agent profiles
@@ -86,4 +88,6 @@ makes the CLI drop the profile silently. To confirm all profiles load, run
 |---|---|
 | `out/in-place-comparison.md` | Oil in place at Volve: PDO, Sodir and the simulation model at three points in time |
 | `out/workflow-deck/index.html` | Slide deck for a large screen: the workflow, the agents, how a number travels, the first use, the main results of each report, the original and the modified development plan. `make deck` rebuilds it |
+| `out/rcf_volve_v2.pptx` | The results presentation "Bias Busting Decision Analysis" (PowerPoint, made by the user) |
+| `out/rcf_volve_v2/index.html` | The same presentation as a web page: its seven slides laid out as in the file, with the original figure files; the agents diagram on its slide 4; the first use, the two plans and what changes at the end. `figures.csv` lists where each picture comes from. `make deck` rebuilds it |
 | `out/workflow-deck/figs/` | The deck's diagrams as separate SVG files, among them `use-case.svg` (what the workflow has been used for), `flow-chart.svg` (its steps) and `concept-comparison.svg` (the 2005 plan beside the modified plan) |

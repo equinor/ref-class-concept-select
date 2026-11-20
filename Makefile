@@ -79,6 +79,7 @@ rcf-volve:
 dmx-volve:
 	uv run python -m dmxkit.volve_concept build
 
-# Rebuild the slide deck on the workflow and its first use, with its figures.
+# Rebuild the slide decks: the workflow and its first use; the results presentation.
 deck:
 	uv run python -m syskit.workflow_deck build
+	uv run python -m syskit.rcf_volve_deck build

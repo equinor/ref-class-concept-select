@@ -85,7 +85,9 @@ An overview for presentation — the workflow, the agents, the first use and the
 results — is the slide deck
 [`agents/sys/out/workflow-deck/index.html`](agents/sys/out/workflow-deck/index.html) (open
 in a browser; arrow keys to move, F for full screen). Its diagrams are also separate files
-in `figs/`.
+in `figs/`. The results presentation is
+[`agents/sys/out/rcf_volve_v2/index.html`](agents/sys/out/rcf_volve_v2/index.html), made from
+`rcf_volve_v2.pptx`.
 
 Next is the full decision model of the concept choice; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
