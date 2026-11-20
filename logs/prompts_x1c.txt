@@ -119,12 +119,38 @@ md report and a html website that summarizes this work.
 ____________________________________________________________
 # result
 
+The prompt file is pushed, and the paper conversion, the
+review, the redone study and the rcf skill are pushed too;
+make check passes.
 
+[Where (under agents/rcf/):]
+• Paper: lib/md/
+• Review: out/expert-study-review.md
+• Study: out/volve-rcf-study.md
+• Web pages: index.html in the same-named folders under out/
+• Skill: skills/reference-class-study/SKILL.md
 
+[Findings:]
+• The expert's main message holds: volumes are
+over-estimated, and the PDO range is too narrow.
 
+• One conclusion does not hold: low discovery probabilities
+are not too low. Per prospect, 242 discoveries were expected
+and 244 made.
 
+• Discoveries hold a median 0.33 of the prognosed volume.
 
+# • Volve after five years: the 2005 reference class gives 6.8
+# million Sm3 (3.1–11.1), the PDO 11.1, actual 7.7.
 
+[Open:]
+• The origin of the prognosis and reserves files is
+unverified.
+
+• The cost comparison is not done.
+
+• A formatter rewrote the expert's notebook; I restored it
+from git and excluded the folder.
 
 ____________________________________________________________
 Fri Nov 20 2026 07:34:46 week 47 CET+0100
