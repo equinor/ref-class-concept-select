@@ -1,6 +1,6 @@
 
 ____________________________________________________________
-
+Fri Nov 20 2026 12:23:09 week 47 CET+0100
 ████████████████████████████████████████████████████████████
 
 ┌────────────────────────────────┐
@@ -9,15 +9,83 @@ ____________________________________________________________
 
 ____________________________________________________________
 [prompt:]
+
 Create an html webpage that describes the work developed
-in this repo
+in this repo. Focus on simple figures and annotated diagrams
+illustrating how the information handling has been performed.
+The html webpage should work as a slide deck for presentation
+on a large screen.
+
+Have as little text as possible. Illustrate the different
+parts of the ref-class-concept-select workflow and how they
+are supposed to work, i.e., the infrastructure and the
+various agent roles and responsibilities.
+
+Also make a standalone figure illustrating the kind of work
+that the ref-class-concept-select workflow has been used for
+so far, i.e., to analyze a concept selection in a field
+development plan, to suggest a procedure to calibrate the
+probabilistic basis underlying the concept solution and
+production strategy, to use a decision analysis framework
+that uses this new basis to develop a modified concept
+solution (this last step was not conducted fully, i.e.,
+a decision analysis framework has not yet been implemented,
+but still show the intention/plan of using).
+
+Also produce a flow chart diagram describing the steps in
+the above paragraph.
+
+Show thereafter the main results from each of the html
+reports that have been made. Show only one or two of the
+main figures from each report.
+
+Finally, show an illustration of the original field
+development concept and strategy and compare it against
+the proposed modified development plan given in
+volve-concept-basis
 
 ____________________________________________________________
 # result
 
+The slide deck is built and pushed:
+agents/sys/out/workflow-deck/index.html, 14 slides, rebuilt
+with make deck. make check passes, and I looked at every
+slide at 1600×900.
 
+Open it in a browser; arrow keys or clicks move, F goes full screen.
+
+┌────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Slides │ Content                                                                                                    │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 2–5    │ Workflow and data layer, the five agents, how an agent is set up, how a number travels from page to report │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 6      │ First use: read the plan → calibrate the basis → decide (decision model shown as planned)                  │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 7      │ Flow chart of those steps, done and planned marked                                                         │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 8–11   │ Two main figures from each of the four reports                                                             │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 12–13  │ The 2005 plan beside the modified plan, and what changes                                                   │
+├────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 14     │ Done, started, next                                                                                        │
+└────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+The diagrams are also separate SVG files in figs/: use-case.svg, flow-chart.svg and concept-comparison.svg are the three you asked for.
+
+The concept comparison is a schematic; which wells drain which area is assumed, and the slide says so.
+
+Your staged change to logs/prompts_x1c.txt is left uncommitted.
+
+
+
+[prompt:]
+
+
+
+
+# END ~> (PRESENTATION WEBPAGE)
 ____________________________________________________________
-
+Fri Nov 20 2026 11:56:03 week 47 CET+0100
 ████████████████████████████████████████████████████████████
 
 ┌────────────────────────────────┐
@@ -30,7 +98,7 @@ ____________________________________________________________
 Based on the PUD we know which field development concept
 that was selected at that time. Fundamentally, this
 particular solution is based on the inplace volumetric
-estimates at the time of concept select. 
+estimates at the time of concept select.
 
 (There are of course many other factors that contributed to
 determine which field development solution that should be
@@ -52,7 +120,7 @@ suggest a modification to the original field development
 solution.)
 
 Ground your argumentation in the inplace volumetric
-estimates. 
+estimates.
 
 Create an md report and a html website that
 summarizes this work.
@@ -60,16 +128,51 @@ summarizes this work.
 ____________________________________________________________
 # result
 
+The recalibrated volume basis does not support a different
+concept, so I've proposed a modified development plan within
+the chosen one. It is pushed and make check passes.
+
+Alternative basis (oil in place, million Sm3)
+
+┌────────────┬───────────┬──────┬────────────┐
+│            │ P90 (low) │ P50  │ P10 (high) │
+├────────────┼───────────┼──────┼────────────┤
+│ PDO        │ 20.9      │ 26.5 │ 35.3       │
+├────────────┼───────────┼──────┼────────────┤
+│ Calibrated │ 18.2      │ 23.4 │ 34.6       │
+└────────────┴───────────┴──────┴────────────┘
 
 
-____________________________________________________________
-[prompt:]
+• [Method:]
 
-____________________________________________________________
-# result
+the PDO's East is kept as stated. Its West, which has a
+factor-of-four range and a mean nearly twice its base model,
+is calibrated with pre-drill prognoses on record before
+2005.
 
+• [Risk:]
+the chance of ending below the PDO's
+low case rises from 10 % to 30 %.
 
+[Concept:]
+• Verdict: the East alone gives 205 MNOK after tax, so the leased jack-up stands.
 
+• Modification: commit the other four wells and hold back the western producer and injector until a pilot from the platform. That pair fails to pay 31 % of the time, against 0.7 % on the PDO basis.
+
+• Sensitivity: with a milder treatment of the West the figure is 8 %.
+
+[Not established:]
+• The PDO does not say which wells lie in which area, so
+treating the West as prospect-like and linking the western
+wells to it are assumptions.
+
+• No rejected concept can be valued, because the PDO gives
+no numbers for them.
+
+The report is agents/dmx/out/volve-concept-basis.md, with
+the web page in volve-concept-basis/index.html.
+
+# ~> END (PROPOSE ALTERNATIVE CONCEPT)
 
 ____________________________________________________________
 Fri Nov 20 2026 10:21:42 week 47 CET+0100
@@ -152,6 +255,7 @@ unverified.
 • A formatter rewrote the expert's notebook; I restored it
 from git and excluded the folder.
 
+# ~> DONE (INTEGRATE RCF WORK HERE)
 ____________________________________________________________
 Fri Nov 20 2026 07:34:46 week 47 CET+0100
 ████████████████████████████████████████████████████████████
@@ -251,13 +355,7 @@ Discovery_report_anlz.md.
 
 Your edits to logs/prompts_x1c.txt are uncommitted.
 
-
-____________________________________________________________
-[prompt:]
-
-____________________________________________________________
-# result
-
+# ~> DONE (ANALYSIS OF DOCS BY AGENTS/DOC)
 ____________________________________________________________
 Thu Nov 19 2026 13:25:12 week 47 CET+0100
 ████████████████████████████████████████████████████████████
