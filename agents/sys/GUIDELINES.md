@@ -226,7 +226,7 @@ or was skipped.
   consistent and pass `make check`.
 - Commit subject starts with the domain: `doc: convert Volve_PUD_cmt to md`.
 - Never commit raw data, simulation output, credentials or anything in `work/`.
-- Do not commit changes to `logs/` on the user's behalf.
+- Commit changes to `logs/` only when the user asks; never edit the logs.
 
 ## 10. Decision log
 
