@@ -80,6 +80,19 @@ def trace(mask: np.ndarray, area: tuple[int, int, int, int]) -> tuple[np.ndarray
     return np.array(columns, dtype=float), np.array(rows)
 
 
+def despike(values: np.ndarray, *, window: int = 5, threshold: float = 3.0) -> np.ndarray:
+    """Replace isolated outliers by the median of their neighbourhood.
+
+    A value further than ``threshold`` from the median of the ``window`` values
+    around it is a stray pixel, not part of the curve. Steps and slopes are
+    kept, because there the median moves with the curve.
+    """
+    half = window // 2
+    padded = np.pad(values, half, mode="edge")
+    medians = np.array([np.median(padded[i : i + window]) for i in range(values.size)])
+    return np.where(np.abs(values - medians) > threshold, medians, values)
+
+
 def yearly_mean(years: np.ndarray, values: np.ndarray, first: int, last: int) -> dict[int, float]:
     """Mean of a digitised series within each calendar year that it covers."""
     result = {}

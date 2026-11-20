@@ -22,7 +22,7 @@ resume the whole workflow without relying on memory.
 |---|---|---|
 | `AGENTS.md`, `README.md`, `docs/`, `.github/`, `pyproject.toml`, `uv.lock`, `Makefile` | sys | Rules, overview, plan, agent profiles, environment |
 | `agents/<domain>/` | that domain | Charter, procedures, code, deliverables |
-| `data/manifest.csv`, `data/sources.csv`, `data/sodir/`, `data/npd_archive/` | sys | Raw-data inventory, source catalogue, public snapshots, archived web captures |
+| `data/manifest.csv`, `data/sources.csv`, `data/sodir/`, `data/npd_archive/`, `data/public/` | sys | Raw-data inventory, source catalogue, public snapshots, archived web captures |
 | `data/volve/` | doc | Converted documents and figure cut-outs |
 | `data/facts/<source-id>.csv` | the domain that reads that source: doc for documents, sim for `sim2016`, sys for `sodir` and `npd_archive` | Fact register |
 | `logs/` | user | Prompt logs; agents do not edit |
@@ -41,6 +41,10 @@ Inside a domain folder:
 | `out/` | yes | Deliverables |
 | `work/` | no | Scratch; safe to delete at any time |
 | `lib/` | yes | Reference literature |
+| `skills/<name>/` | yes | A procedure packaged as a skill (`SKILL.md` and its reference files) |
+
+A skill is linked from `.github/skills/<name>` so that Copilot CLI finds it;
+the files stay in the domain folder. `copilot skill list` shows what is found.
 
 ## 3. Data
 
@@ -80,7 +84,9 @@ Inside a domain folder:
   snapshot; each is about 8 MB, so take one only when newer data is needed.
   Historical values that the live tables no longer show are taken from
   Internet Archive captures, saved unchanged in `data/npd_archive/` with an
-  `index.csv` (capture timestamp, original URL, SHA-256).
+  `index.csv` (capture timestamp, original URL, SHA-256). Other public series
+  (consumer price index, Brent price) are in `data/public/`; `make public`
+  takes new snapshots.
 - **Size.** Nothing larger than 10 MB is committed. Simulation output is never
   committed; commit the deck changes and the script that produces it.
 
@@ -103,6 +109,7 @@ Inside a domain folder:
 | `sim2016` | `eclipse_model/sim_model_PPA-eclipse/VOLVE_2016.*` |
 | `sodir` | Sodir FactPages tables; always with the snapshot date |
 | `npd_archive` | Archived captures of the NPD FactPages; always with the capture timestamp |
+| `ssb_cpi`, `fred_brent` | Consumer price index (Statistics Norway) and Brent price (FRED) in `data/public/` |
 
 ## 5. Quantities and provenance
 
@@ -206,17 +213,20 @@ or was skipped.
   | `make check` | Manifest verification, fact validation, tests, lint |
   | `make flow-deck` | Write the `_FLOW` deck files (sim) |
   | `make flow-run` | Run the Flow deck; output in `agents/sim/work/` (sim) |
+  | `make doc-volve` | Rebuild plot data, facts, redrawn charts and the report (doc) |
   | `make format` | Apply lint fixes and formatting |
 
 - Shared code is the `syskit` package in `agents/sys/src/`; sim's code is
-  `simkit` in `agents/sim/src/`. A domain that needs an importable package of
+  `simkit` in `agents/sim/src/` and doc's is `dockit` in `agents/doc/src/`. A domain that needs an importable package of
   its own adds its path to `packages` in `pyproject.toml`; tests go in
   `agents/<domain>/tests/`.
 - Record tool name and version, and the command or procedure, for anything
   generated. Fix random seeds and record them.
 - LLM-produced content (translation, reading of scanned tables or figures) is
   recorded as such in `method`, and is checked per §7, because it cannot be
-  regenerated identically.
+  regenerated identically. When such work is split among sub-agents, all get
+  the same written rules, and their output is checked by a script or by the
+  delegating agent, never accepted on their own report.
 - The reservoir simulator is installed system-wide, not through `uv`; see
   `agents/sim/README.md`.
 
@@ -234,6 +244,8 @@ Structural decisions are recorded here, newest first: date, decision, reason.
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-20 | A domain's reusable procedure is a skill in `agents/<domain>/skills/`, linked from `.github/skills/` | Asked for by the user; keeps the procedure with its domain and lets the CLI load it |
+| 2026-11-20 | Page-by-page translation and transcription is delegated to parallel sub-agents under one rules file and checked by `dockit.assemble` | 247 pages in one pass; consistent output; independent check of digits and highlights |
 | 2026-11-20 | Generated `_FLOW` deck files are written beside the original deck in `$VOLVE_DATA` and listed in the manifest. This is the only exception to "nothing is written to `$VOLVE_DATA`" | Approved by the user. A deck that shares the unchanged include files needs only four new files and no path changes |
 | 2026-11-19 | Converted documents and figure cut-outs are versioned in the repository under `data/volve/`, mirroring `$VOLVE_DATA`; nothing is written to `$VOLVE_DATA` | Approved by the user. They are costly to regenerate, feed every other domain, and must be the same on both machines |
 | 2026-11-19 | Environment managed with `uv`; one lock file, a dependency group per domain | Approved by the user. One command reproduces the environment; heavy stacks install only when needed |

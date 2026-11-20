@@ -1,5 +1,5 @@
 .PHONY: setup check manifest manifest-verify sodir facts facts-validate test lint format \
-	flow-deck flow-run flow-compare
+	flow-deck flow-run flow-compare public doc-volve
 
 VOLVE_DATA ?= ../volve_data
 FLOW_DECK_DIR = $(VOLVE_DATA)/eclipse_model/sim_model_PPA-eclipse
@@ -57,3 +57,15 @@ flow-compare:
 	uv run python -m simkit.compare init $(FLOW_RUN_DIR)
 	uv run python -m simkit.compare summary $(FLOW_RUN_DIR)
 	uv run python -m simkit.compare balance $(FLOW_RUN_DIR)
+
+# Download new dated snapshots of the public price series (CPI, Brent).
+public:
+	uv run python -m syskit.public snapshot
+
+# Rebuild what the doc domain generates from data: plot data, facts, redrawn charts, report.
+doc-volve:
+	uv run python -m dockit.pud_plots extract
+	uv run python -m dockit.pud_facts write
+	uv run python -m dockit.disc_facts write
+	uv run python -m dockit.pud_redraw draw
+	uv run python -m dockit.pud_report build

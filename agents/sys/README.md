@@ -63,6 +63,7 @@ that does not exist.
 | `src/syskit/manifest.py` | Create and verify `data/manifest.csv` |
 | `src/syskit/sodir.py` | Download Sodir snapshots; generate `data/facts/sodir.csv` |
 | `src/syskit/facts.py` | Validate the fact register |
+| `src/syskit/public.py` | Download snapshots of public price series to `data/public/` |
 | `tests/` | Tests for `syskit` |
 
 ## Agent profiles

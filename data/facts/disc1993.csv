@@ -1,0 +1,69 @@
+fact_id,quantity,value,unit,basis,as_of,subject,source,locator,method,confidence,note
+disc1993.stooip.theta_vest.p90,stooip,7.22,MSm3,P90,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.stooip.theta_vest.mean,stooip,10.33,MSm3,mean,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.stooip.theta_vest.p10,stooip,12.83,MSm3,P10,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.recoverable_oil.theta_vest.p90,recoverable_oil,3.18,MSm3,P90,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.recoverable_oil.theta_vest.mean,recoverable_oil,4.55,MSm3,mean,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.recoverable_oil.theta_vest.p10,recoverable_oil,5.68,MSm3,P10,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.discovery_probability.theta_vest,discovery_probability,1.0,fraction,estimate,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.stooip.theta_vest_west.p90,stooip,4.17,MSm3,P90,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_vest_west.mean,stooip,5.9,MSm3,mean,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_vest_west.p10,stooip,7.5,MSm3,P10,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_west.p90,recoverable_oil,1.81,MSm3,P90,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_west.mean,recoverable_oil,2.6,MSm3,mean,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_west.p10,recoverable_oil,3.35,MSm3,P10,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.discovery_probability.theta_vest_west,discovery_probability,1.0,fraction,estimate,1993-12,"Theta Vest, western segment",disc1993,p180 table 10.2,vision,medium,
+disc1993.stooip.theta_vest_east.p90,stooip,3.62,MSm3,P90,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_vest_east.mean,stooip,4.91,MSm3,mean,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_vest_east.p10,stooip,6.15,MSm3,P10,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_east.p90,recoverable_oil,1.57,MSm3,P90,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_east.mean,recoverable_oil,2.17,MSm3,mean,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_vest_east.p10,recoverable_oil,2.76,MSm3,P10,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.discovery_probability.theta_vest_east,discovery_probability,0.9,fraction,estimate,1993-12,"Theta Vest, eastern segment",disc1993,p181 table 10.3,vision,medium,
+disc1993.stooip.theta_c.p90,stooip,8.28,MSm3,P90,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_c.mean,stooip,16.24,MSm3,mean,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.stooip.theta_c.p10,stooip,25.86,MSm3,P10,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_c.p90,recoverable_oil,3.3,MSm3,P90,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_c.mean,recoverable_oil,6.51,MSm3,mean,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.recoverable_oil.theta_c.p10,recoverable_oil,10.39,MSm3,P10,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,"P(90) is the low value; read once, not rechecked against the scan"
+disc1993.discovery_probability.theta_c,discovery_probability,0.12,fraction,estimate,1993-12,Theta C prospect,disc1993,p182 table 10.4,vision,medium,
+disc1993.associated_gas_in_place.theta_vest.p90,associated_gas_in_place,1.17,GSm3,P90,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.associated_gas_in_place.theta_vest.mean,associated_gas_in_place,1.65,GSm3,mean,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.associated_gas_in_place.theta_vest.p10,associated_gas_in_place,2.04,GSm3,P10,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.associated_gas_recoverable.theta_vest.p90,associated_gas_recoverable,0.5,GSm3,P90,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.associated_gas_recoverable.theta_vest.mean,associated_gas_recoverable,0.72,GSm3,mean,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.associated_gas_recoverable.theta_vest.p10,associated_gas_recoverable,0.9,GSm3,P10,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,P(90) is the low value
+disc1993.input.reservoir_thickness.minimum,reservoir_thickness,18.0,m,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.reservoir_thickness.most_likely,reservoir_thickness,27.0,m,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.reservoir_thickness.maximum,reservoir_thickness,36.0,m,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.hydrocarbon_column.minimum,hydrocarbon_column,128.0,m,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.hydrocarbon_column.most_likely,hydrocarbon_column,191.0,m,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.hydrocarbon_column.maximum,hydrocarbon_column,196.0,m,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.net_gross_ratio.minimum,net_gross_ratio,0.9,fraction,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.net_gross_ratio.most_likely,net_gross_ratio,0.92,fraction,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.net_gross_ratio.maximum,net_gross_ratio,0.99,fraction,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.porosity.minimum,porosity,0.19,fraction,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.porosity.most_likely,porosity,0.23,fraction,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.porosity.maximum,porosity,0.26,fraction,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_saturation.minimum,oil_saturation,0.8,fraction,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_saturation.most_likely,oil_saturation,0.89,fraction,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_saturation.maximum,oil_saturation,0.95,fraction,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.shrinkage_factor.minimum,shrinkage_factor,0.64,Sm3/m3,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.shrinkage_factor.most_likely,shrinkage_factor,0.67,Sm3/m3,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.shrinkage_factor.maximum,shrinkage_factor,0.69,Sm3/m3,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.gas_oil_ratio.minimum,gas_oil_ratio,150.0,Sm3/Sm3,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.gas_oil_ratio.most_likely,gas_oil_ratio,158.0,Sm3/Sm3,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.gas_oil_ratio.maximum,gas_oil_ratio,169.0,Sm3/Sm3,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_recovery_factor.minimum,oil_recovery_factor,0.35,fraction,minimum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_recovery_factor.most_likely,oil_recovery_factor,0.45,fraction,most likely,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.input.oil_recovery_factor.maximum,oil_recovery_factor,0.5,fraction,maximum,1993-12,Theta Vest,disc1993,p179 table 10.1,vision,high,
+disc1993.well.dst_max_oil_rate,dst_max_oil_rate,1358,Sm3/d,measured,1993-12,Well 15/9-19 SR,disc1993,p110 table 7.1,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.dst_test_permeability,dst_test_permeability,914,mD,measured,1993-12,Well 15/9-19 SR,disc1993,p110 table 7.1,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.dst_productivity_index,dst_productivity_index,144,Sm3/d/bar,measured,1993-12,Well 15/9-19 SR,disc1993,p110 table 7.1,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.dst_reservoir_pressure,dst_reservoir_pressure,327.7,bar,measured,1993-12,Well 15/9-19 SR,disc1993,p110 table 7.1,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.dst_reservoir_temperature,dst_reservoir_temperature,106.2,degC,measured,1993-12,Well 15/9-19 SR,disc1993,p110 table 7.1,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.hugin_thickness,hugin_thickness,18.059,m TVT,measured,1993-12,Well 15/9-19 SR,disc1993,p107 table 6.2,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.hugin_porosity,hugin_porosity,0.226,fraction,measured,1993-12,Well 15/9-19 SR,disc1993,p107 table 6.2,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.hugin_water_saturation,hugin_water_saturation,0.11,fraction,measured,1993-12,Well 15/9-19 SR,disc1993,p107 table 6.2,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.hugin_net_gross,hugin_net_gross,0.924,fraction,measured,1993-12,Well 15/9-19 SR,disc1993,p107 table 6.2,vision,medium,"Read once, not rechecked against the scan"
+disc1993.well.hugin_permeability,hugin_permeability,2913.2,mD,measured,1993-12,Well 15/9-19 SR,disc1993,p107 table 6.2,vision,medium,"Read once, not rechecked against the scan"

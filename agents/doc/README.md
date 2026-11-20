@@ -34,22 +34,29 @@ versioned. Nothing is written to `$VOLVE_DATA`.
 |---|---|
 | `$VOLVE_DATA/reports/Volve_PUD_cmt.pdf` | `data/volve/reports/md/Volve_PUD_cmt.md` |
 | | `data/volve/reports/md/Volve_PUD_cmt.xlsx` |
-| | `data/volve/reports/figs/Volve_PUD_cmt_fig04-5_<slug>.png` and `.csv` |
+| | `data/volve/reports/figs/Volve_PUD_cmt_p025_fig4-5.png`, plot data `..._fig4-5_<series>.csv` |
+| `$VOLVE_DATA/reports/Discovery_report.pdf` | `data/volve/reports/md/Discovery_report.md` |
+| | `data/volve/reports/figs/Discovery_report_p<NNN>.jpg` (whole figure pages of the scan) |
 
-## Conventions proposed by this charter
+## Conventions
 
-To be confirmed or adjusted when the first doc task is specified.
+Settled in the first doc task (2026-11-20).
 
-- Figure files: `<stem>_fig<NN>_<slug>.png`; plot data beside it as
-  `<stem>_fig<NN>_<slug>.csv`. `<NN>` follows the document's own numbering
-  (`fig04-5` for Figur 4.5).
-- The Excel file of rule 3 is placed in the `md/` folder, one sheet per figure,
-  plus an index sheet listing figure, page, axis units and extraction method.
-- Translated documents: the Markdown is in English; each section keeps its page
-  reference so the original wording can be checked.
-- `_anlz` documents and HTML reports go in `agents/doc/out/`.
+- Figure files: `<stem>_p<NNN>_fig<n>.png`, with the page number first so the
+  files sort in document order and `<n>` following the document's own
+  numbering (`fig4-5` for Figur 4.5). Figure pages of a scan are kept whole as
+  `<stem>_p<NNN>.jpg`.
+- Plot data: one CSV per series beside the cut-out,
+  `<stem>_p<NNN>_fig<n>_<series>.csv`. The Excel file of rule 3 is in the
+  `md/` folder, one sheet per figure, plus an index sheet listing figure,
+  page, units and extraction method.
 - Page anchors: every page of the source starts with a marker
   (`<!-- page 25 -->`) so facts can cite pages.
+- Translated documents: the Markdown is in English; the page markers let the
+  original wording be checked.
+- Bold is used only for text highlighted in the source (rule 4). Captions are
+  in italics.
+- `_anlz` documents and HTML reports go in `agents/doc/out/`.
 
 ## Inputs
 
@@ -67,9 +74,47 @@ the columns of guidelines §5; `make facts-validate` checks them.
 
 ## Environment
 
-`uv sync --group doc` installs PyMuPDF, openpyxl, pandas and matplotlib. Other
-extraction tools are added with `uv add --group doc <package>` once a trial
-shows they are needed.
+`uv sync --group doc` installs PyMuPDF, openpyxl, pandas, matplotlib, Pillow
+and plotly. Other tools are added with `uv add --group doc <package>` once a
+trial shows they are needed.
+
+## Skill
+
+The procedure for converting and analysing a field document is the skill
+[`skills/analyze-field-document/SKILL.md`](skills/analyze-field-document/SKILL.md),
+with the page rules for sub-agents in `page-conversion.md` beside it. It is
+linked from `.github/skills/` so Copilot CLI loads it. Start the next batch of
+documents from it, and add to it what that batch teaches.
+
+## Code
+
+The `dockit` package in `src/`. The first group is general; the modules named
+`pud_` and `disc_` hold what is specific to those two documents.
+
+| Module | Purpose |
+|---|---|
+| `dockit.pdf` | Page text in reading order with highlights marked; page images |
+| `dockit.figures` | Figure cut-outs located from captions and drawings |
+| `dockit.plots` | Axis calibration and curve tracing for raster and vector plots |
+| `dockit.assemble` | Join page files into one document; check form, digits and highlights against the source text |
+| `dockit.pud_plots` | Plot data of the PDO figures to CSV and Excel, with checks against its tables |
+| `dockit.pud_facts`, `dockit.disc_facts` | The values registered from the two documents |
+| `dockit.pud_data` | Plan and outcome series used by the analysis and the report |
+| `dockit.pud_redraw`, `dockit.pud_report` | Redrawn charts; the HTML report |
+
+`make doc-volve` reruns everything that is generated from data. The
+translation and transcription are LLM work and are not rerun by it.
+
+## Results so far
+
+| Output | Content |
+|---|---|
+| `data/volve/reports/md/Volve_PUD_cmt.md` | The PDO in English, 53 pages, highlights in bold |
+| `data/volve/reports/md/Discovery_report.md` | The discovery report, 194 pages |
+| `out/Volve_PUD_cmt_anlz.md` | Concept selection, production strategy with redrawn forecasts, uncertainties |
+| `out/Discovery_report_anlz.md` | The same lines, where the discovery report has content |
+| `out/volve-pdo-vs-actual/index.html` | The plan against the outcome: production, schedule, wells, investments |
+| `data/facts/pud2005.csv`, `data/facts/disc1993.csv` | Values registered from the two documents |
 
 ## Method
 
@@ -88,12 +133,11 @@ shows they are needed.
 `agents/sys/GUIDELINES.md` §7: converted document, extracted table, digitised
 plot, translation.
 
-## First step
+## Open points
 
-Defined in `docs/startup-assessment.md` §7. The detailed task is specified by
-the user after the foundation is approved.
-
-## Procedures
-
-Procedures that prove themselves are written up as `GUIDELINE_<topic>.md` in
-this folder so the next batch of documents starts from them.
+- The tables of the discovery report other than Table 10.1 were read once from
+  the scan and not checked a second time.
+- The PDO refers to a concept screening report (20.11.2003), a concept
+  selection report (04.11.2004) and a Volume 2; none is in the dataset, so the
+  reasons for rejecting the other concepts are not available.
+- No public source gives the actual operating or lease costs of the field.

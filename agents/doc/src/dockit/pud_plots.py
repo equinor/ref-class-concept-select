@@ -22,7 +22,7 @@ import pymupdf
 from openpyxl import Workbook
 from openpyxl.styles import Font
 
-from dockit.plots import Axis, cluster_1d, plot_area, trace, yearly_mean
+from dockit.plots import Axis, cluster_1d, despike, plot_area, trace, yearly_mean
 from syskit.paths import data_dir, volve_data
 
 PDF = "reports/Volve_PUD_cmt.pdf"
@@ -112,7 +112,7 @@ def raster_chart(image: np.ndarray, series: dict, minimum: float, step: float) -
     result = {}
     for name, (test, factor) in series.items():
         columns, rows = trace(test(image), area)
-        result[name] = (time.value(columns), value.value(rows) * factor)
+        result[name] = (time.value(columns), value.value(despike(rows)) * factor)
     return result
 
 
@@ -216,7 +216,7 @@ def checks(data: dict) -> list[tuple[str, float, float]]:
             volume = rate * DAYS_PER_YEAR / 1e6
             rows.append((f"Fig 4.2 oil volume {year} vs Table 4.5 mean", volume, stated[year]))
     plateau = float(np.percentile(oil[1], 97))
-    rows.append(("Fig 4.2 plateau oil rate vs text (8500 Sm3/d)", plateau, 8500.0))
+    rows.append(("Fig 4.2 plateau vs 9000 Sm3/d at 94 % regularity", plateau, 9000 * 0.94))
     for case in ("mean", "p90", "p50", "p10"):
         for year, value in TABLE_4_5[case].items():
             if year + 1 in TABLE_4_5[case] and year in data["4.5"][case]:

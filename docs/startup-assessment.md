@@ -1,6 +1,6 @@
 # Startup assessment and development plan
 
-Status: **approved 2026-11-19; Phase 1 complete** · prepared in the sys role
+Status: **approved 2026-11-19; Phase 1 complete; Phase 2 under way** (doc first step done) · prepared in the sys role
 
 ## 1. Summary
 
@@ -167,7 +167,7 @@ settled by a small trial in the first step of the domain, not in advance.
 
 | Domain | First step | Result | Depends on |
 |---|---|---|---|
-| doc | Convert `Volve_PUD_cmt.pdf`: Markdown in English with page anchors and highlights in bold; figure cut-outs; plot data to Excel; begin with a three-page trial of the extraction tools | `data/volve/reports/md/`, `figs/`, workbook, facts, and a written procedure | Your task specification |
+| doc | Done 2026-11-20: both source documents converted, analysed and compared with the outcome; procedure written as a skill. See `agents/doc/README.md` | `data/volve/reports/`, `agents/doc/out/`, `agents/doc/skills/` | — |
 | sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. The port of the deck to OPM Flow is done (2026-11-20) | CSV tables and a note | Nothing |
 | rcf | Build the reference dataset from the Sodir snapshot: per field, the recoverable estimate at approval and at each later year, final recovery, investments. Write the class definition before computing statistics. Summarise the method of Nesvold & Bratvold (2022) | Dataset, class definition, method note | Nothing |
 | dmx | Decision timeline and framing of the 2005 concept decision from doc's facts; influence-diagram skeleton without numbers | Timeline, frame, diagram | doc first step |

@@ -5,3 +5,5 @@ prod,Daily and monthly production per wellbore,production_data/Volve production 
 sim2016,"Eclipse 100 history-matched simulation model with results, case VOLVE_2016",eclipse_model/sim_model_PPA-eclipse,2016
 sodir,"Sodir FactPages tables, dated snapshots in data/sodir",https://factpages.sodir.no,
 npd_archive,"Archived captures of the NPD (now Sodir) FactPages from the Internet Archive, saved in data/npd_archive",https://web.archive.org,
+ssb_cpi,"Statistics Norway table 03014, consumer price index, annual; snapshots in data/public",https://data.ssb.no/api/v0/en/table/03014,
+fred_brent,"FRED series DCOILBRENTEU, Brent crude price, annual average; snapshots in data/public",https://fred.stlouisfed.org/series/DCOILBRENTEU,

@@ -110,7 +110,20 @@ searched.
   transport, status) and charts of production and investments with data
   download. The numbers are Sodir's.
 
-### 2.5 Simulator and tooling references — *verified*
+### 2.5 Price series — *verified 2026-11-20*
+
+Used to put the PDO's assumptions and costs in context. Snapshots in
+`data/public/`, taken with `make public`.
+
+| Series | Source | Retrieval |
+|---|---|---|
+| Consumer price index, annual, 2015 = 100 | Statistics Norway, table 03014 | POST of a JSON query to `https://data.ssb.no/api/v0/en/table/03014` (in `syskit.public`) |
+| Brent crude, annual average, USD per barrel | FRED series `DCOILBRENTEU` | `https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU&fq=Annual&fam=avg` |
+
+No public source was found for the actual operating or lease costs of Volve;
+Sodir publishes investments only.
+
+### 2.6 Simulator and tooling references — *verified*
 
 - OPM Flow reference manual, release 2026-04: <https://opm-project.org/?page_id=955>
 - OPM Flow packages for Ubuntu 24.04: `ppa:opm/ppa` (`libopm-simulators-bin`
@@ -118,7 +131,7 @@ searched.
   `agents/sim/README.md`.
 - `resdata` 7.0.0 and `res2df` 1.4.0 on PyPI.
 
-### 2.6 Not yet checked
+### 2.7 Not yet checked
 
 - Sodir wellbore pages for the Volve exploration and development wells, and the
   documents attached to them.

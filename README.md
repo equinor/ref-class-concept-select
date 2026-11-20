@@ -18,6 +18,7 @@ charter, coordinated by a common set of guidelines.
 | Know the rules every agent follows | [`AGENTS.md`](AGENTS.md), [`agents/sys/GUIDELINES.md`](agents/sys/GUIDELINES.md) |
 | Work in a domain | `agents/<domain>/README.md` |
 | Use the shared data | [`data/README.md`](data/README.md) |
+| Read the converted source documents | `data/volve/reports/md/` |
 
 ## Setup
 
@@ -40,7 +41,8 @@ AGENTS.md          rules loaded by every agent session
 .github/agents/    Copilot CLI profile per domain
 agents/
   sys/             organisation, conventions, integration, QA; shared code (syskit)
-  doc/             document conversion, extraction, reports
+  doc/             document conversion, extraction, reports (dockit; skill; out/ has the
+                   analyses and the plan-versus-outcome report)
   sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
   dmx/             decision structuring and models
   rcf/             reference class forecasting (lib/ holds reference papers)
@@ -54,8 +56,17 @@ Makefile           setup, check and data commands
 
 ## Status
 
-The infrastructure (Phase 1 of the plan) is in place. Next are the first steps
-in each domain, starting with doc; see
+The infrastructure is in place, the simulation deck runs in OPM Flow, and the
+two source documents are converted and analysed:
+
+- [`agents/doc/out/Volve_PUD_cmt_anlz.md`](agents/doc/out/Volve_PUD_cmt_anlz.md) — the 2005
+  development plan: concept selection, production strategy, uncertainties
+- [`agents/doc/out/Discovery_report_anlz.md`](agents/doc/out/Discovery_report_anlz.md) — the
+  1993 discovery report
+- [`agents/doc/out/volve-pdo-vs-actual/index.html`](agents/doc/out/volve-pdo-vs-actual/index.html)
+  — the plan against the outcome (open in a browser)
+
+Next are the first steps of rcf and dmx; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
 
 ## Attribution
