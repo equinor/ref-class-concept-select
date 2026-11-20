@@ -62,8 +62,10 @@ that does not exist.
 | `src/syskit/paths.py` | Repository root and raw-data location |
 | `src/syskit/manifest.py` | Create and verify `data/manifest.csv` |
 | `src/syskit/sodir.py` | Download Sodir snapshots; generate `data/facts/sodir.csv` |
-| `src/syskit/facts.py` | Validate the fact register |
+| `src/syskit/facts.py` | Validate the fact register; read a source's facts |
 | `src/syskit/public.py` | Download snapshots of public price series to `data/public/` |
+| `src/syskit/charts.py` | A chart described once, drawn as an interactive figure and as a PNG |
+| `src/syskit/report.py` | A report written once, rendered as Markdown and as a self-contained web page |
 | `tests/` | Tests for `syskit` |
 
 ## Agent profiles

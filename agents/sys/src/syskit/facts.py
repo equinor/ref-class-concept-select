@@ -39,6 +39,17 @@ _AS_OF = re.compile(r"\d{4}(-\d{2}(-\d{2})?)?")
 _FACT_ID = re.compile(r"[a-z0-9_]+(\.[a-z0-9_-]+)+")
 
 
+def read(source: str, facts_dir: Path | None = None) -> dict[str, float | str]:
+    """Values of one source's facts by fact id; numbers as floats, text as written."""
+    path = (facts_dir or data_dir() / "facts") / f"{source}.csv"
+    with path.open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    return {
+        row["fact_id"]: row["value"] if row["unit"] == TEXT_UNIT else float(row["value"])
+        for row in rows
+    }
+
+
 def load_sources(sources_file: Path) -> set[str]:
     with sources_file.open(newline="", encoding="utf-8") as handle:
         return {row["id"] for row in csv.DictReader(handle)}

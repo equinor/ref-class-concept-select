@@ -123,7 +123,21 @@ Used to put the PDO's assumptions and costs in context. Snapshots in
 No public source was found for the actual operating or lease costs of Volve;
 Sodir publishes investments only.
 
-### 2.6 Simulator and tooling references — *verified*
+### 2.6 Data of the expert reference class study — *origin not verified*
+
+In `agents/rcf/study/data/`, delivered with the study (November 2026).
+
+| File | Content | Note |
+|---|---|---|
+| `2026-11 PrognosisResultData_Released.xlsx` | Pre-drill prognoses and post-drill results for 629 exploration wells spudded 1989–2024: probability of discovery, volumes in place and recoverable with low and high values, the factors of the volume equation, discovery yes or no | Name and columns point to Sodir's record of exploration-well prognoses and results. The Sodir page could not be opened from here (HTTP 403), so the origin and the release terms are not confirmed |
+| `RCB_reserves.xlsx` | Oil and gas originally recoverable per field and year, 1990–2021 (1996 missing) | Agrees with Sodir `field_reserves` for 2004–2019; the labels 2020 and 2021 are exchanged. The years before 2004 are not in Sodir's public table and cannot be checked against it |
+| Other workbooks | Exports of Sodir tables, synchronised 19.11.2026 | Same content as `data/sodir/20261119/` |
+
+Not found in public tables: PDO cost estimates per field. They are probably
+reported in the yearly budget proposition to the Storting (not checked, not
+collected).
+
+### 2.7 Simulator and tooling references — *verified*
 
 - OPM Flow reference manual, release 2026-04: <https://opm-project.org/?page_id=955>
 - OPM Flow packages for Ubuntu 24.04: `ppa:opm/ppa` (`libopm-simulators-bin`
@@ -131,7 +145,7 @@ Sodir publishes investments only.
   `agents/sim/README.md`.
 - `resdata` 7.0.0 and `res2df` 1.4.0 on PyPI.
 
-### 2.7 Not yet checked
+### 2.8 Not yet checked
 
 - Sodir wellbore pages for the Volve exploration and development wells, and the
   documents attached to them.

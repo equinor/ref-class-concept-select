@@ -10,7 +10,8 @@ method and quality checks, and it takes precedence over this file.
 
 Before you act:
 
-1. Read `agents/doc/README.md` and any `GUIDELINE_*.md` in `agents/doc/`.
+1. Read `agents/doc/README.md` and the skill
+   `agents/doc/skills/analyze-field-document/SKILL.md`.
 2. Read `agents/sys/GUIDELINES.md`. It governs layout, naming, provenance,
    hand-offs and quality gates for every domain.
 3. Follow the rules in `AGENTS.md`.
