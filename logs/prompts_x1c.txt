@@ -16,6 +16,60 @@ ____________________________________________________________
 # result
 
 
+____________________________________________________________
+
+████████████████████████████████████████████████████████████
+
+┌────────────────────────────────┐
+│ PROPOSE ALTERNATIVE CONCEPT │
+└────────────────────────────────┘
+
+____________________________________________________________
+[prompt:]
+
+Based on the PUD we know which field development concept
+that was selected at that time. Fundamentally, this
+particular solution is based on the inplace volumetric
+estimates at the time of concept select. 
+
+(There are of course many other factors that contributed to
+determine which field development solution that should be
+implemented, but at this moment we are only focused on how
+the spread of the volumetric estimates influenced the
+particular facility configuration and development strategy
+that was chosen.)
+
+Use what you know after having studied the Volve data and
+field development strategy in agents/sim and agents/doc and
+the probabilistic estimates (in place and production
+prognosis) in agents/rcf through a reference class
+forecasting perspective to establish an alternative basis,
+i.e., a different probabilistic estimate of volumes inplace,
+and argumentation supporting a different concept selection
+(if the new estimates established when applying an RCF
+calibration are too similar to the original basis, then
+suggest a modification to the original field development
+solution.)
+
+Ground your argumentation in the inplace volumetric
+estimates. 
+
+Create an md report and a html website that
+summarizes this work.
+
+____________________________________________________________
+# result
+
+
+
+____________________________________________________________
+[prompt:]
+
+____________________________________________________________
+# result
+
+
+
 
 ____________________________________________________________
 Fri Nov 20 2026 10:21:42 week 47 CET+0100
