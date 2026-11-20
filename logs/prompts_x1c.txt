@@ -35,9 +35,9 @@ conducted by the expert is found here: agents/rcf/study
 - it included raw data in excel files as well as a python
 notebook.
 
-[tasks:] 
+[tasks:]
 
-- Study the methodology of Reference Class 
+- Study the methodology of Reference Class
 Forecasting by reading the reference paper
 agents/rcf/lib/LIB_2022_ENERGY_debiasing_production-forecasts_ENesvold+RBratvold.pdf
 (convert it first to md)
@@ -51,10 +51,10 @@ more robust and to improve it.
 Explain the analysis that has been done to an experienced
 reservoir engineer but also make detailed notes about the
 purpose of the study is and what kind of analysis and
-thinking is conducted by the expert. 
+thinking is conducted by the expert.
 
 The point of this detailed specification is to establish and
-integrate this type of study as a skill for the rcf agent. 
+integrate this type of study as a skill for the rcf agent.
 
 - Perform the same type of study as the one manually
 conducted by the expert on the same dataset but this time
