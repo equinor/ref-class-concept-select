@@ -28,8 +28,14 @@ ____________________________________________________________
 ____________________________________________________________
 [prompt:]
 
+An expert has conducted
+
+
+
 Package the rcf work developed by EN; study and integrate
 it in agents/rcf
+
+
 
 ____________________________________________________________
 # result
@@ -37,7 +43,7 @@ ____________________________________________________________
 
 
 ____________________________________________________________
-
+Fri Nov 20 2026 07:34:46 week 47 CET+0100
 ████████████████████████████████████████████████████████████
 
 ┌────────────────────────────────┐
@@ -45,24 +51,25 @@ ____________________________________________________________
 └────────────────────────────────┘
 
 ____________________________________________________________
-[prompt:]
+[analysis of docs by agents/doc:]
 
-We start by analysing the documents
-../volve_data/reports/Volve_PUD_cmt.pdf and
-../volve_data/reports/Discovery_report.pdf
+We start by providing instructions for how to analyze the
+documents ../volve_data/reports/Volve_PUD_cmt.pdf and
+../volve_data/reports/Discovery_report.pdf and thus start
+building the skills of agents/docs.
 
 As base, both docs should be converted to md as is the
 general operation of agents/docs. If any of the documents
 names has a 'cmt' tag, then any highlighted text in the
 document should also be highlighted/made bold in the md.
 
-Note that Volve_PUD_cmt.pdf is Norwegian, and thus it needs
-to be translated to English. Both documents should
+Note that Volve_PUD_cmt.pdf is in Norwegian, and thus it
+needs to be translated to English.
 
-If asked when analyzing a document summarize and extract the
-specified type of content onto a separate document with that
-has the same file name with the added tag _anlz. Do this for
-Volve_PUD_cmt.pdf
+When conducting a specific analysis on a document summarize
+and extract the type of content being is asked for onto a
+separate document that has the same file name with the added
+tag _anlz. Do this for Volve_PUD_cmt.pdf
 
 Analyze Volve_PUD_cmt.pdf along the three following lines:
 
@@ -71,7 +78,8 @@ the Volve field. We are interested in extracting information
 regarding the concept selection, e.g., what is the specific
 solution developed, what were other alternatives considered,
 what are the pros and cons for the current and the other
-options (if any given, if not, don't speculate).
+options that were considered (if any are given, if not,
+don't speculate).
 
 2. What is the rationale for the described production
 strategy, describe it in plain terms. Also redraw the data
@@ -97,12 +105,41 @@ appropriate comparison figures and tables.
 
 At the end of the analyzes a generalized procedure for how
 to analyze this type of documents should be articulated so
-the next batch of docs to be analyzed can start from these
-directions. Save the guideline in agents/docs.
+that the next batch of docs to be analyzed can start from
+these directions. Save the guideline as one core skill that
+in agents/docs has.
 
 ____________________________________________________________
 # result
 
+The doc task is done and pushed (77e94cd, 53c1321);
+make check passes with 83 tests.
+
+[Deliverables:]
+• Converted documents: data/volve/reports/md/ holds the
+PDO (English, highlights bold) and the Discovery report,
+plus Volve_PUD_cmt.xlsx; cut-outs are in figs/.
+
+• Analyses: agents/doc/out/Volve_PUD_cmt_anlz.md and
+Discovery_report_anlz.md.
+
+• Report: agents/doc/out/volve-pdo-vs-actual/index.html.
+
+• Skill: agents/doc/skills/analyze-field-document/SKILL.md.
+
+[Findings:]
+
+• The PDO lists alternative concepts but gives no pros or cons for them.
+• Oil: 10.17 MSm3 against 11.40 planned.
+• First oil came 11 months late; production lasted 103 months against 63.
+• Investments: 4,689 MNOK against 2,043 (nominal).
+
+[Not verified:]
+
+• Discovery tables other than 10.1 were read once.
+• No public actuals exist for operating or lease costs.
+
+Your edits to logs/prompts_x1c.txt are uncommitted.
 
 
 ____________________________________________________________
@@ -376,21 +413,7 @@ Two limits apply:
 
 The full comparison is in agents/sys/out/in-place-comparison.md, pushed as 16b2e44.
 
-____________________________________________________________
-[prompt:]
-
-
-____________________________________________________________
-# result
-
-
-
-____________________________________________________________
-[prompt:]
-
-
-____________________________________________________________
-# result
+# ~> END (STARTUP AGENT INFRASTRUCTURE)
 
 # todo
 get some references for 'reference class forecasting'
