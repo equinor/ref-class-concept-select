@@ -78,7 +78,7 @@ environment is defined in `pyproject.toml`. OPM Flow is installed separately
 |---|---|---|---|---|
 | sys / infrastructure | Feasible, low risk | Plain-file workflow; one maintainer; two machines (inferred from the two prompt logs) | Conventions drifting between sessions and machines | Short always-loaded rules; checksummed data manifest; locked environment |
 | doc | Feasible; PDO high fidelity, discovery report medium | Text layer and highlights read programmatically in tests; plot pages contain vector paths | Translation errors in technical terms; scanned tables; digitising raster plots; 182 MB scan | Page anchors back to the original; table-versus-plot cross-checks; sample verification; page-wise processing |
-| sim | Analysis feasible now; re-running needs deck work | Results read with `resdata` 7.0. Flow 2026.04 dry run completes after three input fixes and with unsupported keywords ignored; active cells and total pore volume then match the Eclipse `INIT` | Flow does not implement `ADDZCORN` (cell depths differ in 2 862 cells) or the `QUIESC`/`MOBILE` equilibration options, so results may not reproduce Eclipse; run time unknown; model is 2016 hindsight | Analyse shipped results first; substitute the final geometry for `ADDZCORN`; compare against shipped vectors; tag everything `as_of 2016` |
+| sim | Feasible; the deck runs in Flow | Results read with `resdata` 7.0. A Flow version of the deck (`agents/sim/out/volve_2016_flow/README.md`) runs the full history in 11 minutes and ends within 0.6 % of Eclipse on cumulative oil, water and gas | Flow and Eclipse differ in transmissibility in under 1 % of cells per direction, most notably in three tight layers; model is 2016 hindsight | Compare every run against the shipped vectors and check its material balance; tag everything `as_of 2016` |
 | dmx | Feasible for the 2005 concept decision | PDO has distributions, costs, price (22 USD/bbl), discount rate (8 %), break-even (17.50 USD/bbl), and a section on alternatives | Alternatives may be described only qualitatively; earlier and later decisions less documented | Model only what is documented; mark assumptions; start with timeline and framing |
 | rcf | Feasible for recoverable volume and cost; limited for in-place | Sodir tables: 145 fields with yearly reserve estimates 2004–2025, 136 with production, 142 with investments | No public history of in-place estimates; no public operator forecast profiles; published dataset not shareable; estimate history starts 2004 | Start with recoverable-volume and investment classes; use published calibration results for production profiles; treat in-place as a research question |
 
@@ -168,7 +168,7 @@ settled by a small trial in the first step of the domain, not in advance.
 | Domain | First step | Result | Depends on |
 |---|---|---|---|
 | doc | Convert `Volve_PUD_cmt.pdf`: Markdown in English with page anchors and highlights in bold; figure cut-outs; plot data to Excel; begin with a three-page trial of the extraction tools | `data/volve/reports/md/`, `figs/`, workbook, facts, and a written procedure | Your task specification |
-| sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. Then port the deck to OPM Flow | CSV tables and a note; later a patch set for the deck | Nothing for the analysis; OPM Flow installed for the port |
+| sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. The port of the deck to OPM Flow is done (2026-11-20) | CSV tables and a note | Nothing |
 | rcf | Build the reference dataset from the Sodir snapshot: per field, the recoverable estimate at approval and at each later year, final recovery, investments. Write the class definition before computing statistics. Summarise the method of Nesvold & Bratvold (2022) | Dataset, class definition, method note | Nothing |
 | dmx | Decision timeline and framing of the 2005 concept decision from doc's facts; influence-diagram skeleton without numbers | Timeline, frame, diagram | doc first step |
 
@@ -193,9 +193,9 @@ charters, `.gitignore`.
 | 1.6 | Copilot CLI agent profiles in `.github/agents/` | All five listed by the CLI; `rcf` run once and found its charter. The other four were not run individually |
 | 1.7 | Guidelines, charters and README brought in line with what exists | Done |
 
-OPM Flow 2026.04 was installed by the user and checked with dry runs on the
-Volve deck; findings are in `agents/sim/README.md`. Still open from Phase 1:
-nothing has been checked on the second machine.
+OPM Flow 2026.04 was installed by the user. A version of the Volve deck that
+runs in it was built on 2026-11-20; see `agents/sim/out/volve_2016_flow/README.md`.
+Still open from Phase 1: nothing has been checked on the second machine.
 
 ### Phase 2 — first step per domain
 

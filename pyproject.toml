@@ -10,9 +10,9 @@ dependencies = []
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-# Shared code installed into the environment. Add a domain's package here when it gets one.
+# Code installed into the environment. Add a domain's package here when it gets one.
 [tool.hatch.build.targets.wheel]
-packages = ["agents/sys/src/syskit"]
+packages = ["agents/sys/src/syskit", "agents/sim/src/simkit"]
 
 [tool.pytest.ini_options]
 testpaths = ["agents"]
@@ -49,4 +49,4 @@ sim = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["syskit"]
+known-first-party = ["syskit", "simkit"]

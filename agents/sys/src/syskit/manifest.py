@@ -38,7 +38,7 @@ class Diff:
         return not (self.missing or self.changed or self.extra)
 
 
-def _sha256(path: Path) -> str:
+def file_sha256(path: Path) -> str:
     with path.open("rb") as handle:
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
@@ -47,7 +47,7 @@ def scan(root: Path, *, hashes: bool = True) -> list[Entry]:
     """List every file under ``root``, sorted by path."""
     files = sorted(p for p in root.rglob("*") if p.is_file())
     return [
-        Entry(p.relative_to(root).as_posix(), p.stat().st_size, _sha256(p) if hashes else "")
+        Entry(p.relative_to(root).as_posix(), p.stat().st_size, file_sha256(p) if hashes else "")
         for p in files
     ]
 
@@ -81,7 +81,7 @@ def compare(recorded: list[Entry], root: Path, *, hashes: bool = True) -> Diff:
     for path in sorted(expected.keys() & present.keys()):
         same = expected[path].size == present[path].size
         if same and hashes:
-            same = expected[path].sha256 == _sha256(root / path)
+            same = expected[path].sha256 == file_sha256(root / path)
         if not same:
             diff.changed.append(path)
     return diff

@@ -41,7 +41,7 @@ AGENTS.md          rules loaded by every agent session
 agents/
   sys/             organisation, conventions, integration, QA; shared code (syskit)
   doc/             document conversion, extraction, reports
-  sim/             reservoir simulation and analysis
+  sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
   dmx/             decision structuring and models
   rcf/             reference class forecasting (lib/ holds reference papers)
 data/              manifest of raw data, Sodir snapshots, fact register,

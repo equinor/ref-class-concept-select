@@ -26,7 +26,7 @@ resume the whole workflow without relying on memory.
 | `data/volve/` | doc | Converted documents and figure cut-outs |
 | `data/facts/<source-id>.csv` | the domain that reads that source: doc for documents, sim for `sim2016`, sys for `sodir` | Fact register |
 | `logs/` | user | Prompt logs; agents do not edit |
-| `$VOLVE_DATA` (default `../volve_data`) | user | Raw data, read-only |
+| `$VOLVE_DATA` (default `../volve_data`) | user; sim for `_FLOW` deck files (§3) | Raw data, read-only; generated deck files |
 
 Agents read anywhere and write only where this table lets them.
 
@@ -44,12 +44,22 @@ Inside a domain folder:
 
 ## 3. Data
 
-- **Raw data** stays in `$VOLVE_DATA`, unmodified; nothing is written there.
-  Code gets the location from `syskit.paths.volve_data()`, which reads the
-  `VOLVE_DATA` environment variable and falls back to `../volve_data` relative
-  to the repository root. No absolute paths in versioned files.
-- **Manifest.** `data/manifest.csv` lists every raw file with size and
-  SHA-256. `make manifest-verify` confirms a machine holds the same files.
+- **Raw data** stays in `$VOLVE_DATA`, unmodified. Code gets the location
+  from `syskit.paths.volve_data()`, which reads the `VOLVE_DATA` environment
+  variable and falls back to `../volve_data` relative to the repository root.
+  No absolute paths in versioned files.
+- **Generated deck files** are the one thing written to `$VOLVE_DATA`: new
+  versions of simulation input files, placed beside the originals so that the
+  unchanged include files are shared. They carry `_FLOW` before the extension,
+  are written only by `simkit.flow_deck` (`make flow-deck`), never by hand, and
+  never replace an original. Simulation output does not go there; it goes to
+  `agents/sim/work/`.
+- **Manifest.** `data/manifest.csv` lists every file in `$VOLVE_DATA` with
+  size and SHA-256: the raw files and the generated `_FLOW` files. `make
+  manifest-verify` confirms a machine holds the same files. On a machine where
+  the `_FLOW` files are reported missing, run `make flow-deck`; it reproduces
+  them exactly. After changing `simkit.flow_deck`, run `make flow-deck` and
+  `make manifest`.
 - **Adding a raw source:** put the file in `$VOLVE_DATA`, give it an ID in
   `data/sources.csv` (§4), run `make manifest`, commit both files.
 - **Converted documents** live in the repository under `data/volve/`, which
@@ -190,11 +200,14 @@ or was skipped.
   | `uv run <command>` | Run inside the environment |
   | `uv add --group <domain> <package>` | Add a dependency; commit `pyproject.toml` and `uv.lock` |
   | `make check` | Manifest verification, fact validation, tests, lint |
+  | `make flow-deck` | Write the `_FLOW` deck files (sim) |
+  | `make flow-run` | Run the Flow deck; output in `agents/sim/work/` (sim) |
   | `make format` | Apply lint fixes and formatting |
 
-- Shared code is the `syskit` package in `agents/sys/src/`. A domain that
-  needs an importable package of its own adds its path to `packages` in
-  `pyproject.toml`; tests go in `agents/<domain>/tests/`.
+- Shared code is the `syskit` package in `agents/sys/src/`; sim's code is
+  `simkit` in `agents/sim/src/`. A domain that needs an importable package of
+  its own adds its path to `packages` in `pyproject.toml`; tests go in
+  `agents/<domain>/tests/`.
 - Record tool name and version, and the command or procedure, for anything
   generated. Fix random seeds and record them.
 - LLM-produced content (translation, reading of scanned tables or figures) is
@@ -217,6 +230,7 @@ Structural decisions are recorded here, newest first: date, decision, reason.
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-20 | Generated `_FLOW` deck files are written beside the original deck in `$VOLVE_DATA` and listed in the manifest. This is the only exception to "nothing is written to `$VOLVE_DATA`" | Approved by the user. A deck that shares the unchanged include files needs only four new files and no path changes |
 | 2026-11-19 | Converted documents and figure cut-outs are versioned in the repository under `data/volve/`, mirroring `$VOLVE_DATA`; nothing is written to `$VOLVE_DATA` | Approved by the user. They are costly to regenerate, feed every other domain, and must be the same on both machines |
 | 2026-11-19 | Environment managed with `uv`; one lock file, a dependency group per domain | Approved by the user. One command reproduces the environment; heavy stacks install only when needed |
 | 2026-11-19 | OPM Flow installed from the Ubuntu package (`ppa:opm/ppa`), not a container | Approved by the user. Simpler to run and to script |

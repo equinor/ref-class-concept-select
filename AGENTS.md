@@ -32,7 +32,8 @@ its "when the guidelines are silent" procedure rather than inventing a local rul
 
 1. **Raw data is read-only.** Source data lives outside the repo in
    `../volve_data` (override with the `VOLVE_DATA` environment variable). Never
-   write, modify, move or delete anything there. Converted documents go in the
+   modify, move or delete anything there. The only files added there are the
+   generated `_FLOW` deck files (guidelines §3). Converted documents go in the
    repository under `data/volve/`.
 2. **Every number has a source.** A value taken from a document, a simulation
    or a public table is recorded as a fact in `data/facts/` with where it came

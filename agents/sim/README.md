@@ -30,48 +30,32 @@ builds reduced, fit-for-purpose decks when a question needs them.
 PDO.** It represents hindsight. Anything derived from it is tagged
 `as_of 2016` and is not used to describe what was known at earlier decisions.
 
-## State of the deck under OPM Flow
+## The deck under OPM Flow
 
-Checked 2026-11-19 with Flow 2026.04 in dry-run mode
-(`flow VOLVE_2016.DATA --enable-dry-run=true --output-dir=<dir>`) on a copy of
-the deck. No simulation has been run.
+The released deck does not run in OPM Flow. `VOLVE_2016_FLOW.DATA` is the
+version that does, with only the changes Flow needs; it and three modified
+include files are generated beside the originals by `make flow-deck`. The
+changes, the verification against the Eclipse results and the known
+differences are in `out/volve_2016_flow/README.md`.
 
-**Input errors that stop Flow** — each must be fixed in a copy:
+In short (Flow 2026.04, checked 2026-11-20):
 
-| File, lines | Problem | Fix used in the check |
-|---|---|---|
-| `VOLVE_2016.DATA`, 620 | `ROCK` has a 13th record with trailing text (`/ #13`); `TABDIMS` declares 12 PVT regions | Line removed |
-| `RSVD_input_new_combined_020610_perch_water_2914m.E100`, 235–256 | `RSVD` has a 13th table ("Reg 13"); `EQLDIMS` declares 12 regions | Table removed |
-| `SCH_010916_10DAYS.SCH`, 4869–4873 | Five well-control records after `DATES 1 JAN 2015` with no `WCONHIST` keyword ("put data manually") | Lines removed. What Eclipse did with them is not established |
+- Three input errors that Eclipse tolerated as "spurious data" are disabled,
+  two equilibration options and `PRIORITY` are removed, and the `ADDZCORN`
+  corner shifts are applied in the grid file.
+- The static model is identical to Eclipse's in every active cell, except
+  for transmissibilities in under 1 % of the cells in each direction.
+- The full history run takes 11 minutes on 8 processes and ends within 0.6 %
+  of Eclipse on cumulative oil, water and gas and 0.1 % on field pressure.
 
-**Keywords Flow does not implement** — Flow stops on these unless run with
-`--parsing-strictness=low`, which ignores them:
+Two lessons from the port, to keep in mind for any deck:
 
-| Keyword | Where | Consequence of ignoring |
-|---|---|---|
-| `ADDZCORN` | Four active includes: `FAULT_NW-15NOV13`, `CONTACT_MAIN-NW-AP2014`, `FAULT_MAIN-F14-AP2014`, `FAULT_MAIN-F12-F14-AP2014` | Grid geometry differs from the Eclipse model (see below). Needs a real substitute, e.g. corner depths taken from the shipped `VOLVE_2016.GRID` |
-| `EQLOPTS` options `QUIESC`, `MOBILE` | `VOLVE_2016.DATA`, 98 | Initial state may differ; compare with the first shipped restart step |
-| `PRIORITY` | `VOLVE_2016.DATA`, 940 | Well prioritisation not applied |
-| `GRIDFILE`, `RPTGRID`, `RPTSOL`, `RPTRUNSP`, `NSTACK`, `PARALLEL`, `ECHO`/`NOECHO`, `MESSAGES` options | | Reporting and run control only |
-| Summary vectors `FMWWO`, `FMWWT`, `WMCON`, `WTPR2FB`, `WTPT2FB`, `WTPR4FB`, `WTPT4FB` | | Not written |
-
-**With the three fixes and low strictness** the dry run completes in 33 s and
-writes `EGRID` and `INIT`. Against the shipped Eclipse `INIT`:
-
-| Quantity | Result |
-|---|---|
-| Active cells | 183 545 in both, the same cells |
-| Total pore volume | Equal to four significant figures (1.1585 × 10⁸ rm³) |
-| Porosity, permeability | Identical |
-| Cell pore volume | Differs by more than 1 % in 873 cells, at most 4.2 % |
-| Cell depth | Differs by more than 0.1 m in 2 862 cells, at most 58.75 m; consistent with the ignored `ADDZCORN`, not checked cell by cell |
-
-Flow also reports 36 connections in inactive cells (ignored) and that
-equilibration region 12 has no active cells.
-
-A lenient parse (as with the OPM Python parser and its "ignore" settings)
-skips the orphan schedule records without a message. Use it for inspection
-only, not to decide that a deck is sound.
+- A lenient parse (for instance the OPM Python parser with errors set to
+  "ignore") skips defective records without a message. Use it for inspection
+  only. The Eclipse `.LOG` shows what Eclipse itself ignored.
+- Check the material balance of every run (`make flow-compare`). A trial
+  change that made the transmissibilities closer to Eclipse's produced a run
+  that lost mass; agreement on volumes alone would have hidden that.
 
 ## Environment
 
@@ -89,8 +73,16 @@ only, not to decide that a deck is sound.
 
 Tables (CSV) and notes in `agents/sim/out/`, each stating case, vector or
 keyword names, simulator and version. Values other domains rely on also go in
-`data/facts/sim2016.csv`. Modified decks are kept as small patch
-files or scripts against the original; the original is never edited.
+`data/facts/sim2016.csv`. Modified decks are produced by a script from the
+originals (`src/simkit/flow_deck.py`); the originals are never edited, and
+simulation output goes to `work/`.
+
+## Code
+
+| Module | Purpose |
+|---|---|
+| `src/simkit/flow_deck.py` | Build the `_FLOW` deck files (`make flow-deck`) |
+| `src/simkit/compare.py` | Compare a Flow run with the Eclipse results: static arrays, summary vectors, material balance (`make flow-compare`) |
 
 ## Quality checks
 
@@ -98,7 +90,8 @@ files or scripts against the original; the original is never edited.
 
 ## First step
 
-Defined in `docs/startup-assessment.md` §7: analyse the shipped results before
-running anything, then port the deck to OPM Flow. The port starts from the
-table above: a script that produces the fixed copy, a substitute for
-`ADDZCORN`, then a full run compared against the shipped summary vectors.
+Defined in `docs/startup-assessment.md` §7. The port to OPM Flow is done.
+Still to do: the read-only analysis of the shipped results (field and well
+profiles, in-place volumes by region, history-match quality against the
+production workbook) and the reconciliation of the model's in-place volume
+with Sodir's.
