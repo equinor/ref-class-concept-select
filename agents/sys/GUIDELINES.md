@@ -22,9 +22,9 @@ resume the whole workflow without relying on memory.
 |---|---|---|
 | `AGENTS.md`, `README.md`, `docs/`, `.github/`, `pyproject.toml`, `uv.lock`, `Makefile` | sys | Rules, overview, plan, agent profiles, environment |
 | `agents/<domain>/` | that domain | Charter, procedures, code, deliverables |
-| `data/manifest.csv`, `data/sources.csv`, `data/sodir/` | sys | Raw-data inventory, source catalogue, public snapshots |
+| `data/manifest.csv`, `data/sources.csv`, `data/sodir/`, `data/npd_archive/` | sys | Raw-data inventory, source catalogue, public snapshots, archived web captures |
 | `data/volve/` | doc | Converted documents and figure cut-outs |
-| `data/facts/<source-id>.csv` | the domain that reads that source: doc for documents, sim for `sim2016`, sys for `sodir` | Fact register |
+| `data/facts/<source-id>.csv` | the domain that reads that source: doc for documents, sim for `sim2016`, sys for `sodir` and `npd_archive` | Fact register |
 | `logs/` | user | Prompt logs; agents do not edit |
 | `$VOLVE_DATA` (default `../volve_data`) | user; sim for `_FLOW` deck files (§3) | Raw data, read-only; generated deck files |
 
@@ -78,6 +78,9 @@ Inside a domain folder:
   analysis. Sodir tables are in `data/sodir/<YYYYMMDD>/` with an `index.csv`
   (retrieval time, size, rows, SHA-256, URL). `make sodir` takes a new
   snapshot; each is about 8 MB, so take one only when newer data is needed.
+  Historical values that the live tables no longer show are taken from
+  Internet Archive captures, saved unchanged in `data/npd_archive/` with an
+  `index.csv` (capture timestamp, original URL, SHA-256).
 - **Size.** Nothing larger than 10 MB is committed. Simulation output is never
   committed; commit the deck changes and the script that produces it.
 
@@ -99,6 +102,7 @@ Inside a domain folder:
 | `prod` | `production_data/Volve production data.xlsx` |
 | `sim2016` | `eclipse_model/sim_model_PPA-eclipse/VOLVE_2016.*` |
 | `sodir` | Sodir FactPages tables; always with the snapshot date |
+| `npd_archive` | Archived captures of the NPD FactPages; always with the capture timestamp |
 
 ## 5. Quantities and provenance
 

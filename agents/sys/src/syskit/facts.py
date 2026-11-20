@@ -36,7 +36,7 @@ CONFIDENCE = frozenset({"high", "medium", "low"})
 TEXT_UNIT = "text"
 
 _AS_OF = re.compile(r"\d{4}(-\d{2}(-\d{2})?)?")
-_FACT_ID = re.compile(r"[a-z0-9]+(\.[a-z0-9_-]+)+")
+_FACT_ID = re.compile(r"[a-z0-9_]+(\.[a-z0-9_-]+)+")
 
 
 def load_sources(sources_file: Path) -> set[str]:

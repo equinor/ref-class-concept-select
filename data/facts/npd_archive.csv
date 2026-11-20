@@ -1,0 +1,20 @@
+fact_id,quantity,value,unit,basis,as_of,subject,source,locator,method,confidence,note
+npd_archive.recoverable_oil.2005,recoverable_oil,11.90,MSm3,estimate,2005-12-31,Volve,npd_archive,capture 20070211104952,read,high,Field page shows no in-place volumes
+npd_archive.recoverable_gas.2005,recoverable_gas,1.30,GSm3,estimate,2005-12-31,Volve,npd_archive,capture 20070211104952,read,high,Field page shows no in-place volumes
+npd_archive.recoverable_ngl.2005,recoverable_ngl,0.20,Mt,estimate,2005-12-31,Volve,npd_archive,capture 20070211104952,read,high,Field page shows no in-place volumes
+npd_archive.recoverable_condensate.2005,recoverable_condensate,0.10,MSm3,estimate,2005-12-31,Volve,npd_archive,capture 20070211104952,read,high,Field page shows no in-place volumes
+npd_archive.in_place_oil.2013,in_place_oil,18.70,MSm3,estimate,2013-12-31,Volve,npd_archive,capture 20141008152735,read,high,
+npd_archive.in_place_associated_gas.2013,in_place_associated_gas,2.80,GSm3,estimate,2013-12-31,Volve,npd_archive,capture 20141008152735,read,high,
+npd_archive.recoverable_oil.2013,recoverable_oil,9.50,MSm3,estimate,2013-12-31,Volve,npd_archive,capture 20141008152735,read,high,As displayed on the field page
+npd_archive.in_place_oil.2016,in_place_oil,18.70,MSm3,estimate,2016-12-31,Volve,npd_archive,capture 20170627083227,read,high,
+npd_archive.in_place_associated_gas.2016,in_place_associated_gas,2.80,GSm3,estimate,2016-12-31,Volve,npd_archive,capture 20170627083227,read,high,
+npd_archive.recoverable_oil.2016,recoverable_oil,10.20,MSm3,estimate,2016-12-31,Volve,npd_archive,capture 20170627083227,read,high,As displayed on the field page
+npd_archive.in_place_oil.2019,in_place_oil,19.00,MSm3,estimate,2019-12-31,Volve,npd_archive,capture 20201022065650,read,high,In-place values appear rounded to whole numbers on this capture
+npd_archive.in_place_associated_gas.2019,in_place_associated_gas,3.00,GSm3,estimate,2019-12-31,Volve,npd_archive,capture 20201022065650,read,high,In-place values appear rounded to whole numbers on this capture
+npd_archive.recoverable_oil.2019,recoverable_oil,10.17,MSm3,estimate,2019-12-31,Volve,npd_archive,capture 20201022065650,read,high,As displayed on the field page
+npd_archive.in_place_oil.2020,in_place_oil,18.70,MSm3,estimate,2020-12-31,Volve,npd_archive,capture 20210414070956,read,high,In-place table.
+npd_archive.in_place_associated_gas.2020,in_place_associated_gas,2.80,GSm3,estimate,2020-12-31,Volve,npd_archive,capture 20210414070956,read,high,In-place table.
+npd_archive.in_place_oil.2021,in_place_oil,18.70,MSm3,estimate,2021-12-31,Volve,npd_archive,capture 20221209052528,read,high,In-place table.
+npd_archive.in_place_associated_gas.2021,in_place_associated_gas,2.80,GSm3,estimate,2021-12-31,Volve,npd_archive,capture 20221209052528,read,high,In-place table.
+npd_archive.in_place_oil.2022,in_place_oil,19.00,MSm3,estimate,2022-12-31,Volve,npd_archive,capture 20230523130141,read,high,In-place table. Values appear rounded to whole numbers in this capture
+npd_archive.in_place_associated_gas.2022,in_place_associated_gas,3.00,GSm3,estimate,2022-12-31,Volve,npd_archive,capture 20230523130141,read,high,In-place table. Values appear rounded to whole numbers in this capture

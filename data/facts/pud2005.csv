@@ -1,0 +1,56 @@
+fact_id,quantity,value,unit,basis,as_of,subject,source,locator,method,confidence,note
+pud2005.stooip.t33.four_way_closure,stooip,24.5,MSm3,base,2005-02,Volve four-way closure,pud2005,p19 table 3.3,read,high,Norwegian label: Volve 4-veis lukning
+pud2005.stooip.t33.south,stooip,5.9,MSm3,base,2005-02,Volve South,pud2005,p19 table 3.3,read,high,Norwegian label: Volve Sør
+pud2005.stooip.t33.other_prospects,stooip,0.4,MSm3,base,2005-02,Other prospects,pud2005,p19 table 3.3,read,high,Norwegian label: Øvrige prospekter
+pud2005.stooip.t33.total,stooip,30.8,MSm3,base,2005-02,Volve and nearby prospects,pud2005,p19 table 3.3,read,high,Norwegian label: Totalt
+pud2005.stooip.t34.east.base,stooip,19.9,MSm3,base,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.east.mean,stooip,19.2,MSm3,mean,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.east.p90,stooip,15.9,MSm3,P90,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.east.p50,stooip,19.1,MSm3,P50,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.east.p10,stooip,22.8,MSm3,P10,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.east.sd,stooip_sd,2.6,MSm3,sd,2005-02,Volve closure East,pud2005,p19 table 3.4,read,high,Norwegian label: Øst. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.base,stooip,4.6,MSm3,base,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.mean,stooip,8.3,MSm3,mean,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.p90,stooip,3.4,MSm3,P90,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.p50,stooip,7.5,MSm3,P50,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.p10,stooip,14.6,MSm3,P10,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.west.sd,stooip_sd,4.3,MSm3,sd,2005-02,Volve closure West,pud2005,p19 table 3.4,read,high,Norwegian label: Vest. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.base,stooip,24.5,MSm3,base,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.mean,stooip,27.5,MSm3,mean,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.p90,stooip,20.9,MSm3,P90,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.p50,stooip,26.7,MSm3,P50,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.p10,stooip,35.2,MSm3,P10,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.closure.sd,stooip_sd,5.5,MSm3,sd,2005-02,Volve closure,pud2005,p19 table 3.4,read,high,Norwegian label: Volve lukningen. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.base,stooip,6.3,MSm3,base,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.mean,stooip,13.8,MSm3,mean,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.p90,stooip,5.0,MSm3,P90,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.p50,stooip,9.9,MSm3,P50,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.p10,stooip,30.0,MSm3,P10,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.prospects.sd,stooip_sd,11.6,MSm3,sd,2005-02,Prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.base,stooip,3.9,MSm3,base,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.mean,stooip,9.4,MSm3,mean,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.p90,stooip,0.2,MSm3,P90,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.p50,stooip,6.7,MSm3,P50,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.p10,stooip,24.3,MSm3,P10,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.risked_prospects.sd,stooip_sd,11.1,MSm3,sd,2005-02,Risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Riskede Prospekter. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.base,stooip,30.8,MSm3,base,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.mean,stooip,41.3,MSm3,mean,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.p90,stooip,27.2,MSm3,P90,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.p50,stooip,36.4,MSm3,P50,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.p10,stooip,64.7,MSm3,P10,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total.sd,stooip_sd,15.8,MSm3,sd,2005-02,Volve closure and prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.base,stooip,28.4,MSm3,base,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.mean,stooip,36.9,MSm3,mean,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.p90,stooip,23.0,MSm3,P90,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.p50,stooip,32.8,MSm3,P50,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.p10,stooip,58.2,MSm3,P10,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t34.total_risked.sd,stooip_sd,14.8,MSm3,sd,2005-02,Volve closure and risked prospects,pud2005,p19 table 3.4,read,high,Norwegian label: Totalt risket volum. Uncertainty study; P90 is the low case
+pud2005.stooip.t45.mean,stooip,27.50,MSm3,mean,2005-02,Volve closure,pud2005,p25 table 4.5,read,high,Uncertainty study; P90 is the low case
+pud2005.stooip.t45.p90,stooip,20.9,MSm3,P90,2005-02,Volve closure,pud2005,p25 table 4.5,read,high,Uncertainty study; P90 is the low case
+pud2005.stooip.t45.p50,stooip,26.70,MSm3,P50,2005-02,Volve closure,pud2005,p25 table 4.5,read,high,Uncertainty study; P90 is the low case
+pud2005.stooip.t45.p10,stooip,35.2,MSm3,P10,2005-02,Volve closure,pud2005,p25 table 4.5,read,high,Uncertainty study; P90 is the low case
+pud2005.recoverable_oil.t45.mean,recoverable_oil,11.40,MSm3,mean,2005-02,Volve,pud2005,p25 table 4.5,read,high,Reserves at a minimum oil rate of 2100 Sm3/d; P90 is the low case
+pud2005.recoverable_oil.t45.p90,recoverable_oil,9.0,MSm3,P90,2005-02,Volve,pud2005,p25 table 4.5,read,high,Reserves at a minimum oil rate of 2100 Sm3/d; P90 is the low case
+pud2005.recoverable_oil.t45.p50,recoverable_oil,11.35,MSm3,P50,2005-02,Volve,pud2005,p25 table 4.5,read,high,Reserves at a minimum oil rate of 2100 Sm3/d; P90 is the low case
+pud2005.recoverable_oil.t45.p10,recoverable_oil,15.31,MSm3,P10,2005-02,Volve,pud2005,p25 table 4.5,read,high,Reserves at a minimum oil rate of 2100 Sm3/d; P90 is the low case
+pud2005.stooip.summary,stooip,27.5,MSm3,mean,2005-02,Volve,pud2005,p7 section 1.3,read,high,"Summary text: 27,5 millioner Sm3 tilstedeværende olje"

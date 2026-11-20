@@ -4,3 +4,4 @@ disc1993,"Discovery evaluation report, well 15/9-19 SR, Theta Vest structure",re
 prod,Daily and monthly production per wellbore,production_data/Volve production data.xlsx,2016-12
 sim2016,"Eclipse 100 history-matched simulation model with results, case VOLVE_2016",eclipse_model/sim_model_PPA-eclipse,2016
 sodir,"Sodir FactPages tables, dated snapshots in data/sodir",https://factpages.sodir.no,
+npd_archive,"Archived captures of the NPD (now Sodir) FactPages from the Internet Archive, saved in data/npd_archive",https://web.archive.org,

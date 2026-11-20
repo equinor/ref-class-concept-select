@@ -56,6 +56,12 @@ def test_invalid_values_are_rejected(changes, expected):
     assert any(expected in problem for problem in _problems(**changes))
 
 
+def test_source_ids_may_contain_underscores():
+    row = GOOD | {"fact_id": "npd_archive.in_place_oil.2016", "source": "npd_archive"}
+
+    assert facts.check_row(row, file_source="npd_archive", sources={"npd_archive"}) == []
+
+
 def test_text_facts_are_allowed_with_the_text_unit():
     assert _problems(value="Leased jack-up with storage vessel", unit="text") == []
 

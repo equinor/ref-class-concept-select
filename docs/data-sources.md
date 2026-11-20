@@ -86,14 +86,31 @@ Volve values from these tables:
 | Recoverable oil, estimate by year-end | 2005: 11.90 · 2006: 12.42 · 2007: 12.49 · 2008: 13.58 · 2009: 8.79 · 2010: 8.15 · 2011: 8.51 · 2012: 8.68 · 2013: 9.54 · 2014: 9.68 · 2015: 10.34 · 2016 onward: 10.17 |
 | Investments 2005–2016, nominal | 4 689 MNOK (2005–2009: 2 933; 2010–2011: 111; 2012–2014: 1 640; 2015–2016: 5) |
 
-### 2.3 Norwegian Petroleum (norskpetroleum.no) — *verified*
+### 2.3 Archived NPD FactPages (Internet Archive) — *verified 2026-11-20*
+
+The live Sodir tables carry only the current in-place estimate. Earlier
+published values are in Internet Archive captures of the NPD FactPages (NPD is
+Sodir's former name). Saved in `data/npd_archive/`:
+
+| Capture | Content | Volve values |
+|---|---|---|
+| Feb 2007 | Field page, `www.npd.no/engelsk/cwi/pbl/en/field/all/3420717.htm` | Recoverable oil 11.90 as of 31.12.2005; no in-place shown |
+| Oct 2014, Jun 2017, Oct 2020 | Field page, `factpages.npd.no/ReportServer…PageView/field…NpdId=3420717` | Oil in place 18.70 (31.12.2013, 31.12.2016), 19.00 (31.12.2019) |
+| Apr 2021, Dec 2022, May 2023 | `field_in_place_volumes` table, all fields | Oil in place 18.70, 18.70, 19.00 |
+
+To find captures: `http://web.archive.org/cdx/search/cdx?url=<url>&filter=statuscode:200&collapse=timestamp:6&fl=timestamp,length,original`.
+To fetch one unchanged: `http://web.archive.org/web/<timestamp>id_/<url>`.
+A domain-wide search of `npd.no` timed out; only the specific URLs above were
+searched.
+
+### 2.4 Norwegian Petroleum (norskpetroleum.no) — *verified*
 
 - <https://www.norskpetroleum.no/en/facts/field/volve/>
 - Short field description (development, reservoir, recovery strategy,
   transport, status) and charts of production and investments with data
   download. The numbers are Sodir's.
 
-### 2.4 Simulator and tooling references — *verified*
+### 2.5 Simulator and tooling references — *verified*
 
 - OPM Flow reference manual, release 2026-04: <https://opm-project.org/?page_id=955>
 - OPM Flow packages for Ubuntu 24.04: `ppa:opm/ppa` (`libopm-simulators-bin`
@@ -101,7 +118,7 @@ Volve values from these tables:
   `agents/sim/README.md`.
 - `resdata` 7.0.0 and `res2df` 1.4.0 on PyPI.
 
-### 2.5 Not yet checked
+### 2.6 Not yet checked
 
 - Sodir wellbore pages for the Volve exploration and development wells, and the
   documents attached to them.
