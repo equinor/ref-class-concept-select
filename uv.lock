@@ -1011,7 +1011,11 @@ dev = [
     { name = "ruff" },
 ]
 dmx = [
+    { name = "matplotlib" },
+    { name = "pandas" },
+    { name = "plotly" },
     { name = "pyagrum" },
+    { name = "scipy" },
 ]
 doc = [
     { name = "matplotlib" },
@@ -1041,7 +1045,13 @@ dev = [
     { name = "pytest", specifier = ">=9.2.0" },
     { name = "ruff", specifier = ">=0.17.6" },
 ]
-dmx = [{ name = "pyagrum", specifier = ">=3.3.2" }]
+dmx = [
+    { name = "matplotlib", specifier = ">=3.11.2" },
+    { name = "pandas", specifier = ">=3.1.1" },
+    { name = "plotly", specifier = ">=7.1.0" },
+    { name = "pyagrum", specifier = ">=3.3.2" },
+    { name = "scipy", specifier = ">=1.18.1" },
+]
 doc = [
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "openpyxl", specifier = ">=3.1.5" },

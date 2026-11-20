@@ -80,6 +80,7 @@ The `rcfkit` package in `src/`.
 | `rcfkit.exploration` | Probability of discovery and volumes, prognosis against result |
 | `rcfkit.fields` | Reference class of fields: membership rules, production fractions, back-test, reserves growth, discovery link |
 | `rcfkit.volve` | The Volve case: PDO forecast, reference class forecast, outcome |
+| `rcfkit.inplace` | The class of undrilled prognoses as ratios of result to prognosis, for calibrating a volume in place (used by dmx) |
 | `rcfkit.expert` | The expert study's calculations, reproduced |
 | `rcfkit.review`, `rcfkit.study` | The two reports |
 

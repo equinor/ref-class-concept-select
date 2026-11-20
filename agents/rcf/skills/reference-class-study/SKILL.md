@@ -154,6 +154,12 @@ what a subsurface team can act on.
   inside-view forecast as a second, independent outside view.
 - State where the outcome fell in each forecast. One case ranks nothing; the
   back-test is the evidence for the method.
+- Where no class exists for the estimate as a whole (volume in place at
+  sanction), calibrate it by component: apply the class of undrilled
+  prognoses (`rcfkit.inplace`) to the part whose stated uncertainty is that
+  of a prognosis, leave the well-determined part as stated, and show a milder
+  treatment beside it. `agents/dmx/out/volve-concept-basis.md` is the worked
+  example.
 
 ### 10. Report
 
@@ -192,6 +198,11 @@ learned to this skill, commit with an `rcf:` subject.
   cumulative series can dip.
 - **Formatting tools reach into delivered material.** `ruff format` rewrites
   notebooks; `agents/rcf/study` is excluded in `pyproject.toml`.
+- **A premise taken from a label.** "West" was first written up as undrilled;
+  the PDO does not say which wells lie in which area, and the discovery well
+  is in what an earlier report called the western segment. Classify a
+  component by the uncertainty the source states for it, and say what the
+  source does not tell.
 - **Numbers typed into text.** Every figure in a report comes from the
   script; a sentence that says "the median" must be computed from the same
   sample as the number beside it.

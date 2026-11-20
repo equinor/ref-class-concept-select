@@ -1,5 +1,5 @@
 .PHONY: setup check manifest manifest-verify sodir facts facts-validate test lint format \
-	flow-deck flow-run flow-compare public doc-volve rcf-volve
+	flow-deck flow-run flow-compare public doc-volve rcf-volve dmx-volve
 
 VOLVE_DATA ?= ../volve_data
 FLOW_DECK_DIR = $(VOLVE_DATA)/eclipse_model/sim_model_PPA-eclipse
@@ -74,3 +74,7 @@ doc-volve:
 rcf-volve:
 	uv run python -m rcfkit.review build
 	uv run python -m rcfkit.study build
+
+# Rebuild the report on the Volve concept selection under a recalibrated volume basis.
+dmx-volve:
+	uv run python -m dmxkit.volve_concept build

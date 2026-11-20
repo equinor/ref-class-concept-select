@@ -1,0 +1,7 @@
+basis,area,p90,p50,p10,mean
+PDO,east,15.89,19.04,22.79,19.23
+PDO,west,3.389,7.036,14.58,8.269
+PDO,closure,20.86,26.46,35.29,27.5
+Calibrated,east,15.89,19.04,22.79,19.23
+Calibrated,west,0.4868,3.508,15.22,6.314
+Calibrated,closure,18.22,23.37,34.65,25.54

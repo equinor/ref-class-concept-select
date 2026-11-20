@@ -44,7 +44,7 @@ agents/
   doc/             document conversion, extraction, reports (dockit; skill; out/ has the
                    analyses and the plan-versus-outcome report)
   sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
-  dmx/             decision structuring and models
+  dmx/             decision structuring and models (dmxkit; out/ the concept analysis)
   rcf/             reference class forecasting (rcfkit; skill; lib/ reference papers;
                    study/ the expert's study; out/ the review and the study)
 data/              manifest of raw data, Sodir snapshots, fact register,
@@ -75,7 +75,13 @@ A reference class study of the Norwegian shelf record is done as well:
   probability of discovery, volumes, reserves and production against outcomes, and Volve in
   that record (web pages in the folders of the same names)
 
-Next is the first step of dmx; see
+The two come together in a first decision analysis:
+
+- [`agents/dmx/out/volve-concept-basis.md`](agents/dmx/out/volve-concept-basis.md) — the Volve
+  concept selection on a volume basis recalibrated with the reference class (web page in the
+  folder of the same name)
+
+Next is the full decision model of the concept choice; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
 
 ## Attribution

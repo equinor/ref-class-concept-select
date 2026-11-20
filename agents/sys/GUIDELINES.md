@@ -173,7 +173,7 @@ A hand-off is a file with a defined location and content, not a conversation.
 | doc → dmx, rcf | `data/facts/pud2005.csv`, `disc1993.csv` | Estimates, assumptions, alternatives, dates |
 | sim → dmx, rcf, doc | `agents/sim/out/` tables (CSV) and notes; `data/facts/sim2016.csv` | Profiles, volumes, sensitivities, with model and vector names |
 | sys → rcf, dmx | `data/sodir/<date>/`, `data/facts/sodir.csv` | Public tables for all fields; Volve values as facts |
-| rcf → dmx | `agents/rcf/out/` distributions and adjustment factors | Reference class definition, sample, statistics |
+| rcf → dmx | `agents/rcf/out/` distributions and adjustment factors; `rcfkit.inplace` | Reference class definition, sample, statistics |
 | dmx → doc | `agents/dmx/out/` model specifications and results | For reports |
 | any → sys | Request for a rule or a reconciliation | See §11 |
 
@@ -216,11 +216,13 @@ or was skipped.
   | `make flow-run` | Run the Flow deck; output in `agents/sim/work/` (sim) |
   | `make doc-volve` | Rebuild plot data, facts, redrawn charts and the report (doc) |
   | `make rcf-volve` | Rebuild the review of the expert study, the reference class study and its tables (rcf) |
+  | `make dmx-volve` | Rebuild the report on the Volve concept selection and its tables (dmx) |
   | `make format` | Apply lint fixes and formatting |
 
 - Shared code is the `syskit` package in `agents/sys/src/`; sim's code is
   `simkit` in `agents/sim/src/`, doc's is `dockit` in `agents/doc/src/` and
-  rcf's is `rcfkit` in `agents/rcf/src/`. A report that is wanted both as
+  rcf's is `rcfkit` in `agents/rcf/src/` and dmx's is `dmxkit` in
+  `agents/dmx/src/`. A report that is wanted both as
   Markdown and as a web page is written once with `syskit.report.Report` and
   `syskit.charts.Chart`, so that both versions come from the same blocks and
   every number in it is computed in the script. A domain that needs an importable package of

@@ -17,6 +17,7 @@ packages = [
     "agents/sim/src/simkit",
     "agents/doc/src/dockit",
     "agents/rcf/src/rcfkit",
+    "agents/dmx/src/dmxkit",
 ]
 
 [tool.pytest.ini_options]
@@ -36,7 +37,11 @@ dev = [
     "ruff>=0.17.6",
 ]
 dmx = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
     "pyagrum>=3.3.2",
+    "scipy>=1.18.1",
 ]
 doc = [
     "matplotlib>=3.11.2",
@@ -60,4 +65,4 @@ sim = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["syskit", "simkit", "dockit", "rcfkit"]
+known-first-party = ["syskit", "simkit", "dockit", "rcfkit", "dmxkit"]

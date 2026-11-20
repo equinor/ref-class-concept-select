@@ -1,6 +1,6 @@
 # Startup assessment and development plan
 
-Status: **approved 2026-11-19; Phase 1 complete; Phase 2 under way** (doc and rcf first steps done) · prepared in the sys role
+Status: **approved 2026-11-19; Phase 1 complete; Phase 2 under way** (doc and rcf first steps done; dmx started) · prepared in the sys role
 
 ## 1. Summary
 
@@ -170,7 +170,7 @@ settled by a small trial in the first step of the domain, not in advance.
 | doc | Done 2026-11-20: both source documents converted, analysed and compared with the outcome; procedure written as a skill. See `agents/doc/README.md` | `data/volve/reports/`, `agents/doc/out/`, `agents/doc/skills/` | — |
 | sim | Read-only analysis of the shipped results: field and well profiles, in-place by region, history-match quality against the production workbook; reconcile the model's in-place volume with Sodir's. The port of the deck to OPM Flow is done (2026-11-20) | CSV tables and a note | Nothing |
 | rcf | Done 2026-11-20: paper converted; the expert's study reviewed and redone; procedure written as a skill. See `agents/rcf/README.md`. Investments (cost class) remain | `agents/rcf/out/`, `agents/rcf/skills/` | — |
-| dmx | Decision timeline and framing of the 2005 concept decision from doc's facts; influence-diagram skeleton without numbers | Timeline, frame, diagram | doc first step |
+| dmx | Started 2026-11-20: the concept selection on a recalibrated volume basis (`agents/dmx/out/volve-concept-basis.md`). Remaining: decision timeline and framing of the 2005 concept decision; influence diagram with price and cost | Timeline, frame, diagram | — |
 
 doc, rcf and sim's analysis step can run in parallel; dmx follows doc.
 
