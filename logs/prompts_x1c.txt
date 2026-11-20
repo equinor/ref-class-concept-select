@@ -1,6 +1,43 @@
 
 ____________________________________________________________
-Thu Nov 19 2026 16:57:55 week 47 CET+0100
+
+████████████████████████████████████████████████████████████
+
+┌────────────────────────────────┐
+│ PRESENTATION WEBPAGE │
+└────────────────────────────────┘
+
+____________________________________________________________
+[prompt:]
+Create an html webpage that describes the work developed
+in this repo
+
+____________________________________________________________
+# result
+
+
+
+____________________________________________________________
+
+████████████████████████████████████████████████████████████
+
+┌────────────────────────────────┐
+│ INTEGRATE RCF WORK HERE │
+└────────────────────────────────┘
+
+____________________________________________________________
+[prompt:]
+
+Package the rcf work developed by EN; study and integrate
+it in agents/rcf
+
+____________________________________________________________
+# result
+
+
+
+____________________________________________________________
+
 ████████████████████████████████████████████████████████████
 
 ┌────────────────────────────────┐
@@ -14,20 +51,20 @@ We start by analysing the documents
 ../volve_data/reports/Volve_PUD_cmt.pdf and
 ../volve_data/reports/Discovery_report.pdf
 
-As base, both docs should be converted to md as is the 
+As base, both docs should be converted to md as is the
 general operation of agents/docs. If any of the documents
-names has a 'cmt' tag, then any highlighted text in the 
-document should also be highlighted/made bold in the md. 
+names has a 'cmt' tag, then any highlighted text in the
+document should also be highlighted/made bold in the md.
 
 Note that Volve_PUD_cmt.pdf is Norwegian, and thus it needs
-to be translated to English. Both documents should 
+to be translated to English. Both documents should
 
 If asked when analyzing a document summarize and extract the
 specified type of content onto a separate document with that
 has the same file name with the added tag _anlz. Do this for
 Volve_PUD_cmt.pdf
 
-Analyze Volve_PUD_cmt.pdf along the three following lines: 
+Analyze Volve_PUD_cmt.pdf along the three following lines:
 
 1. Volve_PUD_cmt.pdf describes the plan for development for
 the Volve field. We are interested in extracting information
@@ -42,26 +79,26 @@ for the different production forecasts given in the
 document, and remake the tables in the analysis document.
 
 3. Conduct a third pass where you identify the main
-uncertainties underlying the estimated volumes in place, 
-as well as the production strategy and the development 
+uncertainties underlying the estimated volumes in place,
+as well as the production strategy and the development
 plan.
 
 Analyze Discovery_report along the same lines, where
 applicable. Extract to a separate .md file accordingly.
 
-Conduct an analysis of the Volve field development plan 
+Conduct an analysis of the Volve field development plan
 as given in Volve_PUD_cmt.pdf (with whatever other relevant
-information available from Discovery_report) with focus on 
+information available from Discovery_report) with focus on
 the forecasted production and development costs and compare
 it with openly available data of what the actualy production
-and cost were for this field at end of operation. Present 
-this analysis as a state-of-the-art html web report with 
-appropriate comparison figures and tables. 
+and cost were for this field at end of operation. Present
+this analysis as a state-of-the-art html web report with
+appropriate comparison figures and tables.
 
 At the end of the analyzes a generalized procedure for how
 to analyze this type of documents should be articulated so
 the next batch of docs to be analyzed can start from these
-directions. Save the guideline in agents/docs.   
+directions. Save the guideline in agents/docs.
 
 ____________________________________________________________
 # result
@@ -95,48 +132,48 @@ The analysis will identify different core decisions that
 were made during the project, which information was
 available at the time of decision, e.g., volumetric and cost
 estimates, which assumptions that underlie the different
-decisions, and any inconsistencies that may be found. 
+decisions, and any inconsistencies that may be found.
 
 The methodology then works to structure some of these
 decisions using a decision analysis procedure, i.e., a
 decision model, e.g., a decision tree and/or influence
 diagram is created using specific decision, uncertainties
 and corresponding values and probabilites acquired from the
-data. (Data in this sense is information directly read from 
-documentation and/or derived from artifacts created by the 
-field development team, e.g., the reservoir simulation 
+data. (Data in this sense is information directly read from
+documentation and/or derived from artifacts created by the
+field development team, e.g., the reservoir simulation
 model and the plan for production and operation.)
 
 Reference class forecasting is a general approach that is in
 this context used to calibrate in-place volumetric estimates
 though it can also be use to calibrate other probabilistic
-assessments, i.e., use the outside view to challenge the 
-inside view. 
+assessments, i.e., use the outside view to challenge the
+inside view.
 
 [context: repo startup]
 
-This repo sets up work to be conducted by a set of agents 
-which concentrate on performing different tasks and serve 
-as experts within their respective domains. 
+This repo sets up work to be conducted by a set of agents
+which concentrate on performing different tasks and serve
+as experts within their respective domains.
 
-Five domains are currently identified to each be driven by 
+Five domains are currently identified to each be driven by
 a respective agent. Each agent works primariry within its
-own folder within this repo, but has access to all data 
-in the repo. Additional domains may be specified at a later 
-time. 
+own folder within this repo, but has access to all data
+in the repo. Additional domains may be specified at a later
+time.
 
 [The agents folders and the agent specifications are:]
 
-agents/doc: agent that analyses and extracts data from 
-documents that contain graphs and tables. The documents, 
-often given in pdfs, should be extracted to markdown and 
-any other format that makes both the text data and the 
+agents/doc: agent that analyses and extracts data from
+documents that contain graphs and tables. The documents,
+often given in pdfs, should be extracted to markdown and
+any other format that makes both the text data and the
 numerical data easy to digest by an llm agent for further
-analysis. This agent also has the responsibility to create 
-communication artifacts, e.g., html webpages that show and 
-summarize the data found in the various documents. All the  
-the data from all the graphs (production profiles) in each 
-document should be exported to an excel file with the same 
+analysis. This agent also has the responsibility to create
+communication artifacts, e.g., html webpages that show and
+summarize the data found in the various documents. All the
+the data from all the graphs (production profiles) in each
+document should be exported to an excel file with the same
 name as the original file.
 
 agents/doc is also responsible for converting source docs,
@@ -150,7 +187,7 @@ appropriately.
 
 agents/sim: agent that runs reservoir simulations and/or
 perform analysis on input data and output results from
-reservoir simulations. 
+reservoir simulations.
 
 The manual for the open-source opm flow reservoir simulator
 (https://opm-project.org/?page_id=955) is the reference for
@@ -164,20 +201,20 @@ Equinor has a software library called resdata
 (https://github.com/equinor/resdata) for reading and writing
 result files from the Eclipse reservoir simulator.
 
-agents/dmx: agent that structures decisions and is able to 
-create and solve decision models, e.g., influence diagrams 
-and/or decision trees. 
+agents/dmx: agent that structures decisions and is able to
+create and solve decision models, e.g., influence diagrams
+and/or decision trees.
 
-agents/rcf: agent that possesses the knowledge about 
-reference class forecasting and has the main responsibility 
-for implementing this methodology when called in by other 
-other agents. 
+agents/rcf: agent that possesses the knowledge about
+reference class forecasting and has the main responsibility
+for implementing this methodology when called in by other
+other agents.
 
 agents/sys: agent that has specific knowledge about how best
 to organize, coordinate and integrate the different types of
 data and the work created by the different agents. The other
 agents can and should call in the guidelines provided by
-this agent when necessary. 
+this agent when necessary.
 
 [tasks:]
 
@@ -196,13 +233,13 @@ to implement the various ideas in this plan. Focus first on
 what is required to create a robust workflow infrastructure,
 then consider what is recommended as a first step in each of
 the domains. Consider that this overall workflow will be
-managed and maintained by a single user only. 
+managed and maintained by a single user only.
 
-- Summarize your report and development plan for approval. 
-The overall infrastructure should be established first, 
+- Summarize your report and development plan for approval.
+The overall infrastructure should be established first,
 including possible a sufficiently detailed specification
 using best practice as reference for how agents/sys should
-operate. 
+operate.
 
 - Tasks to be performed by the agents/doc domain will be
 specified next after the foundational part of the workflow
@@ -211,6 +248,135 @@ is well established.
 - Push the code and keep everything tidy
 
 ____________________________________________________________
+[/model:]
+Claude Fable 5.2 (high) for this session
+
+____________________________________________________________
+# result
+
+Phase 1 is built and pushed to main (18dcada); I took
+"restart" to mean resume, so nothing was discarded.
+make check passes here and on a fresh clone.
+
+OPM Flow is not installed yet. The command is:
+
+sudo add-apt-repository -y ppa:opm/ppa && sudo apt-get update && sudo apt-get install -y libopm-simulators-bin openmpi-bin
+flow --version
+
+
+• Environment: uv is installed in ~/.local/bin;
+make setup installs every domain's dependencies.
+
+• Data: the repo now holds a checksum manifest of the
+74 raw files, a Sodir snapshot, and 182 Volve facts.
+
+• Agents: copilot --agent doc (or sys, sim, dmx, rcf);
+all five are registered, but only rcf was actually run.
+
+Nothing was tested on your second machine, and your
+logs/prompts_x1c.txt edit is still uncommitted. Next
+is your doc task specification.
+
+____________________________________________________________
+[install opm flow:]
+$ sudo add-apt-repository -y ppa:opm/ppa && sudo apt-get
+update && sudo apt-get install -y libopm-simulators-bin
+openmpi-bin
+
+____________________________________________________________
+[prompt:]
+opm flow is now installed successfully
+
+____________________________________________________________
+# result
+Flow 2026.04 is installed and working, but the Volve deck
+will not run in it as released. I only did dry runs on a
+patched copy in /tmp; no simulation has been run and the
+raw data is untouched.
+
+• Three input errors stop Flow: a surplus 13th record in
+ROCK and in RSVD, and five well-control records at 1 Jan
+2015 with no WCONHIST keyword.
+
+• ADDZCORN is not implemented in Flow. With it ignored,
+active cells and total pore volume match Eclipse, but
+depths differ in 2,862 cells.
+
+• Correction: the model has 183,545 active cells, not the
+203,522 I documented earlier.
+
+Details are in agents/sim/README.md, pushed as 1dda8ca.
+____________________________________________________________
+[prompt:]
+Can you create a version of the Volve eclipse deck that runs
+in flow making only the minimally required changes to it;
+make only  new version of the required files, i.e., .DATA
+file and any other file that needs to be modified; you can
+create a new version of the eclipse run files in
+../volve_data
+
+____________________________________________________________
+# result
+The Flow version of the deck is built and runs the full history in OPM Flow 2026.04 with default options: VOLVE_2016_FLOW.DATA plus three _FLOW include files, beside the originals in ../volve_data/eclipse_model/sim_model_PPA-eclipse/. No original file is modified.
+
+It ends within 0.6% of Eclipse on cumulative oil, water and gas and 0.1% on field pressure, and takes 11 minutes on 8 processes.
+
+The changes are only what Flow stops on:
+
+• Input errors: a surplus 13th ROCK record, a surplus 13th RSVD table, and five well records with no WCONHIST keyword are commented out. Eclipse's own log shows it ignored all three.
+• Unsupported keywords: QUIESC/MOBILE and PRIORITY are removed.
+• ADDZCORN: the shifts are applied in a new grid file instead (12,600 corner depths, taken from Eclipse's own output geometry).
+
+One known difference remains uncorrected: Flow applies a TRANZ cap and a MULTZ of 0.1 in the opposite order to Eclipse, so about 1,450 cells in three tight layers have up to 10× the vertical transmissibility. A fix I tried made the run lose mass, so I left it out.
+
+Run it with make flow-run. Details are in agents/sim/out/volve_2016_flow/README.md; pushed as 507ac5d.
+
+____________________________________________________________
+[prompt:]
+Briefly report on the work that has been conducted so far.
+
+Make a comparison between the estimated in-place values
+obtained from the eclipse model, the values reported in the
+PDO and the values reported to sodir. Compare at three
+points in time (using whichever data is available): the
+first at the time of PDO delivery, the second at production
+start and the last and end of production.
+
+____________________________________________________________
+# result
+
+Work so far
+
+• Foundation: agent rules, a charter per domain, the operating guidelines, and the assessment and plan (approved).
+• Infrastructure: one locked Python environment, a checksum manifest of the raw data, a Sodir snapshot, a validated fact register (277 facts), and make check.
+• Simulation: a version of the Volve deck that runs in OPM Flow, ending within 0.6% of Eclipse on cumulative volumes.
+• Not started: the document conversion (doc), the reference class (rcf) and the decision model (dmx).
+
+Oil originally in place (MSm3)
+
+┌────────────────────────────┬───────────────────────────────────────────────────────────────┬─────────────────────────────────────────────┬───────────────────────────────────────┐
+│ Point in time              │ PDO (operator)                                                │ Sodir (then NPD)                            │ Eclipse model                         │
+├────────────────────────────┼───────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┼───────────────────────────────────────┤
+│ PDO delivery, Feb 2005     │ Mean 27.5; P90 20.9, P50 26.7, P10 35.2 (P90 is the low case) │ Not published; recoverable oil only (11.90) │ None in the dataset                   │
+├────────────────────────────┼───────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┼───────────────────────────────────────┤
+│ Production start, Feb 2008 │ No update                                                     │ No record found                             │ 21.97, but as history-matched in 2016 │
+├────────────────────────────┼───────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┼───────────────────────────────────────┤
+│ End of production, 2016    │ —                                                             │ 18.70 (as of 31.12.2016)                    │ 21.97 original; 11.99 remaining       │
+└────────────────────────────┴───────────────────────────────────────────────────────────────┴─────────────────────────────────────────────┴───────────────────────────────────────┘
+
+• The outcome is below the PDO's low case. Sodir's 18.70 is 32% below the PDO mean and 11% below its P90.
+• Sodir's figure matches the operator's geological model. A slide shipped with the model, dated Dec 2010, gives 18.7 for the geological model and 20.6 for the simulation model "to obtain the match".
+• The simulation model holds 17% more oil than Sodir's figure. Its in-place volume is effectively a history-match parameter.
+• Recovery factor moved the other way. It is 41% in the PDO and 54% in Sodir's final figures, so recovered oil ended only 11% below the PDO mean.
+
+Two limits apply:
+
+• Scope: I have not established that the PDO's "Volve closure" (East + West) covers the same volume as the later "field including North West segment".
+• Sodir history: the earliest in-place value I found is for year-end 2013, from Internet Archive captures of the old NPD pages.
+
+The full comparison is in agents/sys/out/in-place-comparison.md, pushed as 16b2e44.
+
+____________________________________________________________
 [prompt:]
 
 
@@ -219,8 +385,6 @@ ____________________________________________________________
 
 
 
-
-
 ____________________________________________________________
 [prompt:]
 
@@ -228,9 +392,9 @@ ____________________________________________________________
 ____________________________________________________________
 # result
 
-# todo 
+# todo
 get some references for 'reference class forecasting'
-methodology and how it should be applied to petroleum 
+methodology and how it should be applied to petroleum
 field development ~> [ok:]
 research/20261118-force-llm-hackathon/ref-class-concept-select/agents/rcf/lib
 /LIB_2022_ENERGY_debiasing_production-forecasts_ENesvold+RBratvold.pdf
