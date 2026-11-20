@@ -40,7 +40,8 @@ Inside a domain folder:
 | `tests/` | yes | Tests for `src/` |
 | `out/` | yes | Deliverables |
 | `work/` | no | Scratch; safe to delete at any time |
-| `lib/` | yes | Reference literature |
+| `lib/` | yes | Reference literature; converted copies in `lib/md/`, their figures in `lib/figs/` |
+| `study/` | yes | Work delivered by others, kept as delivered: read, never edited or reformatted |
 | `skills/<name>/` | yes | A procedure packaged as a skill (`SKILL.md` and its reference files) |
 
 A skill is linked from `.github/skills/<name>` so that Copilot CLI finds it;
@@ -192,7 +193,7 @@ Before an artifact is handed off or committed:
 | Translation | Numbers, units and proper names unchanged; uncertain terms flagged |
 | Simulation result | Deck, simulator version and run log recorded; mass-balance and history-match summary checked |
 | Decision model | Probabilities sum to one; every input traced to a fact or marked as assumption; result reproduced by a second calculation path where feasible |
-| Reference class | Inclusion rule written before the statistics are computed; sample size and exclusions reported |
+| Reference class | Inclusion rule written before the statistics are computed; sample size and exclusions reported; the case kept out of its own class; ranges tested on cases not used to build them |
 | Cross-source value | Same quantity from two sources compared; difference explained or flagged |
 | Anything committed | `make check` passes |
 
@@ -214,10 +215,15 @@ or was skipped.
   | `make flow-deck` | Write the `_FLOW` deck files (sim) |
   | `make flow-run` | Run the Flow deck; output in `agents/sim/work/` (sim) |
   | `make doc-volve` | Rebuild plot data, facts, redrawn charts and the report (doc) |
+  | `make rcf-volve` | Rebuild the review of the expert study, the reference class study and its tables (rcf) |
   | `make format` | Apply lint fixes and formatting |
 
 - Shared code is the `syskit` package in `agents/sys/src/`; sim's code is
-  `simkit` in `agents/sim/src/` and doc's is `dockit` in `agents/doc/src/`. A domain that needs an importable package of
+  `simkit` in `agents/sim/src/`, doc's is `dockit` in `agents/doc/src/` and
+  rcf's is `rcfkit` in `agents/rcf/src/`. A report that is wanted both as
+  Markdown and as a web page is written once with `syskit.report.Report` and
+  `syskit.charts.Chart`, so that both versions come from the same blocks and
+  every number in it is computed in the script. A domain that needs an importable package of
   its own adds its path to `packages` in `pyproject.toml`; tests go in
   `agents/<domain>/tests/`.
 - Record tool name and version, and the command or procedure, for anything
@@ -244,6 +250,9 @@ Structural decisions are recorded here, newest first: date, decision, reason.
 
 | Date | Decision | Reason |
 |---|---|---|
+| 2026-11-20 | Reports are written once (`syskit.report`, `syskit.charts`) and rendered as Markdown with PNG charts and as a web page with interactive charts | The user asks for both; one source keeps numbers and charts identical |
+| 2026-11-20 | Material delivered by others (`agents/rcf/study`) is kept as delivered and excluded from formatting and linting; corrections to its data are made in the reading code, with the evidence in the docstring | A formatter rewrote the expert's notebook during this work (restored from git); provenance requires the delivered state |
+| 2026-11-20 | Reference literature inside the repository is converted beside the original (`lib/md/`, `lib/figs/`) | Same rule as for source documents: the Markdown sits in an `md` folder next to the file |
 | 2026-11-20 | A domain's reusable procedure is a skill in `agents/<domain>/skills/`, linked from `.github/skills/` | Asked for by the user; keeps the procedure with its domain and lets the CLI load it |
 | 2026-11-20 | Page-by-page translation and transcription is delegated to parallel sub-agents under one rules file and checked by `dockit.assemble` | 247 pages in one pass; consistent output; independent check of digits and highlights |
 | 2026-11-20 | Generated `_FLOW` deck files are written beside the original deck in `$VOLVE_DATA` and listed in the manifest. This is the only exception to "nothing is written to `$VOLVE_DATA`" | Approved by the user. A deck that shares the unchanged include files needs only four new files and no path changes |

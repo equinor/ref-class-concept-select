@@ -20,6 +20,7 @@ from plotly.offline import get_plotlyjs
 from dockit import pud_data, pud_facts
 from syskit import public
 from syskit.paths import repo_root
+from syskit.report import CSS
 
 PLAN, ACTUAL, MUTED = "#1d4ed8", "#c2410c", "#64748b"
 BAND = "rgba(29, 78, 216, 0.14)"
@@ -597,64 +598,6 @@ def build_tables(result: pud_data.Outcome, k: dict[str, float]) -> dict[str, str
         ["Kind", "Planned", "Drilled", "Wellbores (year drilling began)"], rows, left=(0, 3)
     )
     return tables
-
-
-CSS = """
-:root { --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --card:#ffffff;
-        --plan:#1d4ed8; --actual:#c2410c; }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-       color:var(--ink); background:var(--bg); line-height:1.55; }
-header.top { background:#0f172a; color:#f8fafc; padding:44px 24px 36px; }
-header.top .wrap, main, nav .wrap { max-width:1080px; margin:0 auto; }
-header.top h1 { margin:0 0 8px; font-size:clamp(1.6rem, 3.2vw, 2.3rem); line-height:1.2; }
-header.top p { margin:0; color:#cbd5e1; max-width:760px; }
-nav { position:sticky; top:0; z-index:5; background:rgba(255,255,255,.94);
-      border-bottom:1px solid var(--line); backdrop-filter: blur(6px); }
-nav .wrap { display:flex; gap:18px; padding:10px 24px; overflow-x:auto; white-space:nowrap; }
-nav a { color:var(--muted); text-decoration:none; font-size:.92rem; }
-nav a:hover { color:var(--ink); }
-main { padding:8px 24px 64px; }
-section { padding-top:40px; }
-h2 { font-size:1.45rem; margin:0 0 6px; }
-h3 { font-size:1.08rem; margin:28px 0 6px; }
-p.lead { color:var(--muted); margin:0 0 18px; max-width:780px; }
-p, li { max-width:780px; }
-.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:14px;
-         margin:18px 0 8px; }
-.card { background:var(--card); border:1px solid var(--line); border-radius:12px;
-        padding:16px 18px; }
-.card .label { color:var(--muted); font-size:.86rem; }
-.card .pair { display:flex; align-items:baseline; gap:10px; margin:6px 0 2px; flex-wrap:wrap; }
-.card .plan { color:var(--plan); font-size:1.05rem; }
-.card .arrow { color:var(--muted); }
-.card .actual { color:var(--actual); font-size:1.5rem; font-weight:650; }
-.card .note { color:var(--muted); font-size:.86rem; }
-figure { background:var(--card); border:1px solid var(--line); border-radius:12px; margin:18px 0;
-         padding:10px 12px 12px; }
-figcaption { color:var(--muted); font-size:.9rem; padding:4px 8px 2px; max-width:none; }
-.legend-key { display:flex; gap:18px; font-size:.9rem; color:var(--muted); margin:8px 0 0; }
-.legend-key span::before { content:""; display:inline-block; width:12px; height:12px;
-        border-radius:3px; margin-right:6px; vertical-align:-1px; }
-.legend-key .p::before { background:var(--plan); }
-.legend-key .a::before { background:var(--actual); }
-.scroll { overflow-x:auto; background:var(--card); border:1px solid var(--line);
-          border-radius:12px; margin:14px 0; }
-table { border-collapse:collapse; width:100%; font-size:.93rem; font-variant-numeric:tabular-nums; }
-th, td { padding:8px 12px; border-bottom:1px solid var(--line); }
-th { background:#f1f5f9; font-weight:600; position:sticky; top:0; }
-tbody tr:last-child td { border-bottom:0; }
-.l { text-align:left; } .r { text-align:right; }
-details { margin:8px 0 0; } summary { cursor:pointer; color:var(--muted); font-size:.92rem; }
-.callout { border-left:4px solid var(--actual); background:#fff7ed; padding:12px 16px;
-           border-radius:0 10px 10px 0; margin:16px 0; max-width:780px; }
-footer { color:var(--muted); font-size:.88rem; border-top:1px solid var(--line); margin-top:48px;
-         padding-top:18px; }
-code { background:#e2e8f0; padding:1px 5px; border-radius:4px; font-size:.88em; }
-@media print { nav { display:none; } header.top { background:#fff; color:#000; }
-               header.top p { color:#333; } figure, .card, .scroll { break-inside:avoid; } }
-"""
 
 
 def card(label: str, plan: str, actual: str, note: str) -> str:

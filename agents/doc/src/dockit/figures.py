@@ -4,7 +4,10 @@ A figure is located from its caption: the graphics (images and vector
 drawings) nearest to the caption are grouped, and the page is rendered
 inside their bounding box.
 
-    python -m dockit.figures cut <pdf> <figs-dir> [--word Figur]
+    python -m dockit.figures cut <pdf> <figs-dir> [--word Figur] [--style chapter|journal]
+
+Two caption styles are known: ``chapter`` (``Figur 4.2 - Title``, numbered by
+chapter) and ``journal`` (``Fig. 9. Title`` or ``Fig. A.16. Title``).
 """
 
 from __future__ import annotations
@@ -76,11 +79,17 @@ def graphics(page: pymupdf.Page) -> list[Rect]:
     return [r for r in rects if r[0] >= inside[0] - 1 and r[2] <= inside[2] + 1]
 
 
-def caption_numbers(text: str, word: str) -> list[str]:
+def caption_numbers(text: str, word: str, style: str = "chapter") -> list[str]:
     """Figure numbers in a caption block, e.g. ``["4.2"]``; empty if it is not a caption.
 
-    Two figures side by side can share one caption line.
+    Two figures side by side can share one caption line (chapter style). In
+    journal style the number ends with a full stop, which tells a caption
+    (``Fig. 8. Example``) from a sentence (``Fig. 8 shows``); the caption may
+    start on a later line of a block that the text layer joined to body text.
     """
+    if style == "journal":
+        match = re.search(rf"(?:^|\n)\s*{re.escape(word)}\s*((?:[A-Z]\.)?\d+)\.\s", text)
+        return [match.group(1)] if match else []
     if not re.match(rf"\s*{word}\s*\d", text):
         return []
     return [f"{a}.{b}" for a, b in re.findall(rf"{word}\s*(\d+)\s*[.\-]\s*(\d+)", text)]
@@ -109,7 +118,9 @@ def with_labels(box: Rect, blocks: list[Block], caption: Block) -> Rect:
     return result
 
 
-def locate(page: pymupdf.Page, word: str = "Figur") -> list[tuple[str, str, Rect]]:
+def locate(
+    page: pymupdf.Page, word: str = "Figur", style: str = "chapter"
+) -> list[tuple[str, str, Rect]]:
     """Find (number, caption, bounding box) for every figure caption on the page.
 
     A caption with no graphics above or below it yields no figure.
@@ -118,7 +129,7 @@ def locate(page: pymupdf.Page, word: str = "Figur") -> list[tuple[str, str, Rect
     groups = cluster(graphics(page))
     found = []
     for block in blocks:
-        numbers = caption_numbers(block.text, word)
+        numbers = caption_numbers(block.text, word, style)
         candidates = [g for g in groups if horizontal_overlap(g, block.rect) > 0]
         if not numbers or not candidates:
             continue
@@ -129,21 +140,32 @@ def locate(page: pymupdf.Page, word: str = "Figur") -> list[tuple[str, str, Rect
 
         nearest = sorted(candidates, key=gap)[: len(numbers)]
         caption = " ".join(block.text.replace("**", "").split())
+        caption = caption[max(caption.find(word), 0) :]
         for number, box in zip(numbers, sorted(nearest), strict=False):
-            box = with_labels(box, blocks, block)
+            if style == "chapter":  # journal figures are pictures with their labels inside
+                box = with_labels(box, blocks, block)
             if (box[1] + box[3]) / 2 < block.rect[1]:  # figure above its caption: stop there
                 box = (box[0], box[1], box[2], min(box[3] + 4, block.rect[1] - 1))
             found.append((number, caption, box))
-    return found
+    # A sentence that starts a line with "Fig. 9." can pass for a caption; the block
+    # that starts with the caption word wins.
+    best: dict[str, tuple[str, str, Rect]] = {}
+    for item in found:
+        number, caption, _ = item
+        if number not in best or caption.startswith(word) and len(caption) < len(best[number][1]):
+            best[number] = item
+    return list(best.values())
 
 
-def cut(pdf: Path, target_dir: Path, *, word: str = "Figur", dpi: int = 150) -> list[Figure]:
+def cut(
+    pdf: Path, target_dir: Path, *, word: str = "Figur", style: str = "chapter", dpi: int = 150
+) -> list[Figure]:
     """Write one image per captioned figure and an index. Returns the figures found."""
     document = pymupdf.open(pdf)
     target_dir.mkdir(parents=True, exist_ok=True)
     figures = []
     for page_number, page in enumerate(document, start=1):
-        for number, caption, box in locate(page, word):
+        for number, caption, box in locate(page, word, style):
             rect = tuple(pymupdf.Rect(box) + (-4, -3, 4, 0) & page.rect)
             name = f"{pdf.stem}_p{page_number:03d}_fig{number.replace('.', '-')}.png"
             render(page, target_dir / name, dpi=dpi, clip=rect)
@@ -164,9 +186,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("pdf", type=Path)
     parser.add_argument("target_dir", type=Path)
     parser.add_argument("--word", default="Figur", help="caption word, e.g. Figur or Figure")
+    parser.add_argument("--style", choices=("chapter", "journal"), default="chapter")
     parser.add_argument("--dpi", type=int, default=150)
     args = parser.parse_args(argv)
-    figures = cut(args.pdf, args.target_dir, word=args.word, dpi=args.dpi)
+    figures = cut(args.pdf, args.target_dir, word=args.word, style=args.style, dpi=args.dpi)
     print(f"{len(figures)} figures written to {args.target_dir}")
     return 0
 

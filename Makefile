@@ -1,5 +1,5 @@
 .PHONY: setup check manifest manifest-verify sodir facts facts-validate test lint format \
-	flow-deck flow-run flow-compare public doc-volve
+	flow-deck flow-run flow-compare public doc-volve rcf-volve
 
 VOLVE_DATA ?= ../volve_data
 FLOW_DECK_DIR = $(VOLVE_DATA)/eclipse_model/sim_model_PPA-eclipse
@@ -69,3 +69,8 @@ doc-volve:
 	uv run python -m dockit.disc_facts write
 	uv run python -m dockit.pud_redraw draw
 	uv run python -m dockit.pud_report build
+
+# Rebuild the review of the expert study, the reference class study and its tables.
+rcf-volve:
+	uv run python -m rcfkit.review build
+	uv run python -m rcfkit.study build

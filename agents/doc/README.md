@@ -94,7 +94,7 @@ The `dockit` package in `src/`. The first group is general; the modules named
 | Module | Purpose |
 |---|---|
 | `dockit.pdf` | Page text in reading order with highlights marked; page images |
-| `dockit.figures` | Figure cut-outs located from captions and drawings |
+| `dockit.figures` | Figure cut-outs located from captions and drawings; caption styles `chapter` (Figur 4.2) and `journal` (Fig. 9.) |
 | `dockit.plots` | Axis calibration and curve tracing for raster and vector plots |
 | `dockit.assemble` | Join page files into one document; check form, digits and highlights against the source text |
 | `dockit.pud_plots` | Plot data of the PDO figures to CSV and Excel, with checks against its tables |
@@ -115,6 +115,7 @@ translation and transcription are LLM work and are not rerun by it.
 | `out/Discovery_report_anlz.md` | The same lines, where the discovery report has content |
 | `out/volve-pdo-vs-actual/index.html` | The plan against the outcome: production, schedule, wells, investments |
 | `data/facts/pud2005.csv`, `data/facts/disc1993.csv` | Values registered from the two documents |
+| `agents/rcf/lib/md/LIB_2022_ENERGY_…ENesvold+RBratvold.md` | Reference paper for rcf (Nesvold & Bratvold, 2022), 14 pages, equations in LaTeX |
 
 ## Method
 

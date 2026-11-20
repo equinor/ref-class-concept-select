@@ -47,6 +47,11 @@ uv run python -m dockit.pdf prepare <pdf> agents/doc/work/<id> --dpi 150 [--form
 uv run python -m dockit.figures cut <pdf> data/volve/<dir>/figs --word Figur
 ```
 
+For a journal paper, whose captions read `Fig. 9. Title`, add
+`--word "Fig." --style journal`. A document that lives inside the repository
+(reference literature in `agents/<domain>/lib/`) is converted beside it:
+`lib/md/<stem>.md` and `lib/figs/`.
+
 This writes, per page, the text in reading order (highlights marked `**…**`)
 and an image, and cuts out captioned figures. Look at a contact sheet of the
 cut-outs; fix the cropping rules if a crop is wrong, never the image by hand.
@@ -65,6 +70,10 @@ scanned pages are language-model work:
   for a short list of oddities in the source and of anything it was unsure of.
 - For a digital document the text layer has the exact digits; the image gives
   layout. For a scan the image decides; the machine-read text is only an aid.
+- Give document-specific rules in a notes file beside the pages (`NOTES.md`):
+  what differs from the general rules. For a paper: no translation, no bold,
+  equations as LaTeX read from the page image, references as a list, and how
+  the text layer mangles ranges (`21e400` for 21–400) and ligatures.
 - Never accept a sub-agent's own statement that its pages are correct. Check
   in step 4.
 

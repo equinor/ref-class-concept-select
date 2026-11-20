@@ -7,3 +7,5 @@ sodir,"Sodir FactPages tables, dated snapshots in data/sodir",https://factpages.
 npd_archive,"Archived captures of the NPD (now Sodir) FactPages from the Internet Archive, saved in data/npd_archive",https://web.archive.org,
 ssb_cpi,"Statistics Norway table 03014, consumer price index, annual; snapshots in data/public",https://data.ssb.no/api/v0/en/table/03014,
 fred_brent,"FRED series DCOILBRENTEU, Brent crude price, annual average; snapshots in data/public",https://fred.stlouisfed.org/series/DCOILBRENTEU,
+nesvold2022,"Nesvold & Bratvold (2022), Debiasing probabilistic oil production forecasts, Energy 258, 124744; converted in agents/rcf/lib/md",agents/rcf/lib,2022-07
+rcf_study,"Expert reference class study: notebook, prognosis-and-result file for exploration wells, resource-account reserves, Sodir exports; origin of the first two not verified",agents/rcf/study,2026-11

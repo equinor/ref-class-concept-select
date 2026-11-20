@@ -45,7 +45,8 @@ agents/
                    analyses and the plan-versus-outcome report)
   sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
   dmx/             decision structuring and models
-  rcf/             reference class forecasting (lib/ holds reference papers)
+  rcf/             reference class forecasting (rcfkit; skill; lib/ reference papers;
+                   study/ the expert's study; out/ the review and the study)
 data/              manifest of raw data, Sodir snapshots, fact register,
                    converted documents
 docs/              background, data sources, assessment and plan
@@ -66,7 +67,15 @@ two source documents are converted and analysed:
 - [`agents/doc/out/volve-pdo-vs-actual/index.html`](agents/doc/out/volve-pdo-vs-actual/index.html)
   — the plan against the outcome (open in a browser)
 
-Next are the first steps of rcf and dmx; see
+A reference class study of the Norwegian shelf record is done as well:
+
+- [`agents/rcf/out/expert-study-review.md`](agents/rcf/out/expert-study-review.md) — review of
+  the expert's study in `agents/rcf/study`
+- [`agents/rcf/out/volve-rcf-study.md`](agents/rcf/out/volve-rcf-study.md) — the study redone:
+  probability of discovery, volumes, reserves and production against outcomes, and Volve in
+  that record (web pages in the folders of the same names)
+
+Next is the first step of dmx; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
 
 ## Attribution

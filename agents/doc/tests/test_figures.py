@@ -36,3 +36,10 @@ def test_labels_join_the_figure_but_headings_body_text_and_captions_do_not():
     result = with_labels(box, [caption, axis_label, inside, heading, paragraph, below], caption)
 
     assert result == (84, 100, 300, 250)
+
+
+def test_journal_captions_end_the_number_with_a_full_stop():
+    assert caption_numbers("Fig. 9. 90% confidence interval", "Fig.", "journal") == ["9"]
+    assert caption_numbers("Fig. A.16. Example of forecasts", "Fig.", "journal") == ["A.16"]
+    assert caption_numbers("Fig. 8 shows an example operator forecast", "Fig.", "journal") == []
+    assert caption_numbers("end of body text\nFig. 1. General problem", "Fig.", "journal") == ["1"]
