@@ -78,7 +78,23 @@ Your staged change to logs/prompts_x1c.txt is left uncommitted.
 
 
 
+____________________________________________________________
 [prompt:]
+
+A powerpoint slide deck has been created to summarize the
+results. The powerpoint is here: 
+/agents/sys/out/rcf_volve_v2.pptx
+
+Make this slide into an html webpage for
+presentation, use the original figures from the reports. 
+
+In addition, add slides 3, 6, 12 and 13 from /agents/sys/out/workflow-deck into the webpage slide as follows:
+
+Add slide 3 from workflow-deck as slide 4 in the powerpoint.
+Add slides 6, 12 and 13 at the end.
+
+____________________________________________________________
+# result
 
 
 
