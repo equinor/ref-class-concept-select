@@ -81,6 +81,12 @@ The two come together in a first decision analysis:
   concept selection on a volume basis recalibrated with the reference class (web page in the
   folder of the same name)
 
+An overview for presentation — the workflow, the agents, the first use and the main
+results — is the slide deck
+[`agents/sys/out/workflow-deck/index.html`](agents/sys/out/workflow-deck/index.html) (open
+in a browser; arrow keys to move, F for full screen). Its diagrams are also separate files
+in `figs/`.
+
 Next is the full decision model of the concept choice; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
 

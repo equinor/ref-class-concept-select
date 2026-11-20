@@ -66,6 +66,9 @@ that does not exist.
 | `src/syskit/public.py` | Download snapshots of public price series to `data/public/` |
 | `src/syskit/charts.py` | A chart described once, drawn as an interactive figure and as a PNG |
 | `src/syskit/report.py` | A report written once, rendered as Markdown and as a self-contained web page |
+| `src/syskit/svg.py` | Diagrams as SVG, written from code |
+| `src/syskit/slides.py` | A slide deck as one web page, for a large screen |
+| `src/syskit/workflow_deck.py` | The deck on this repository's workflow and what it has been used for |
 | `tests/` | Tests for `syskit` |
 
 ## Agent profiles
@@ -76,3 +79,11 @@ A profile only names the charter and guidelines to read; behaviour is defined
 in the charter. The `description` value must be quoted: an unquoted colon in it
 makes the CLI drop the profile silently. To confirm all profiles load, run
 `copilot --agent none -p x`; the error lists the available agents.
+
+## Deliverables
+
+| Output | Content |
+|---|---|
+| `out/in-place-comparison.md` | Oil in place at Volve: PDO, Sodir and the simulation model at three points in time |
+| `out/workflow-deck/index.html` | Slide deck for a large screen: the workflow, the agents, how a number travels, the first use, the main results of each report, the original and the modified development plan. `make deck` rebuilds it |
+| `out/workflow-deck/figs/` | The deck's diagrams as separate SVG files, among them `use-case.svg` (what the workflow has been used for), `flow-chart.svg` (its steps) and `concept-comparison.svg` (the 2005 plan beside the modified plan) |

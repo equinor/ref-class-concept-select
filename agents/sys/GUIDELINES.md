@@ -217,6 +217,7 @@ or was skipped.
   | `make doc-volve` | Rebuild plot data, facts, redrawn charts and the report (doc) |
   | `make rcf-volve` | Rebuild the review of the expert study, the reference class study and its tables (rcf) |
   | `make dmx-volve` | Rebuild the report on the Volve concept selection and its tables (dmx) |
+  | `make deck` | Rebuild the slide deck on the workflow and its first use (sys) |
   | `make format` | Apply lint fixes and formatting |
 
 - Shared code is the `syskit` package in `agents/sys/src/`; sim's code is

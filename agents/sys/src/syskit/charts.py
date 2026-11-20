@@ -124,12 +124,29 @@ class Chart:
         )
 
     def png(self, path: Path, dpi: int = 130) -> None:
+        self._draw(path, dpi=dpi)
+
+    def svg(self, path: Path, scale: float = 1.0, size: tuple[float, float] = (8.4, 4.8)) -> None:
+        """The chart as a vector image; ``scale`` enlarges the lettering, e.g. for slides."""
+        self._draw(path, scale=scale, size=size)
+
+    def _draw(
+        self,
+        path: Path,
+        dpi: int = 130,
+        scale: float = 1.0,
+        size: tuple[float, float] = (8.4, 4.8),
+    ) -> None:
         import matplotlib
 
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
 
-        figure, axes = plt.subplots(figsize=(8.4, 4.8))
+        with plt.rc_context({"font.size": 10 * scale}):
+            self._plot(plt, path, dpi, scale, size)
+
+    def _plot(self, plt, path: Path, dpi: int, scale: float, size: tuple[float, float]) -> None:
+        figure, axes = plt.subplots(figsize=size)
         bars = [s for s in self.series if s.kind == "bar"]
         # Bars sit at whole-number positions; other series on a bar chart follow them.
         place = {value: index for index, value in enumerate(bars[0].x)} if bars else {}
@@ -137,9 +154,13 @@ class Chart:
             style = {"color": s.color, "label": s.name or None}
             if s.kind == "line":
                 x = [place.get(v, v) for v in s.x]
-                axes.plot(x, s.y, linewidth=s.width, linestyle="--" if s.dash else "-", **style)
+                axes.plot(
+                    x, s.y, linewidth=s.width * scale, linestyle="--" if s.dash else "-", **style
+                )
             elif s.kind == "markers":
-                axes.scatter(s.x, s.y, s=s.size**2 * 0.6, alpha=s.opacity, linewidths=0, **style)
+                axes.scatter(
+                    s.x, s.y, s=s.size**2 * 0.6 * scale, alpha=s.opacity, linewidths=0, **style
+                )
             elif s.kind == "band":
                 axes.fill_between(s.x, s.low, s.high, alpha=0.16 * s.opacity, linewidth=0, **style)
             elif s.kind == "bar":
@@ -154,9 +175,16 @@ class Chart:
                     [h - v for h, v in zip(s.high, s.y, strict=True)],
                 ]
                 axes.errorbar(
-                    s.x, s.y, yerr=errors, fmt="o-" if s.connect else "o", markersize=s.size * 0.7,
-                    capsize=3, linewidth=s.width if s.connect else 0, elinewidth=1.2, **style,
-                )  # fmt: skip
+                    s.x,
+                    s.y,
+                    yerr=errors,
+                    fmt="o-" if s.connect else "o",
+                    markersize=s.size * 0.7 * scale,
+                    capsize=3 * scale,
+                    linewidth=s.width * scale if s.connect else 0,
+                    elinewidth=1.2 * scale,
+                    **style,
+                )
         labels = [str(v) for s in self.series for v in s.x if isinstance(v, str)]
         if sum(len(v) for v in set(labels)) > 70:
             axes.tick_params(axis="x", labelrotation=20)
@@ -170,7 +198,7 @@ class Chart:
             axes.set_xlim(*self.x_range)
         if self.y_range:
             axes.set_ylim(*self.y_range)
-        axes.set_title(self.title, loc="left", fontsize=12)
+        axes.set_title(self.title, loc="left", fontsize=12 * scale)
         axes.set_xlabel(self.x_title)
         axes.set_ylabel(self.y_title)
         axes.grid(True, color="#e2e8f0", linewidth=0.8)
@@ -178,7 +206,7 @@ class Chart:
         for side in ("top", "right"):
             axes.spines[side].set_visible(False)
         if any(s.name for s in self.series):
-            axes.legend(frameon=False, fontsize=9, loc="best")
+            axes.legend(frameon=False, fontsize=9 * scale, loc="best")
         figure.tight_layout()
         path.parent.mkdir(parents=True, exist_ok=True)
         figure.savefig(path, dpi=dpi)
