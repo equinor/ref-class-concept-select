@@ -83,3 +83,4 @@ dmx-volve:
 deck:
 	uv run python -m syskit.workflow_deck build
 	uv run python -m syskit.rcf_volve_deck build
+	uv run python -m syskit.rcf_volve_pptx build

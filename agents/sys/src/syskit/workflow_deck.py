@@ -559,10 +559,10 @@ def concept_comparison(r: dict) -> Svg:
     return s
 
 
-def changes_slide(deck: Deck, r: dict) -> None:
-    """The slide that sets the 2005 plan beside the modified plan, element by element."""
+def changes_rows(r: dict) -> list[tuple[str, str, str]]:
+    """Element, 2005 plan, modified plan: the rows of the comparison."""
     p, m, w = r["pdo"], r["metrics"], r["west"]
-    rows = [
+    return [
         ("Concept", "Leased jack-up, storage vessel, gas to Sleipner A", "Unchanged"),
         ("Volume basis", f"{p['closure']['mean']:.1f} million Sm3 (mean)",
          f"East {p['east']['mean']:.1f} committed; West "
@@ -575,6 +575,11 @@ def changes_slide(deck: Deck, r: dict) -> None:
          f"about {m['Calibrated']['reserves_p50']:.0f}, low case "
          f"{m['Calibrated']['reserves_p90']:.1f}"),
     ]  # fmt: skip
+
+
+def changes_slide(deck: Deck, r: dict) -> None:
+    """The slide that sets the 2005 plan beside the modified plan, element by element."""
+    rows = changes_rows(r)
     body = "".join(f'<tr><td>{a}</td><td>{b}</td><td class="new">{c}</td></tr>' for a, b, c in rows)
     deck.slide(
         "What changes",

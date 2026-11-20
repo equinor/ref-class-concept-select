@@ -87,7 +87,8 @@ results — is the slide deck
 in a browser; arrow keys to move, F for full screen). Its diagrams are also separate files
 in `figs/`. The results presentation is
 [`agents/sys/out/rcf_volve_v2/index.html`](agents/sys/out/rcf_volve_v2/index.html), made from
-`rcf_volve_v2.pptx`.
+`rcf_volve_v2.pptx`; the same ten slides as a PowerPoint file are in
+[`agents/sys/out/rcf_volve_v2_extended.pptx`](agents/sys/out/rcf_volve_v2_extended.pptx).
 
 Next is the full decision model of the concept choice; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.

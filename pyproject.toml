@@ -44,11 +44,13 @@ dmx = [
     "scipy>=1.18.1",
 ]
 doc = [
+    "cairosvg>=2.9.1",
     "matplotlib>=3.11.2",
     "openpyxl>=3.1.5",
     "pandas>=3.1.1",
     "plotly>=7.1.0",
     "pymupdf>=2.1",
+    "python-pptx>=1.0.2",
 ]
 rcf = [
     "matplotlib>=3.11.2",

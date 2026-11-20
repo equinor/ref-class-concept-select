@@ -71,6 +71,7 @@ that does not exist.
 | `src/syskit/workflow_deck.py` | The deck on this repository's workflow and what it has been used for |
 | `src/syskit/pptx.py` | Read a PowerPoint file and lay its slides out as HTML |
 | `src/syskit/rcf_volve_deck.py` | The presentation `rcf_volve_v2.pptx` as a web page, with four slides of the workflow deck |
+| `src/syskit/rcf_volve_pptx.py` | The same presentation, with the same additions, as a PowerPoint file |
 | `tests/` | Tests for `syskit` |
 
 ## Agent profiles
@@ -90,4 +91,5 @@ makes the CLI drop the profile silently. To confirm all profiles load, run
 | `out/workflow-deck/index.html` | Slide deck for a large screen: the workflow, the agents, how a number travels, the first use, the main results of each report, the original and the modified development plan. `make deck` rebuilds it |
 | `out/rcf_volve_v2.pptx` | The results presentation "Bias Busting Decision Analysis" (PowerPoint, made by the user) |
 | `out/rcf_volve_v2/index.html` | The same presentation as a web page: its seven slides laid out as in the file, with the original figure files; the agents diagram on its slide 4; the first use, the two plans and what changes at the end. `figures.csv` lists where each picture comes from. `make deck` rebuilds it |
+| `out/rcf_volve_v2_extended.pptx` | The web presentation as a PowerPoint file: the seven slides of `rcf_volve_v2.pptx` unchanged, the agents diagram added on slide 4, three slides at the end. The diagrams are pictures; "What changes" is a table that can be edited. `make deck` rebuilds it (needs the system library `libcairo2`) |
 | `out/workflow-deck/figs/` | The deck's diagrams as separate SVG files, among them `use-case.svg` (what the workflow has been used for), `flow-chart.svg` (its steps) and `concept-comparison.svg` (the 2005 plan beside the modified plan) |
