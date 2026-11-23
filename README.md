@@ -34,27 +34,6 @@ make check    # verify raw data against the manifest, validate facts, test, lint
 To work as a domain agent in Copilot CLI: `copilot --agent doc` (or `sys`,
 `sim`, `dmx`, `rcf`), or `/agent` inside a session.
 
-## Layout
-
-```
-AGENTS.md          rules loaded by every agent session
-.github/agents/    Copilot CLI profile per domain
-agents/
-  sys/             organisation, conventions, integration, QA; shared code (syskit)
-  doc/             document conversion, extraction, reports (dockit; skill; out/ has the
-                   analyses and the plan-versus-outcome report)
-  sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
-  dmx/             decision structuring and models (dmxkit; out/ the concept analysis)
-  rcf/             reference class forecasting (rcfkit; skill; lib/ reference papers;
-                   study/ the expert's study; out/ the review and the study)
-data/              manifest of raw data, Sodir snapshots, fact register,
-                   converted documents
-docs/              background, data sources, assessment and plan
-logs/              user prompt logs, one file per machine
-pyproject.toml     environment: one dependency group per domain (uv.lock pins it)
-Makefile           setup, check and data commands
-```
-
 ## Status
 
 The infrastructure is in place, the simulation deck runs in OPM Flow, and the
@@ -92,6 +71,25 @@ in `figs/`. The results presentation is
 
 Next is the full decision model of the concept choice; see
 [`docs/startup-assessment.md`](docs/startup-assessment.md) §7–8.
+
+## Layout
+
+```
+AGENTS.md          rules loaded by every agent session
+.github/agents/    Copilot CLI profile per domain
+agents/
+  sys/             organisation, conventions, integration, QA; shared code (syskit)
+  doc/             document conversion, extraction, reports (dockit; skill; out/ has the
+                   analyses and the plan-versus-outcome report)
+  sim/             reservoir simulation and analysis (simkit; Flow version of the deck)
+  dmx/             decision structuring and models (dmxkit; out/ the concept analysis)
+  rcf/             reference class forecasting (rcfkit; skill; lib/ reference papers;
+                   study/ the expert's study; out/ the review and the study)
+data/              manifest of raw data, Sodir snapshots, fact register,
+                   converted documents
+volve/             volve data, PUD, eclipse deck, production data
+Makefile           setup, check and data commands
+```
 
 ## Attribution
 
