@@ -1,0 +1,2779 @@
+<eclipse>
+<warning date="31/12/2007" time="0.00000000000000">
+ PARAOPTS ITEM 2 HAS BEEN DEFAULTED OR SET TO ZERO.                      
+ OUTPUT FROM SLAVE PROCESSORS MAY BE LOST                                
+</warning>
+<message date="31/12/2007" time="0.00000000000000">
+     72   PINCH-OUT CONNECTIONS GENERATED                                
+</message>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (3,37,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (4,37,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (5,37,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (3,38,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (4,38,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (5,38,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (3,39,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (4,39,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (5,39,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THE PORE VOLUME FOR CELL (6,39,1) HAS BEEN CHANGED                      
+ IN THE EDIT SECTION. THE CORRESPONDING                                  
+ POROSITY WILL NOT BE UPDATED BUT MAY STILL BE                           
+ USED IN SOME CALCULATIONS.                                              
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ NO FURTHER MESSAGES ABOUT                                               
+ PORE VOLUMES CHANGED IN THE EDIT SECTION                                
+ WILL BE EMITTED FROM PROCESS 4                                          
+</warning>
+<message date="31/12/2007" time="0.00000000000000">
+ THE OUTPUT LIMIT FOR THESE MESSAGES                                     
+ CAN BE CHANGED WITH ITEM 13 OF THE                                      
+ MESSAGES KEYWORD OR WITH ITEM 220                                       
+ OF THE OPTIONS KEYWORD.                                                 
+</message>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE ARE        1 PORE VOLUMES IN THE EDIT SECTION                     
+ WHICH ACTIVATE CELLS WHICH HAVE PREVIOUSLY                              
+ BEEN MADE INACTIVE BY ACTNUM, MINPV OR MINPVV KEYWORDS.                 
+ FOR A FULL LISTING SET MNEMONIC PORV &gt; 1 IN RPTGRID                  
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ A TOTAL OF 19977 CELLS HAVE BECOME INACTIVE BECAUSE                     
+ THEY HAD A PORE VOLUME LESS THAN THAT SUPPLIED VIA THE                  
+ MINPV OR MINPVV KEYWORDS IN THE GRID SECTION.                           
+</warning>
+<message date="31/12/2007" time="0.00000000000000">
+ PRE-PROCESSING HAS FOUND NON-NEIGHBOUR CONNECTIONS                      
+ WHICH EITHER JOIN ADJACENT CELLS OR CAN BE TREATED AS A                 
+ NORMAL CONNECTION. THE TRANSMISSIBILITY HAS BEEN ADDED TO               
+ THE APPROPRIATE CELL TRANSMISSIBILITY AND THE                           
+ NON-NEIGHBOUR CONNECTION REMOVED FROM THE SIMULATION                    
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+ 1 NNCS REMOVED FROM PROCESSOR 4 DURING PRE-PROCESSING                   
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+ A FULL LISTING OF THESE NNCS CAN BE OBTAINED BY SETTING                 
+ THE ALLNNC MNEMONIC IN RPTGRID. THE OUTPUT HAS THE                      
+ TITLE MNEMONIC DEL-NNC                                                  
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+       28 NON-NEIGHBOUR CONNECTIONS HAVE BEEN IGNORED                    
+ AS THEIR TRANSMISSIBILITY IS LESS THAN 0.100000E-05                     
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+ 29301 NON-NEIGHBOUR CONNECTIONS PRESENT                                 
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+    86658 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   77  32   1 AND   78  32   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   73  33   1 AND   74  33   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   77  33   1 AND   78  33   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   77  34   1 AND   78  34   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   78  35   1 AND   79  35   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   78  36   1 AND   79  36   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   78  37   1 AND   79  37   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   78  38   1 AND   79  38   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   77  39   1 AND   78  39   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ THERE IS A TRANSMISSIBILITY IN THE  X  DIRECTION                        
+ BETWEEN CELLS   77  40   1 AND   78  40   1. THESE CELLS ARE            
+ IN DIFFERENT PVT REGIONS                                                
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ NO FURTHER MESSAGES ABOUT                                               
+ PVT REGION CONNECTION CONSISTENCY                                       
+ WILL BE EMITTED FROM PROCESS 4                                          
+</warning>
+<message date="31/12/2007" time="0.00000000000000">
+ THE OUTPUT LIMIT FOR THESE MESSAGES                                     
+ CAN BE CHANGED WITH ITEM 13 OF THE                                      
+ MESSAGES KEYWORD OR WITH ITEM 220                                       
+ OF THE OPTIONS KEYWORD.                                                 
+</message>
+<warning date="31/12/2007" time="0.00000000000000">
+ MAXIMUM RS IN EQUILIBRATION REGION 1                                    
+ IS GREATER THAN THE MAXIMUM VALUE ENTERED                               
+ IN THE PVTO TABLE NUMBER 1. THIS MAY LEAD TO PVT                        
+ TABLE EXTRAPOLATION. THIS MESSAGE WILL                                  
+ NOT BE REPEATED                                                         
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ EQUILIBRATION REGION      12 HAS NO ACTIVE CELLS                        
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ DEFAULTED CONNECTIONS FOLLOWINGCOPT     OVERFLOWS SUMMARY LIST          
+ SEE SMRYDIMS KEYWORD IN RUNSPEC                                         
+ EXCESS HAS BEEN IGNORED                                                 
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ KEYWORD WTPR2FB  IGNORED BECAUSE IT OVERFLOWS THE SUMMARY LIST          
+ SEE SMRYDIMS KEYWORD IN RUNSPEC                                         
+ THE EXCESS HAS BEEN DISCARDED                                           
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ KEYWORD WTPT2FB  IGNORED BECAUSE IT OVERFLOWS THE SUMMARY LIST          
+ SEE SMRYDIMS KEYWORD IN RUNSPEC                                         
+ THE EXCESS HAS BEEN DISCARDED                                           
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ KEYWORD WTPR4FB  IGNORED BECAUSE IT OVERFLOWS THE SUMMARY LIST          
+ SEE SMRYDIMS KEYWORD IN RUNSPEC                                         
+ THE EXCESS HAS BEEN DISCARDED                                           
+</warning>
+<warning date="31/12/2007" time="0.00000000000000">
+ KEYWORD WTPT4FB  IGNORED BECAUSE IT OVERFLOWS THE SUMMARY LIST          
+ SEE SMRYDIMS KEYWORD IN RUNSPEC                                         
+ THE EXCESS HAS BEEN DISCARDED                                           
+</warning>
+<comment date="31/12/2007" time="0.00000000000000">
+ THE HISTORY MATCHING WELL CONTROL MODES SET IN                          
+ SUBSEQUENT WCONHIST KEYWORDS WILL BE OVER-RIDDEN                        
+ WITH THE CONTROL MODE RESV                                              
+</comment>
+<message date="31/12/2007" time="0.00000000000000">
+ DRSDT KEYWORD HAS NOT BEEN ENTERED, SO THE                              
+ MAXIMUM GAS RE-SOLUTION RATE IS DEFAULTED TO INFINITY.                  
+</message>
+<message date="31/12/2007" time="0.00000000000000">
+ RESTART FILE WRITTEN   REPORT     0                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<message date="10/4/2008" time="101.00000000000000">
+ RESTART FILE WRITTEN   REPORT    11                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="20/4/2008" time="111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/4/2008" time="121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/5/2008" time="131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/5/2008" time="141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/5/2008" time="151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/6/2008" time="161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/6/2008" time="171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/6/2008" time="181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/7/2008" time="191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/7/2008" time="201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/7/2008" time="211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="8/8/2008" time="221.00000000000000">
+ RESTART FILE WRITTEN   REPORT    25                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="8/8/2008" time="221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/8/2008" time="231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/8/2008" time="231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/8/2008" time="241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/8/2008" time="241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/9/2008" time="251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/9/2008" time="251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/9/2008" time="261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/9/2008" time="261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/9/2008" time="271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/9/2008" time="271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/10/2008" time="281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/10/2008" time="281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/10/2008" time="291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/10/2008" time="291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/10/2008" time="301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/10/2008" time="301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/11/2008" time="311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/11/2008" time="311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/11/2008" time="321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/11/2008" time="321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/11/2008" time="331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/11/2008" time="331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="6/12/2008" time="341.00000000000000">
+ RESTART FILE WRITTEN   REPORT    37                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="6/12/2008" time="341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/12/2008" time="341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/12/2008" time="351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/12/2008" time="351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/12/2008" time="361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/12/2008" time="361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/1/2009" time="371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/1/2009" time="371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/1/2009" time="381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/1/2009" time="381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/1/2009" time="391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/1/2009" time="391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/2/2009" time="401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/2/2009" time="401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/2/2009" time="411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/2/2009" time="411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/2/2009" time="421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/2/2009" time="421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/3/2009" time="431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/3/2009" time="431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/3/2009" time="441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/3/2009" time="441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/3/2009" time="451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/3/2009" time="451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="5/4/2009" time="461.00000000000000">
+ RESTART FILE WRITTEN   REPORT    52                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="5/4/2009" time="461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/4/2009" time="461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/4/2009" time="471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/4/2009" time="471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/4/2009" time="481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/4/2009" time="481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/5/2009" time="491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/5/2009" time="491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/5/2009" time="501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/5/2009" time="501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/5/2009" time="511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/5/2009" time="511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/6/2009" time="521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/6/2009" time="521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/6/2009" time="531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/6/2009" time="531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/6/2009" time="541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/6/2009" time="541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/7/2009" time="551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/7/2009" time="551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/7/2009" time="561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/7/2009" time="561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/7/2009" time="571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/7/2009" time="571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="3/8/2009" time="581.00000000000000">
+ RESTART FILE WRITTEN   REPORT    64                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="3/8/2009" time="581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/8/2009" time="581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/8/2009" time="591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/8/2009" time="591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/8/2009" time="601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/8/2009" time="601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/9/2009" time="611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/9/2009" time="611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/9/2009" time="621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/9/2009" time="621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/9/2009" time="631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/9/2009" time="631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/10/2009" time="641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/10/2009" time="641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/10/2009" time="651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/10/2009" time="651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/10/2009" time="661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/10/2009" time="661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/11/2009" time="671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/11/2009" time="671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/11/2009" time="681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/11/2009" time="681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/11/2009" time="691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/11/2009" time="691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="1/12/2009" time="701.00000000000000">
+ RESTART FILE WRITTEN   REPORT    76                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="1/12/2009" time="701.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/12/2009" time="701.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/12/2009" time="711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/12/2009" time="711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/12/2009" time="721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/12/2009" time="721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/12/2009" time="731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/12/2009" time="731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/1/2010" time="741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/1/2010" time="741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/1/2010" time="751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/1/2010" time="751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/1/2010" time="761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/1/2010" time="761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/2/2010" time="771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/2/2010" time="771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/2/2010" time="781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/2/2010" time="781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/3/2010" time="791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/3/2010" time="791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/3/2010" time="801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/3/2010" time="801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/3/2010" time="811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/3/2010" time="811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/3/2010" time="821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/3/2010" time="821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="10/4/2010" time="831.00000000000000">
+ RESTART FILE WRITTEN   REPORT    89                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="10/4/2010" time="831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/4/2010" time="831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/4/2010" time="841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/4/2010" time="841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/4/2010" time="851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/4/2010" time="851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/5/2010" time="861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/5/2010" time="861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/5/2010" time="871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/5/2010" time="871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/5/2010" time="881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/5/2010" time="881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/6/2010" time="891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/6/2010" time="891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/6/2010" time="901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/6/2010" time="901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/6/2010" time="911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/6/2010" time="911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/7/2010" time="921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/7/2010" time="921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/7/2010" time="931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/7/2010" time="931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/7/2010" time="941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/7/2010" time="941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="8/8/2010" time="951.00000000000000">
+ RESTART FILE WRITTEN   REPORT   101                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="8/8/2010" time="951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/8/2010" time="951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/8/2010" time="961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/8/2010" time="961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/8/2010" time="971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/8/2010" time="971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/9/2010" time="981.00000000000000">
+ THE EFFICIENCY FACTOR FOR WELL I-F-4                                    
+ IS GREATER THAN ONE.                                                    
+</warning>
+<warning date="7/9/2010" time="981.00000000000000">
+ THE EFFICIENCY FACTOR FOR WELL I-F-5                                    
+ IS GREATER THAN ONE.                                                    
+</warning>
+<warning date="7/9/2010" time="981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/9/2010" time="981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/9/2010" time="991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/9/2010" time="991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/9/2010" time="1001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/9/2010" time="1001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/10/2010" time="1011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/10/2010" time="1011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/10/2010" time="1021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/10/2010" time="1021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/10/2010" time="1031.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/10/2010" time="1031.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/11/2010" time="1041.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/11/2010" time="1041.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/11/2010" time="1051.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/11/2010" time="1051.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/11/2010" time="1061.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/11/2010" time="1061.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="6/12/2010" time="1071.00000000000000">
+ RESTART FILE WRITTEN   REPORT   116                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="6/12/2010" time="1071.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/12/2010" time="1071.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/12/2010" time="1081.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/12/2010" time="1081.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/12/2010" time="1091.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/12/2010" time="1091.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/1/2011" time="1101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/1/2011" time="1101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/1/2011" time="1111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/1/2011" time="1111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/1/2011" time="1121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/1/2011" time="1121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/2/2011" time="1131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/2/2011" time="1131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/2/2011" time="1141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/2/2011" time="1141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/2/2011" time="1151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/2/2011" time="1151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/3/2011" time="1161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/3/2011" time="1161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/3/2011" time="1171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/3/2011" time="1171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/3/2011" time="1181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/3/2011" time="1181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="5/4/2011" time="1191.00000000000000">
+ RESTART FILE WRITTEN   REPORT   128                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="5/4/2011" time="1191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/4/2011" time="1191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/4/2011" time="1201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/4/2011" time="1201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/4/2011" time="1211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/4/2011" time="1211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/5/2011" time="1221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/5/2011" time="1221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/5/2011" time="1231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/5/2011" time="1231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/5/2011" time="1241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/5/2011" time="1241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/6/2011" time="1251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/6/2011" time="1251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/6/2011" time="1261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/6/2011" time="1261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/6/2011" time="1271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/6/2011" time="1271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/7/2011" time="1281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/7/2011" time="1281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/7/2011" time="1291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/7/2011" time="1291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/7/2011" time="1301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/7/2011" time="1301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="3/8/2011" time="1311.00000000000000">
+ RESTART FILE WRITTEN   REPORT   140                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="3/8/2011" time="1311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/8/2011" time="1311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/8/2011" time="1321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/8/2011" time="1321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/8/2011" time="1331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/8/2011" time="1331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/9/2011" time="1341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/9/2011" time="1341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/9/2011" time="1351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/9/2011" time="1351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/9/2011" time="1361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/9/2011" time="1361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/10/2011" time="1371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/10/2011" time="1371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/10/2011" time="1381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/10/2011" time="1381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/10/2011" time="1391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/10/2011" time="1391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/11/2011" time="1401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/11/2011" time="1401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/11/2011" time="1411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/11/2011" time="1411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/11/2011" time="1421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/11/2011" time="1421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="1/12/2011" time="1431.00000000000000">
+ RESTART FILE WRITTEN   REPORT   152                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="1/12/2011" time="1431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/12/2011" time="1431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/12/2011" time="1441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/12/2011" time="1441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/12/2011" time="1451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/12/2011" time="1451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/12/2011" time="1461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/12/2011" time="1461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/1/2012" time="1471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/1/2012" time="1471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/1/2012" time="1481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/1/2012" time="1481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/1/2012" time="1491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/1/2012" time="1491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/2/2012" time="1501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/2/2012" time="1501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/2/2012" time="1511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/2/2012" time="1511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/2/2012" time="1521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/2/2012" time="1521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/3/2012" time="1531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/3/2012" time="1531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/3/2012" time="1541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/3/2012" time="1541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/3/2012" time="1551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/3/2012" time="1551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="9/4/2012" time="1561.00000000000000">
+ RESTART FILE WRITTEN   REPORT   165                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="9/4/2012" time="1561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/4/2012" time="1561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/4/2012" time="1571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/4/2012" time="1571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/4/2012" time="1581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/4/2012" time="1581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/5/2012" time="1591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/5/2012" time="1591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/5/2012" time="1601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/5/2012" time="1601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/5/2012" time="1611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/5/2012" time="1611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/6/2012" time="1621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/6/2012" time="1621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/6/2012" time="1631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/6/2012" time="1631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/6/2012" time="1641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/6/2012" time="1641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/7/2012" time="1651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/7/2012" time="1651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/7/2012" time="1661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/7/2012" time="1661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/7/2012" time="1671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/7/2012" time="1671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="7/8/2012" time="1681.00000000000000">
+ RESTART FILE WRITTEN   REPORT   177                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="7/8/2012" time="1681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/8/2012" time="1681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/8/2012" time="1691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/8/2012" time="1691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/9/2012" time="1711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/9/2012" time="1711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/9/2012" time="1721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/9/2012" time="1721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/9/2012" time="1731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/9/2012" time="1731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/10/2012" time="1741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/10/2012" time="1741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/10/2012" time="1751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/10/2012" time="1751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/10/2012" time="1761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/10/2012" time="1761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/11/2012" time="1771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/11/2012" time="1771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/11/2012" time="1781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/11/2012" time="1781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/11/2012" time="1791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/11/2012" time="1791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="5/12/2012" time="1801.00000000000000">
+ RESTART FILE WRITTEN   REPORT   189                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="5/12/2012" time="1801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/12/2012" time="1801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/12/2012" time="1811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/12/2012" time="1811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/12/2012" time="1821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/12/2012" time="1821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/1/2013" time="1831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/1/2013" time="1831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/1/2013" time="1841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/1/2013" time="1841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/1/2013" time="1851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/1/2013" time="1851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/2/2013" time="1861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/2/2013" time="1861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/2/2013" time="1871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/2/2013" time="1871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/2/2013" time="1881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/2/2013" time="1881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/3/2013" time="1891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/3/2013" time="1891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/3/2013" time="1901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/3/2013" time="1901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/3/2013" time="1911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/3/2013" time="1911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="4/4/2013" time="1921.00000000000000">
+ RESTART FILE WRITTEN   REPORT   201                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="4/4/2013" time="1921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/4/2013" time="1921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/4/2013" time="1931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/4/2013" time="1931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/4/2013" time="1941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/4/2013" time="1941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/5/2013" time="1951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/5/2013" time="1951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/5/2013" time="1961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/5/2013" time="1961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/5/2013" time="1971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/5/2013" time="1971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/6/2013" time="1981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/6/2013" time="1981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/6/2013" time="1991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/6/2013" time="1991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/6/2013" time="1991.00000000000000">
+ THE EFFICIENCY FACTOR FOR WELL I-F-4                                    
+ IS GREATER THAN ONE.                                                    
+</warning>
+<warning date="13/6/2013" time="1991.00000000000000">
+ THE EFFICIENCY FACTOR FOR WELL I-F-5                                    
+ IS GREATER THAN ONE.                                                    
+</warning>
+<warning date="23/6/2013" time="2001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/6/2013" time="2001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/7/2013" time="2011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/7/2013" time="2011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/7/2013" time="2021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/7/2013" time="2021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/7/2013" time="2031.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/7/2013" time="2031.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="2/8/2013" time="2041.00000000000000">
+ RESTART FILE WRITTEN   REPORT   213                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+</message>
+<warning date="2/8/2013" time="2041.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/8/2013" time="2041.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/8/2013" time="2051.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/8/2013" time="2051.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/8/2013" time="2061.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/8/2013" time="2061.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/9/2013" time="2071.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/9/2013" time="2071.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/9/2013" time="2081.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/9/2013" time="2081.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/9/2013" time="2091.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/9/2013" time="2091.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/10/2013" time="2101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/10/2013" time="2101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/10/2013" time="2101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/10/2013" time="2111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/10/2013" time="2111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/10/2013" time="2111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/10/2013" time="2121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/10/2013" time="2121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/10/2013" time="2121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/10/2013" time="2131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/10/2013" time="2131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/10/2013" time="2131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/11/2013" time="2141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/11/2013" time="2141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/11/2013" time="2141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/11/2013" time="2151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/11/2013" time="2151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/11/2013" time="2161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/11/2013" time="2161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/12/2013" time="2171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/12/2013" time="2171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/12/2013" time="2181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/12/2013" time="2181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/12/2013" time="2181.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/12/2013" time="2191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/12/2013" time="2191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/12/2013" time="2191.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/1/2014" time="2201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/1/2014" time="2201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/1/2014" time="2201.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/1/2014" time="2211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/1/2014" time="2211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/1/2014" time="2211.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/1/2014" time="2221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/1/2014" time="2221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/1/2014" time="2221.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-1B                          
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="8/2/2014" time="2231.00000000000000">
+ RESTART FILE WRITTEN   REPORT   234                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="8/2/2014" time="2231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/2/2014" time="2231.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/2/2014" time="2241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/2/2014" time="2241.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/2/2014" time="2251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/2/2014" time="2251.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/3/2014" time="2261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/3/2014" time="2261.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/3/2014" time="2271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/3/2014" time="2271.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/3/2014" time="2281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/3/2014" time="2281.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/4/2014" time="2291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/4/2014" time="2291.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/4/2014" time="2301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/4/2014" time="2301.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/4/2014" time="2311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/4/2014" time="2311.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="9/5/2014" time="2321.00000000000000">
+ RESTART FILE WRITTEN   REPORT   248                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="9/5/2014" time="2321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/5/2014" time="2321.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/5/2014" time="2331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/5/2014" time="2331.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/5/2014" time="2341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/5/2014" time="2341.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/6/2014" time="2351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/6/2014" time="2351.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/6/2014" time="2361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/6/2014" time="2361.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/6/2014" time="2371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/6/2014" time="2371.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/7/2014" time="2381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/7/2014" time="2381.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/7/2014" time="2391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/7/2014" time="2391.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/7/2014" time="2401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/7/2014" time="2401.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="7/8/2014" time="2411.00000000000000">
+ RESTART FILE WRITTEN   REPORT   257                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="7/8/2014" time="2411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/8/2014" time="2411.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/8/2014" time="2421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/8/2014" time="2421.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/8/2014" time="2431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/8/2014" time="2431.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/9/2014" time="2441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/9/2014" time="2441.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/9/2014" time="2451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/9/2014" time="2451.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/9/2014" time="2461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/9/2014" time="2461.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/10/2014" time="2471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="6/10/2014" time="2471.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/10/2014" time="2481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/10/2014" time="2481.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/10/2014" time="2491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/10/2014" time="2491.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="5/11/2014" time="2501.00000000000000">
+ RESTART FILE WRITTEN   REPORT   266                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="5/11/2014" time="2501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/11/2014" time="2501.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/11/2014" time="2511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/11/2014" time="2511.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/11/2014" time="2521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/11/2014" time="2521.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/12/2014" time="2531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/12/2014" time="2531.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/12/2014" time="2541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/12/2014" time="2541.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/12/2014" time="2551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/12/2014" time="2551.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/1/2015" time="2561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/1/2015" time="2561.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/1/2015" time="2571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/1/2015" time="2571.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/1/2015" time="2581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/1/2015" time="2581.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="3/2/2015" time="2591.00000000000000">
+ RESTART FILE WRITTEN   REPORT   277                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="3/2/2015" time="2591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/2/2015" time="2591.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/2/2015" time="2601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/2/2015" time="2601.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/2/2015" time="2611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/2/2015" time="2611.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/3/2015" time="2621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/3/2015" time="2621.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/3/2015" time="2631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="15/3/2015" time="2631.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/3/2015" time="2641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="25/3/2015" time="2641.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/4/2015" time="2651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/4/2015" time="2651.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/4/2015" time="2661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/4/2015" time="2661.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/4/2015" time="2671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/4/2015" time="2671.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="4/5/2015" time="2681.00000000000000">
+ RESTART FILE WRITTEN   REPORT   286                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="4/5/2015" time="2681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="4/5/2015" time="2681.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/5/2015" time="2691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="14/5/2015" time="2691.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/5/2015" time="2701.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="24/5/2015" time="2701.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/6/2015" time="2711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/6/2015" time="2711.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/6/2015" time="2721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/6/2015" time="2721.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/6/2015" time="2731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/6/2015" time="2731.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/7/2015" time="2741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="3/7/2015" time="2741.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/7/2015" time="2751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="13/7/2015" time="2751.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/7/2015" time="2761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="23/7/2015" time="2761.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="2/8/2015" time="2771.00000000000000">
+ RESTART FILE WRITTEN   REPORT   295                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="2/8/2015" time="2771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="2/8/2015" time="2771.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/8/2015" time="2781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="12/8/2015" time="2781.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/8/2015" time="2791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="22/8/2015" time="2791.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/9/2015" time="2801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/9/2015" time="2801.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/9/2015" time="2811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/9/2015" time="2811.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/9/2015" time="2821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/9/2015" time="2821.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/10/2015" time="2831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="1/10/2015" time="2831.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/10/2015" time="2841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="11/10/2015" time="2841.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/10/2015" time="2851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="21/10/2015" time="2851.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/10/2015" time="2861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="31/10/2015" time="2861.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="10/11/2015" time="2871.00000000000000">
+ RESTART FILE WRITTEN   REPORT   306                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="10/11/2015" time="2871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/11/2015" time="2871.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/11/2015" time="2881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/11/2015" time="2881.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/11/2015" time="2891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/11/2015" time="2891.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/12/2015" time="2901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="10/12/2015" time="2901.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/12/2015" time="2911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="20/12/2015" time="2911.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/12/2015" time="2921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="30/12/2015" time="2921.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/1/2016" time="2931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/1/2016" time="2931.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/1/2016" time="2941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/1/2016" time="2941.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/1/2016" time="2951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/1/2016" time="2951.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="8/2/2016" time="2961.00000000000000">
+ RESTART FILE WRITTEN   REPORT   315                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="8/2/2016" time="2961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/2/2016" time="2961.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/2/2016" time="2971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/2/2016" time="2971.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/2/2016" time="2981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/2/2016" time="2981.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/3/2016" time="2991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="9/3/2016" time="2991.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/3/2016" time="3001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="19/3/2016" time="3001.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/3/2016" time="3011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="29/3/2016" time="3011.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/4/2016" time="3021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-5                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="8/4/2016" time="3021.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/4/2016" time="3031.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/4/2016" time="3041.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="8/5/2016" time="3051.00000000000000">
+ RESTART FILE WRITTEN   REPORT   324                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="8/5/2016" time="3051.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="18/5/2016" time="3061.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="28/5/2016" time="3071.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/6/2016" time="3081.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/6/2016" time="3091.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/6/2016" time="3101.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="7/7/2016" time="3111.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="17/7/2016" time="3121.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="27/7/2016" time="3131.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="6/8/2016" time="3141.00000000000000">
+ RESTART FILE WRITTEN   REPORT   333                                     
+ RESTART INCLUDES INTERBLOCK FLOWS                                       
+                  FLUIDS IN PLACE                                        
+                  BUBBLE AND DEW POINT PRESSURES                         
+</message>
+<warning date="6/8/2016" time="3141.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="16/8/2016" time="3151.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="26/8/2016" time="3161.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<warning date="5/9/2016" time="3171.00000000000000">
+ THE BOTTOM HOLE PRESSURE LIMIT FOR WELL I-F-4                           
+ HAS BEEN DEFAULTED. THE DEFAULT VALUE IS    6891.   BARSA               
+</warning>
+<message date="20/9/2016" time="3186.00000000000000">
+ THE TOP-UP PHASE IS SET TO WATER AS                                     
+ GROUP FIELD    HAS A TARGET OR LIMIT RESERVOIR                          
+ VOLUME RATE OR VOIDAGE REPLACEMENT FRACTION                             
+ FOR WATER INJECTION CONTROL                                             
+</message>
+</eclipse>

@@ -1,0 +1,728 @@
+2016-09-12 10:41:03	Debug   	be-vgrid02	ECLIPSE release: 2015.4
+2016-09-12 10:41:03	Debug   	be-vgrid02	ECLRUN build date: 2015-10-16
+2016-09-12 10:41:03	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:03	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:03	Debug   	be-vgrid02	Current User's configuration file: '/private/mabt/eclrun.config'.
+2016-09-12 10:41:03	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:03	Debug   	be-vgrid02	Looking for network XML configuration file name in :''
+2016-09-12 10:41:03	Debug   	be-vgrid02	Looking for network XML configuration file name in :'/private/mabt/eclrun.config'
+2016-09-12 10:41:03	Debug   	be-vgrid02	Setting up default configuration.
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key shell=/bin/csh
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key putty_priv_key=/private/mabt/putty.ppk
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key ChkLicOnWin=False
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key lsf_licenses=False
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key windows_dirs=['/private/mabt']
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key temp_run_dir=/private/mabt
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key NoLocalQueueAuth=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key IntelMpiSsh=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key EfHttpAuth=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key max_history=300
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key EclEnableFloGridSaveRestore=False
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key isAffinityEnabled=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	Attempt to set nonexistent state key azure_encrypt
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key azure_encrypt=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	Attempt to set nonexistent state key azure_staging
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key azure_staging=
+2016-09-12 10:41:03	Debug   	be-vgrid02	Processing the XML configuration file: '/prog/ecl/grid/macros/eclrun.config'
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key file_mode=BOTH
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key windows_dirs=[u'/', u'/project']
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key temp_run_dir=/private/mabt
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key efport=8080
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key efpath=enginframe
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key program=eclipse
+2016-09-12 10:41:03	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key job_name=VOLVE_2016
+2016-09-12 10:41:03	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:03	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:03	Debug   	be-vgrid02	Remote user name : mabt
+2016-09-12 10:41:03	Debug   	be-vgrid02	Determined queuing system type is: LSF
+2016-09-12 10:41:03	Debug   	be-vgrid02	State key areAbsIncludePathsAllowed=True
+2016-09-12 10:41:03	Debug   	be-vgrid02	Basic keyword parser: False
+2016-09-12 10:41:03	Debug   	be-vgrid02	Failed to find VOLVE_2016 with extension ['.MRKEY'] in []
+2016-09-12 10:41:03	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/GRID_postF1B_Nov2013_locupd_12112013.grdecl
+2016-09-12 10:41:04	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is GRID_postF1B_Nov2013_locupd_12112013.grdecl
+2016-09-12 10:41:04	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/ACTNUM_2013
+2016-09-12 10:41:04	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is ACTNUM_2013
+2016-09-12 10:41:04	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FAULT_NW_NEG.GRDECL
+2016-09-12 10:41:04	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FAULT_NW_NEG.GRDECL
+2016-09-12 10:41:04	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/PHIF_NW
+2016-09-12 10:41:04	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is PHIF_NW
+2016-09-12 10:41:04	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/KLOGH_NW
+2016-09-12 10:41:04	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is KLOGH_NW
+2016-09-12 10:41:04	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/PERMZ_NW
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is PERMZ_NW
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/UH-perm-corr-main-mod13
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is UH-perm-corr-main-mod13
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FLUXNUM_2013
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FLUXNUM_2013
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FAULT_NW-15NOV13.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FAULT_NW-15NOV13.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/CONTACT_MAIN-NW-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is CONTACT_MAIN-NW-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FAULT_MAIN-F14-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FAULT_MAIN-F14-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FAULT_MAIN-F12-F14-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FAULT_MAIN-F12-F14-AP2014.GRDECL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/UH-Upflank-NW-perm-corr
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is UH-Upflank-NW-perm-corr
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/pvt_input_new_combined_PVDG_020610_perch_water_2914m.E100
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is pvt_input_new_combined_PVDG_020610_perch_water_2914m.E100
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/SOF3_NEW_PESS_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is SOF3_NEW_PESS_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/SGFN_NEW_BASE_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is SGFN_NEW_BASE_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/SWFN_NEW_PESS_C15_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is SWFN_NEW_PESS_C15_2TABLES.INCL
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/SWIRR_NW
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is SWIRR_NW
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/pp03_SORW
+2016-09-12 10:41:05	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is pp03_SORW
+2016-09-12 10:41:05	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/pp03_KRW
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is pp03_KRW
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/PVTNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is PVTNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FIPNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FIPNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/EQLNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is EQLNUM_2013
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/FIPNUM13_REMOVAL
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is FIPNUM13_REMOVAL
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/RSVD_input_new_combined_020610_perch_water_2914m.E100
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is RSVD_input_new_combined_020610_perch_water_2914m.E100
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/WELL_WSEG_TRACER_HK3_MA.SUMMARY
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is WELL_WSEG_TRACER_HK3_MA.SUMMARY
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/MOD2013_VOLVE_HM_NTRANS_BASE-SHUT-DEF-F11-BHP-F12-3.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is MOD2013_VOLVE_HM_NTRANS_BASE-SHUT-DEF-F11-BHP-F12-3.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/MOD2010_VOLVE_AMAP2012_WELLS_IOR_N_UPPERHUGIN_L-F15D.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is MOD2010_VOLVE_AMAP2012_WELLS_IOR_N_UPPERHUGIN_L-F15D.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/MOD2013_VOLVE_NW-OPTIONS-SHUT-PF1C_H.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is MOD2013_VOLVE_NW-OPTIONS-SHUT-PF1C_H.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/i_f5_7_ju.ecl
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is i_f5_7_ju.ecl
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/F-12_NOV_10_TEST_2.Ecl
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is F-12_NOV_10_TEST_2.Ecl
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/SCH_010916_10DAYS.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	File name read from keyword INCLUDE; value is SCH_010916_10DAYS.SCH
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key data_files=['VOLVE_2016.DATA']
+2016-09-12 10:41:06	Debug   	be-vgrid02	Analysed VOLVE_2016.DATA
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key input_files=['VOLVE_2016.DATA', 'GRID_postF1B_Nov2013_locupd_12112013.grdecl', 'ACTNUM_2013', 'FAULT_NW_NEG.GRDECL', 'PHIF_NW', 'KLOGH_NW', 'PERMZ_NW', 'UH-perm-corr-main-mod13', 'FLUXNUM_2013', 'FAULT_NW-15NOV13.GRDECL', 'CONTACT_MAIN-NW-AP2014.GRDECL', 'FAULT_MAIN-F14-AP2014.GRDECL', 'FAULT_MAIN-F12-F14-AP2014.GRDECL', 'UH-Upflank-NW-perm-corr', 'pvt_input_new_combined_PVDG_020610_perch_water_2914m.E100', 'SOF3_NEW_PESS_2TABLES.INCL', 'SGFN_NEW_BASE_2TABLES.INCL', 'SWFN_NEW_PESS_C15_2TABLES.INCL', 'SWIRR_NW', 'pp03_SORW', 'pp03_KRW', 'PVTNUM_2013', 'FIPNUM_2013', 'EQLNUM_2013', 'FIPNUM13_REMOVAL', 'RSVD_input_new_combined_020610_perch_water_2914m.E100', 'WELL_WSEG_TRACER_HK3_MA.SUMMARY', 'MOD2013_VOLVE_HM_NTRANS_BASE-SHUT-DEF-F11-BHP-F12-3.SCH', 'MOD2010_VOLVE_AMAP2012_WELLS_IOR_N_UPPERHUGIN_L-F15D.SCH', 'MOD2013_VOLVE_NW-OPTIONS-SHUT-PF1C_H.SCH', 'i_f5_7_ju.ecl', 'F-12_NOV_10_TEST_2.Ecl', 'SCH_010916_10DAYS.SCH']
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key backslash_files=[]
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key licenses=[]
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key processors=4
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key program=eclipse
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Basic keyword parser: False
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:06	Debug   	be-vgrid02	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Searching for executable to run...
+2016-09-12 10:41:06	Debug   	be-vgrid02	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Executable's MPI: 'plmpi'
+2016-09-12 10:41:06	Debug   	be-vgrid02	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:06	Debug   	be-vgrid02	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Searching for executable to run...
+2016-09-12 10:41:06	Debug   	be-vgrid02	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:06	Debug   	be-vgrid02	Executable's MPI: 'plmpi'
+2016-09-12 10:41:06	Debug   	be-vgrid02	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:06	Debug   	be-vgrid02	State key converterTempDir=convert_VOLVE_2016_20160912104106079
+2016-09-12 10:41:06	Debug   	be-vgrid02	Creating HDF temp dir: 'convert_VOLVE_2016_20160912104106079'.
+2016-09-12 10:41:06	Debug   	be-vgrid02	Submitting command eclrun --hostfile LSB_HOSTS  --version 2015.1  --comm plmpi  --debug both  --arch auto  --keepstate eclipse /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Attempt to get nonexistent state key bparallel for keywords
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Submitting : bsub -J VOLVE_2016 -oo VOLVE_2016.OUT -q normal -n 4     eclrun --hostfile LSB_HOSTS  --version 2015.1  --comm plmpi  --debug both  --arch auto  --keepstate eclipse /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016
+2016-09-12 10:41:06	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:06	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:06	Debug   	be-vgrid02	Running : bsub -J VOLVE_2016 -oo VOLVE_2016.OUT -q normal -n 4     eclrun --hostfile LSB_HOSTS  --version 2015.1  --comm plmpi  --debug both  --arch auto  --keepstate eclipse /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016
+2016-09-12 10:41:06	Debug   	be-vgrid02	Process ID is 17367
+2016-09-12 10:41:07	Debug   	be-vgrid02	Job <954183> is submitted to queue <normal>.
+2016-09-12 10:41:07	Debug   	be-vgrid02	Return code is 0
+2016-09-12 10:41:07	Debug   	be-vgrid02	Scraping job submission...Job <954183> is submitted to queue <normal>.
+2016-09-12 10:41:07	Debug   	be-vgrid02	Scrape found job id 954183
+2016-09-12 10:41:07	Debug   	be-vgrid02	Submission returned Job <954183> is submitted to queue <normal>.
+2016-09-12 10:41:07	Message 	be-vgrid02	Job VOLVE_2016 submitted to queue normal with job_id=954183
+2016-09-12 10:41:07	Debug   	be-vgrid02	State key simulation_status=Submitted
+2016-09-12 10:41:07	Debug   	be-vgrid02	State key job_id=954183
+2016-09-12 10:41:07	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:07	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:07	Debug   	be-vgrid02	Found /prog/ecl/grid/macros
+2016-09-12 10:41:07	Debug   	be-vgrid02	Platform: system=Linux hostname=be-vgrid02 release=2.6.32-431.17.1.el6.x86_64 os_version=#1 SMP Fri Apr 11 17:27:00 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:07	Debug   	be-vgrid02	Running : bjobs 954183
+2016-09-12 10:41:07	Debug   	be-vgrid02	Process ID is 17376
+2016-09-12 10:41:07	Debug   	be-vgrid02	JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+2016-09-12 10:41:07	Debug   	be-vgrid02	954183  mabt    PEND  normal     be-vgrid02              VOLVE_2016 Sep 12 12:41
+2016-09-12 10:41:07	Debug   	be-vgrid02	Return code is 0
+2016-09-12 10:41:07	Debug   	be-vgrid02	job status is Queued
+2016-09-12 10:41:07	Message 	be-vgrid02	Simulation is queued
+2016-09-12 10:41:07	Debug   	be-vgrid02	State key simulation_status=Queued
+2016-09-12 10:41:07	Debug   	be-vgrid02	State key history_sim_status=Queued
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key eclrun_pid=8842
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Current User's configuration file: '/private/mabt/eclrun.config'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Looking for network XML configuration file name in :''
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Looking for network XML configuration file name in :'/private/mabt/eclrun.config'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Setting up default configuration.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key shell=/bin/csh
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key putty_priv_key=/private/mabt/putty.ppk
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key ChkLicOnWin=False
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key lsf_licenses=False
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key windows_dirs=['/private/mabt']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key temp_run_dir=/private/mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key NoLocalQueueAuth=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key IntelMpiSsh=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key EfHttpAuth=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key max_history=300
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key EclEnableFloGridSaveRestore=False
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key isAffinityEnabled=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key azure_encrypt=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key azure_staging=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Processing the XML configuration file: '/prog/ecl/grid/macros/eclrun.config'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key file_mode=BOTH
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key windows_dirs=[u'/', u'/project']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key temp_run_dir=/private/mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key efport=8080
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key efpath=enginframe
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key is_hdf_conversion_enabled=True
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key program=eclipse
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Basic keyword parser: False
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining full parallel command...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	System type is 'linux'; install path is '/prog/ecl/grid'; comm is 'plmpi'
+2016-09-12 10:41:09	Warning 	be-lcg01-03-12	F_UFMTENDIAN variable is not set up. To set it up include the line "setenv F_UFMTENDIAN big" in your .cshrc on Linux systems.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	F_UFMTENDIAN variable is not set up. To set it up include the line "setenv F_UFMTENDIAN big" in your .cshrc on Linux systems.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	PLMPI Versions='['9.1.3', '9.1.2', '9.1', '8.2.0', '8.1.2', '8.1.0']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Running macro: '/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin/mpirun -hostfile "/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/hostfile.201609121041098842" -np 4 -prot -aff=automatic:bandwidth  /prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe  VOLVE_2016 ; /prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe VOLVE_2016.DATA convert_VOLVE_2016_20160912104106079'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_GRID_INITIALIZED=lsf
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_SPOOLERS_SORT_BY=creation-time:desc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_CONTEXT=os
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_EAUTH_AUX_PASS=yes
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	OIV_PSFONT_PATH=/prog/ecl/grid/2015.1/resource/oi/fonts
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_TRAPSIGS=trap # 15 10 12 2
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_ECLIPSE_EXTRA_ARGS_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	SHELL=/bin/csh
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_CURRENT_GRID_MANAGER=lsf
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_UNIXGROUP_INT=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_NP_EF_DEFAULT=1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_LOCAL=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_VISAGE_REMOTE_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LS_EXEC_T=START
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EXT_LINK_VALUE=/enginframe/demo/
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	MANPATH=/prog/LSF/9.1/man:
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EEXEC_REAL_GID=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_ROOT=/prog/enginframe/2013/enginframe
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	VENDOR=unknown
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_ALL_JOBS_SORT_BY=jobid:asc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_GRID_LSF_PROFILE_LOADED=login
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_INVOKE_CMD=bsub
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_ECLIPSE_UPLOAD_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBINDEX=0
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER=/var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LS_JOBPID=8832
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBID=954183
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_OWNER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HOSTNAME=be-lcg01-03-12
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_JOBS_SORT_BY=jobid:asc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_BQUEUES_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_MCPU_HOSTS=be-lcg01-03-12 4 
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBRES_PID=8832
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_EF_FILE_TAIL_SIZE=300
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	MACHTYPE=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_PLUGIN_PATH=/prog/enginframe/2013/enginframe/plugins/statoil
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	GROUP=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_FM_BROWSE_SORT_BY=_natural:asc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_EXT=DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_XMLNS_doe=xmlns:doe="http://www.enginframe.com/2000/EnginFrame/Design-Of-Experiment"
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_EAUTH_SERVER=mbatchd@BERGEN
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_BROWSER_VERSION=7.0
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_SPOOLERS_MAX_RESULTS=25
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_ACCT_FILE=/tmp/954183.tmpdir/.1473676867.954183.acct
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_BINDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/bin
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_GRID=lsf
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	USER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EEXEC_REAL_UID=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	QUERY_STRING=_uri=//com.statoil.reservoir/eclipse&_actionid=submit
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_DJOB_NUMPROC=4
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EXEC_HOSTTYPE=X86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SESSION=29FE4C3949CB1761AB43B591E5587CEF.be-vgrid02
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_ROOT_CONTEXT=enginframe
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_VERSION=29
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	BSUB_BLOCK_EXEC_HOST=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	I_MPI_DEVICE=ssm
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	REMOTE_ADDR=10.224.21.58
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_NP=1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_MAX_NUM_PROCESSORS=4
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_NAME=tmp4805611409467375158.ef
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECLPATH=/prog/ecl/grid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	MY_LSFCLUSTER=BERGEN
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_DOWNLOAD_MGR=remote
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	PATH_TRANSLATED=/prog/enginframe/2013/enginframe/plugins/statoil/WEBAPP/com.statoil.reservoir.xml
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_HOSTS_SORT_BY=name:asc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_HOSTS_ACTIVE_VIEW=compact
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_BATCH_NEW_SESSION=y
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_INTER_EF_DEFAULT=plmpi
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	CURRENT_PATH=/prog/enginframe/2013/enginframe/plugins/statoil/WEBAPP/
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_ALL_JOBS_MAX_RESULTS=25
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_QUEUESYSTEM=LSF
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	_=/prog/ecl/grid/macros/eclrun
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	FM_BROWSE_SPOOLER_URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4382442992433865780.ef
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_FILES=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_FILE=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_VERSION_EF_DEFAULT=2015.1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_LOGDIR=/var/log/enginframe/enginframe/logs
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBEXIT_STAT=0
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_HOSTTYPE_EF_DEFAULT=any
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_USER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_PLMPI_LOC=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_PROJECT=Default
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECLIPSE_DO_NOT_RECURSE=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	REMOTE_HOST=10.224.21.58
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_HOSTTYPE=any
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_OUTPUT_MODE=normal
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EFFECTIVE_RSRCREQ=select[(cs)&&(type == any )&&(mem>maxmem*1/3)] order[r15s:pg:bjobs] same[model] 
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_JOBS_MAX_RESULTS=25
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_SUBMISSION_FEEDBACK=smart
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	UIDPATH=/prog/ecl/grid/2015.1/bin/linux_x86_64/%U
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_VERSION=2015.1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_PYTHONVER=python-2.6.1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	__LSF_JOB_TMPDIR__=/tmp/954183.tmpdir
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_QUEUE_EF_DEFAULT=normal -LSF
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LM_LICENSE_FILE=7321@eclipse-lic-no.statoil.no
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_INTER=plmpi
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HOME=/private/mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LD_LIBRARY_PATH=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/lib/linux_amd64:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.1/bin/linux_x86_64:/prog/ecl/grid/2015.1/lib/linux_x86_64:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.1/bin/linux_x86_64:/prog/ecl/grid/2015.1/lib/linux_x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSFUSER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_SERVERDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/etc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EXEC_CLUSTER=BERGEN
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_LMSTAT_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	SERVER_PORT=443
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECLARCH=/prog/ecl/grid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBRES_CALLBACK=47025@be-lcg01-03-12
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_CHKFILENAME=/private/mabt/.lsbatch/1473676867.954183
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_SUB_HOST=be-vgrid02
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_UTSR_HEAP=PROCESS
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LS_SUBCWD=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_ECHKPNT_RSH_CMD=ssh
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SERVICEPROFILE_ENABLE=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_LOGDIR=/prog/LSF/log
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	OSTYPE=linux
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HOST=be-vgrid02
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_EAUTH_CLIENT=user
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_DYNAMIC_ROOT=/var/spool/enginframe/2013/enginframe
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	REQUEST_URL=https://be-vgrid02.be.statoil.no/enginframe/statoil/com.statoil.reservoir.xml
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOB_EXECUSER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	cluster_sort_order=ascending
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	XLSF_UIDDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib/uid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_HOSTS=be-lcg01-03-12 be-lcg01-03-12 be-lcg01-03-12 be-lcg01-03-12
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_QUEUES_SORT_BY=jobs:desc
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_EXIT_PRE_ABORT=99
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_QUEUE_IS_EXCLUSIVE=0
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBFILENAME=/private/mabt/.lsbatch/1473676867.954183
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_DOE_SUBMIT_LIMIT=300
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_AFFINITY_HOSTFILE=/private/mabt/.lsbatch/1473676867.954183.hostAffinityFile
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_ENVDIR=/prog/LSF/conf
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_DOWNLOAD_URL=https://be-vgrid02.be.statoil.no/enginframe/download
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HOSTTYPE=X86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EXT_LINK_NAME=Tutorial
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LOGNAME=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_LIM_API_NTRIES=1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	PATH=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/bin:/bin:/usr/bin:/prog/ecl/grid/macros:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/macros:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/etc:/bin:/usr/bin:/usr/sbin:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/macros:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/bin:/usr/bin:/usr/local/bin:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_QUEUE=normal
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_FILES_EF_DEFAULT=/project/gullfaks_satelitter/ressim/gf_sat_rimfaksdalen/ff/2012a/e100/simu/160808_GRD_Q1_Q4/160808_GRD_BC-Q1-LWI_OKT.DATA
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_VISAGE_UPLOAD_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_TYPE=data
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_XMLNS=http://www.enginframe.com/2000/EnginFrame
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	SERVER_NAME=be-vgrid02.be.statoil.no
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_SIMULATOR=eclipse
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_DIRECTORY=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_LIBDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_SUB_USER=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECLRESOURCE=/prog/ecl/grid/2015.1/resource
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	PYTHONPATH2=/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_BASENAME=VOLVE_2016
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_SIMULATOR_EF_DEFAULT=eclipse
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_JOB_TIMESTAMP_VALUE=1473676867
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_OUTPUTFILE=VOLVE_2016.OUT
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_AGENT=com.statoil.reservoir
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_ECLRUN_COMMAND=/prog/ecl/grid/macros/eclrun
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	SBD_KRB5CCNAME_VAL=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_BROWSER_NAME=ie
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_RES_GET_FANOUT_INFO=Y
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_BATCH_JID=954183
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	HY_LIST_QUEUES_MAX_RESULTS=99999
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_SPOOLER_HIDDEN=false
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_JOBNAME=VOLVE_2016
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_LOGIN_NAME=mabt
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSB_DJOB_HOSTFILE=/private/mabt/.lsbatch/1473676867.954183.hostfile
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_ECLRUN_PYTHON=/usr/bin/env eclpython
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	LSF_CGROUP_TOPDIR_KEY=BERGEN
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	cluster_sortby=status
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	SHLVL=6
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	PWD=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECL_IX_REMOTE_ENABLED=true
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFECL_QUEUE=normal
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	ECLVER=2015.1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	BINARY_TYPE_HPC=
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EF_ECLIPSE_INITIALIZED=1
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	EFPLUGIN_NULLFILE=/dev/null
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining full parallel command...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	System type is 'linux'; install path is '/prog/ecl/grid'; comm is 'plmpi'
+2016-09-12 10:41:09	Warning 	be-lcg01-03-12	F_UFMTENDIAN variable is not set up. To set it up include the line "setenv F_UFMTENDIAN big" in your .cshrc on Linux systems.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	F_UFMTENDIAN variable is not set up. To set it up include the line "setenv F_UFMTENDIAN big" in your .cshrc on Linux systems.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'eclipse' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's name: 'eclipse_plmpi.exe'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	The executable was found when searching for: '['eclipse_plmpi']'- 1. ExeName: 'eclipse_plmpi.exe', ExePath: '/prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 10:41:09	Message 	be-lcg01-03-12	Executing ECLIPSE on linux system with x86_64 architecture named be-lcg01-03-12 using plmpi communications
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	About to execute : 
+  /prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin/mpirun -hostfile "/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/hostfile.201609121041098842" -np 4 -prot -aff=automatic:bandwidth  /prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe  VOLVE_2016
+ in directory :
+  /project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	Running : /prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin/mpirun -hostfile "/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/hostfile.201609121041098842" -np 4 -prot -aff=automatic:bandwidth  /prog/ecl/grid/2015.1/bin/linux_x86_64/eclipse_plmpi.exe  VOLVE_2016
+2016-09-12 10:41:09	Message 	be-lcg01-03-12	Process ID is 8846
+2016-09-12 10:41:09	Debug   	be-lcg01-03-12	State key job_pid=8846
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Return code is 0
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_GRID_INITIALIZED=lsf
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_SPOOLERS_SORT_BY=creation-time:desc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_CONTEXT=os
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_EAUTH_AUX_PASS=yes
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	OIV_PSFONT_PATH=/prog/ecl/grid/2015.2/resource/oi/fonts
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_TRAPSIGS=trap # 15 10 12 2
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_ECLIPSE_EXTRA_ARGS_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	SHELL=/bin/csh
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_CURRENT_GRID_MANAGER=lsf
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_UNIXGROUP_INT=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_NP_EF_DEFAULT=1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_LOCAL=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_VISAGE_REMOTE_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LS_EXEC_T=START
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EXT_LINK_VALUE=/enginframe/demo/
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	MANPATH=/prog/LSF/9.1/man:
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EEXEC_REAL_GID=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_ROOT=/prog/enginframe/2013/enginframe
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	VENDOR=unknown
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_ALL_JOBS_SORT_BY=jobid:asc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_GRID_LSF_PROFILE_LOADED=login
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_INVOKE_CMD=bsub
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_ECLIPSE_UPLOAD_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBINDEX=0
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER=/var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LS_JOBPID=8832
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBID=954183
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_OWNER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HOSTNAME=be-lcg01-03-12
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_JOBS_SORT_BY=jobid:asc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_BQUEUES_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_MCPU_HOSTS=be-lcg01-03-12 4 
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBRES_PID=8832
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_EF_FILE_TAIL_SIZE=300
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	MACHTYPE=x86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_PLUGIN_PATH=/prog/enginframe/2013/enginframe/plugins/statoil
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	GROUP=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_FM_BROWSE_SORT_BY=_natural:asc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_EXT=DATA
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_XMLNS_doe=xmlns:doe="http://www.enginframe.com/2000/EnginFrame/Design-Of-Experiment"
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_EAUTH_SERVER=mbatchd@BERGEN
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_BROWSER_VERSION=7.0
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_SPOOLERS_MAX_RESULTS=25
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_ACCT_FILE=/tmp/954183.tmpdir/.1473676867.954183.acct
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_BINDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/bin
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_GRID=lsf
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	USER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EEXEC_REAL_UID=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	QUERY_STRING=_uri=//com.statoil.reservoir/eclipse&_actionid=submit
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_DJOB_NUMPROC=4
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EXEC_HOSTTYPE=X86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SESSION=29FE4C3949CB1761AB43B591E5587CEF.be-vgrid02
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_ROOT_CONTEXT=enginframe
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_VERSION=29
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	BSUB_BLOCK_EXEC_HOST=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	I_MPI_DEVICE=ssm
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	REMOTE_ADDR=10.224.21.58
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_NP=1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_MAX_NUM_PROCESSORS=4
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_NAME=tmp4805611409467375158.ef
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECLPATH=/prog/ecl/grid
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	MY_LSFCLUSTER=BERGEN
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_DOWNLOAD_MGR=remote
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	PATH_TRANSLATED=/prog/enginframe/2013/enginframe/plugins/statoil/WEBAPP/com.statoil.reservoir.xml
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_HOSTS_SORT_BY=name:asc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_HOSTS_ACTIVE_VIEW=compact
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_BATCH_NEW_SESSION=y
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_INTER_EF_DEFAULT=plmpi
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	CURRENT_PATH=/prog/enginframe/2013/enginframe/plugins/statoil/WEBAPP/
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_ALL_JOBS_MAX_RESULTS=25
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_QUEUESYSTEM=LSF
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	_=/prog/ecl/grid/macros/eclrun
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	FM_BROWSE_SPOOLER_URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4382442992433865780.ef
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_FILES=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_FILE=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model/VOLVE_2016.DATA
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_VERSION_EF_DEFAULT=2015.1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_LOGDIR=/var/log/enginframe/enginframe/logs
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBEXIT_STAT=0
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_HOSTTYPE_EF_DEFAULT=any
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_USER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_PLMPI_LOC=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_PROJECT=Default
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECLIPSE_DO_NOT_RECURSE=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	REMOTE_HOST=10.224.21.58
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_HOSTTYPE=any
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_OUTPUT_MODE=normal
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EFFECTIVE_RSRCREQ=select[(cs)&&(type == any )&&(mem>maxmem*1/3)] order[r15s:pg:bjobs] same[model] 
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_JOBS_MAX_RESULTS=25
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_SUBMISSION_FEEDBACK=smart
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	UIDPATH=/prog/ecl/grid/2015.2/bin/linux_x86_64/%U
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_VERSION=2015.1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_PYTHONVER=python-2.6.1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	__LSF_JOB_TMPDIR__=/tmp/954183.tmpdir
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_QUEUE_EF_DEFAULT=normal -LSF
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LM_LICENSE_FILE=7321@eclipse-lic-no.statoil.no
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_INTER=plmpi
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HOME=/private/mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LD_LIBRARY_PATH=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/lib/linux_amd64:/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/lib/linux_amd64:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.1/bin/linux_x86_64:/prog/ecl/grid/2015.1/lib/linux_x86_64:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64:/prog/ecl/grid/2015.1/bin/linux_x86_64:/prog/ecl/grid/2015.1/lib/linux_x86_64:/prog/ecl/grid/2015.1/bin/linux_x86_64:/prog/ecl/grid/2015.1/lib/linux_x86_64:/prog/ecl/grid/2015.2/bin/linux_x86_64:/prog/ecl/grid/2015.2/lib/linux_x86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSFUSER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_SERVERDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/etc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EXEC_CLUSTER=BERGEN
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_LMSTAT_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	SERVER_PORT=443
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECLARCH=/prog/ecl/grid
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBRES_CALLBACK=47025@be-lcg01-03-12
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_CHKFILENAME=/private/mabt/.lsbatch/1473676867.954183
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_SUB_HOST=be-vgrid02
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_UTSR_HEAP=PROCESS
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LS_SUBCWD=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_ECHKPNT_RSH_CMD=ssh
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SERVICEPROFILE_ENABLE=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_LOGDIR=/prog/LSF/log
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	OSTYPE=linux
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HOST=be-vgrid02
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_EAUTH_CLIENT=user
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_DYNAMIC_ROOT=/var/spool/enginframe/2013/enginframe
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	REQUEST_URL=https://be-vgrid02.be.statoil.no/enginframe/statoil/com.statoil.reservoir.xml
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOB_EXECUSER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	cluster_sort_order=ascending
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	XLSF_UIDDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib/uid
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_HOSTS=be-lcg01-03-12 be-lcg01-03-12 be-lcg01-03-12 be-lcg01-03-12
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_QUEUES_SORT_BY=jobs:desc
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_EXIT_PRE_ABORT=99
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_QUEUE_IS_EXCLUSIVE=0
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBFILENAME=/private/mabt/.lsbatch/1473676867.954183
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_DOE_SUBMIT_LIMIT=300
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_AFFINITY_HOSTFILE=/private/mabt/.lsbatch/1473676867.954183.hostAffinityFile
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_ENVDIR=/prog/LSF/conf
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_DOWNLOAD_URL=https://be-vgrid02.be.statoil.no/enginframe/download
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HOSTTYPE=X86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EXT_LINK_NAME=Tutorial
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LOGNAME=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_LIM_API_NTRIES=1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	PATH=/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin:/prog/ecl/grid/tools/linux_x86_64/platform/9.1.3/bin:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/bin:/bin:/usr/bin:/prog/ecl/grid/macros:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/macros:/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/etc:/bin:/usr/bin:/usr/sbin:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/macros:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/bin:/usr/bin:/usr/local/bin:/bin:/usr/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin:/prog/ecl/grid/macros:/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_QUEUE=normal
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_FILES_EF_DEFAULT=/project/gullfaks_satelitter/ressim/gf_sat_rimfaksdalen/ff/2012a/e100/simu/160808_GRD_Q1_Q4/160808_GRD_BC-Q1-LWI_OKT.DATA
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_VISAGE_UPLOAD_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_TYPE=data
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_XMLNS=http://www.enginframe.com/2000/EnginFrame
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	SERVER_NAME=be-vgrid02.be.statoil.no
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_SIMULATOR=eclipse
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_DIRECTORY=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_LIBDIR=/prog/LSF/9.1/linux2.6-glibc2.3-x86_64/lib
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_SUB_USER=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECLRESOURCE=/prog/ecl/grid/2015.2/resource
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	PYTHONPATH2=/prog/ecl/grid/tools/linux_x86_64/python-2.6.1/bin
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_BASENAME=VOLVE_2016
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_SIMULATOR_EF_DEFAULT=eclipse
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_JOB_TIMESTAMP_VALUE=1473676867
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_OUTPUTFILE=VOLVE_2016.OUT
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_AGENT=com.statoil.reservoir
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_ECLRUN_COMMAND=/prog/ecl/grid/macros/eclrun
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	SBD_KRB5CCNAME_VAL=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_BROWSER_NAME=ie
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_RES_GET_FANOUT_INFO=Y
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_BATCH_JID=954183
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	URI=spooler:///var/spool/enginframe/2013/enginframe/spoolers/mabt/tmp4805611409467375158.ef
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	HY_LIST_QUEUES_MAX_RESULTS=99999
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_SPOOLER_HIDDEN=false
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_JOBNAME=VOLVE_2016
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_LOGIN_NAME=mabt
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSB_DJOB_HOSTFILE=/private/mabt/.lsbatch/1473676867.954183.hostfile
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_ECLRUN_PYTHON=/usr/bin/env eclpython
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	LSF_CGROUP_TOPDIR_KEY=BERGEN
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	cluster_sortby=status
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	SHLVL=6
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	PWD=/project/volve/ressim/ff/2010a/e100/simu/Volve_Model
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECL_IX_REMOTE_ENABLED=true
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFECL_QUEUE=normal
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	ECLVER=2015.2
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	BINARY_TYPE_HPC=
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EF_ECLIPSE_INITIALIZED=1
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	EFPLUGIN_NULLFILE=/dev/null
+2016-09-12 14:20:31	Message 	be-lcg01-03-12	Starting HDF conversion ...
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Determining supported MPIs for: 'ConvertSummaryData2DataBase' on 'linux' with 'x86_64' architecture. User requested MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Supported MPIs: '['plmpi']'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Sorted versions are ['2015.2', '2015.1', '2014.2', '2014.1', '2013.2', '2013.1', '2012.2', '2012.1', '2011.2', '2011.1', '2010.2', '2009.2', '2009.1', '2008.2', '2008.1', '2007.2', '2007.1', '2006.2', '2006.1', '2005a_1', '2004a_1']
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Arch. chosen by the user: 'auto'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Installation path: '/prog/ecl/grid'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Searching for executable to run...
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's name: 'ConvertSummaryData2DataBase.exe'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Executable's MPI: 'plmpi'
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	The executable was found when searching for: '['ConvertSummaryData2DataBase']'- 1. ExeName: 'ConvertSummaryData2DataBase.exe', ExePath: '/prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe', Chip: 'x86_64', ExeMPI: 'plmpi'.
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Disabling Save & Restore in FloGrid
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Found /prog/ecl/grid/macros
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Platform: system=Linux hostname=be-lcg01-03-12 release=2.6.32-504.el6.x86_64 os_version=#1 SMP Tue Sep 16 01:56:35 EDT 2014 machine=x86_64 processor=x86_64
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Running : /prog/ecl/grid/2015.2/bin/linux_x86_64/ConvertSummaryData2DataBase.exe VOLVE_2016.DATA convert_VOLVE_2016_20160912104106079
+2016-09-12 14:20:31	Debug   	be-lcg01-03-12	Process ID is 2851
+2016-09-12 14:20:32	Debug   	be-lcg01-03-12	Return code is 0
+2016-09-12 14:20:32	Debug   	be-lcg01-03-12	Deleting HDF temp dir: 'convert_VOLVE_2016_20160912104106079'.
+2016-09-12 14:20:32	Debug   	be-lcg01-03-12	State key converterTempDir=
+2016-09-12 14:20:32	Message 	be-lcg01-03-12	HDF conversion completed successfully.
